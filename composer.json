@@ -1,0 +1,8 @@
+{
+    "require": {
+        "xendit/xendit-php": "^2.6",
+        "laminas/laminas-httphandlerrunner": "^1.3",
+        "guzzlehttp/guzzle": "^7.2",
+        "guzzlehttp/psr7": "^1.7"
+    }
+}
