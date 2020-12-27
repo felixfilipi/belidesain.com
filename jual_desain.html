@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<style>
+
+ body{
+   background: rgba(25, 70, 112)
+ }
+
+  * {
+    box-sizing: border-box;
+    padding:20px;
+  }
+
+label{
+  color: #fff;
+  font-size: 24px;
+}
+
+input[type=text],input[type=url],input[type=textarea], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  resize: vertical;
+  background: #f1f1f1;
+  margin-top:15px;
+}
+
+  textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    resize: vertical;
+    background: #f1f1f1;
+    font-family: sans-serif;
+  }
+
+input[type=submit] {
+  background-color: #335d87;
+	width: 100%;
+	margin-top: 30px;
+  font-family: sans-serif;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #1d99ff;
+}
+
+.container {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:#051d36;
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-bottom: -35px;
+}
+
+.col-75 {
+  float: left;
+  width: 95%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+<!-- Javascript-->
+<script src="js/jquery.js"></script>
+
+</head>
+		<body>
+      <div class="row clearfix">
+         <div class="find-box">
+            <h1>Jual Desain</h1>
+            <h4>Jual desain dan karya anda disini.</h4>
+            <div class="container">
+              <form action="/action_page.php">
+                <div class="row">
+                    <label>Nama Desain*</label>
+                    <input type="text" placeholder="Masukkan Alamat Lengkap anda" required>
+                </div>
+                <div class="row">
+                    <label>Kategori*</label>
+                    <select>
+                       <option>Flying Carpet Green rug</option>
+                       <option>Alaska</option>
+                       <option>Hawaii</option>
+                       <option>California</option>
+                       <option>Nevada</option>
+                       <option>Oregon</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label>Tema*</label>
+                    <div id="boxscroll" style="background-color:#fff;margin-top:15px;">
+                       <div class="form-check">
+                          <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox1" style="color:#000">
+                          Suram
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox2" style="color:#000">
+                          Angker
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox3" style="color:#000">
+                          Wibu
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox4" style="color:#000">
+                          Yami
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox4" style="color:#000">
+                          Yami
+                          </label>
+                       </div>
+                    </div>
+                  </div>
+                <div class="row">
+                    <label>Harga*</label>
+                    <input type="text" placeholder="Masukkan Harga Desain anda" required>
+                </div>
+                <div class="row">
+                    <label>Deskripsi*</label>
+                    <textarea placeholder="Deskripsikan Desain anda" required></textarea>
+                </div>
+                <div class="row">
+                    <label style="font-size:16px">Spesifikasi</label>
+                    <input type="text" placeholder="Masukkan Spesifikasi" required style="width:30%">
+                    <label style="font-size:16px">Penjelasan</label>
+                    <input type="text" placeholder="Jelaskan Spesifikasi" required style="width:30%">
+                </div>
+                <div class="row">
+                    <label>+ Spesifikasi</label>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Daftar" >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <!--bootstrap js-->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/select2.full.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <!--custom js-->
+        <script src="js/custom.js"></script>
+        <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
+          region: "us-south",
+          serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </body>
+  </html>

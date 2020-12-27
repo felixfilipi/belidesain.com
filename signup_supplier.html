@@ -20,7 +20,7 @@ label{
   font-size: 24px;
 }
 
-input[type=text],input[type=password],input[type=number],input[type=tel],input[type=email], select, textarea {
+input[type=text],input[type=url], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -29,17 +29,6 @@ input[type=text],input[type=password],input[type=number],input[type=tel],input[t
   resize: vertical;
   background: #f1f1f1;
   margin-top:15px;
-}
-
-input[type="file"] {
-    display: none;
-}
-.custom-file-upload {
-    border: 1px solid #ccc;
-    font-size: 10px;
-    padding: 3px 8px;
-    cursor: pointer;
-    margin-left: 20px;
 }
 
 input[type=submit] {
@@ -90,52 +79,33 @@ input[type=submit]:hover {
 }
 
 </style>
+<!-- Javascript-->
+<script src="js/jquery.js"></script>
 
 </head>
 		<body>
       <div class="row clearfix">
          <div class="find-box">
-            <h1>Buat Akun</h1>
-            <h4>Cari desain dan produk impian anda disini.</h4>
+            <h1>Buat Akun Supplier</h1>
+            <h4>Jual desain dan produk karya anda disini.</h4>
             <div class="container">
               <form action="/action_page.php">
                 <div class="row">
                   <div class="col-25">
-                    <label>Nama*</label>
-                    <input type="text" placeholder="Masukkan Nama Lengkap anda" required>
+                    <label>Alamat Anda*</label>
+                    <input type="text" placeholder="Masukkan Alamat Lengkap anda" required>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-25">
-                    <label>Password*</label>
-                    <input type="password" placeholder="Masukkan Password anda" required>
+                    <label>Nama Instansi Anda</label>
+                    <input type="text" placeholder="Masukkan Nama Instansi anda">
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-25">
-                    <label>Ulang Password*</label>
-                    <input type="password" placeholder="Masukkan lagi password anda" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label>Email*</label>
-                    <input type="email" placeholder="Masukkan Email anda" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label>Nomor Telepon*</label>
-                    <input type="tel" placeholder="Masukkan Nomor Telepon anda"  pattern="[0-9]{12}" required>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-25">
-                    <label>Upload Foto</label>
-                    <br><br><label for="file-upload" class="custom-file-upload">
-                      Upload Foto
-                    </label>
-                    <input id="file-upload" type="file"/>
+                    <label>Website</label>
+                    <input type="url" placeholder="Masukkan link website anda" required>
                   </div>
                 </div>
                 <div class="row">

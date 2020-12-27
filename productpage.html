@@ -33,8 +33,18 @@
         position: sticky;
         width: 100%;
         margin-top: 15px;
+        }
       }
 
+      .open-button .active {
+      	right: 100%;
+      	width: 100%;
+      	transition: all .5s ease-out 0s;
+      	-webkit-transition: all .5s ease-out 0s;
+      	-moz-transition: all .5s ease-out 0s;
+      	-ms-transition: all .5s ease-out 0s;
+      	-o-transition: all .5s ease-out 0s;
+      }
 
       .form-popup {
         display: none;
@@ -73,27 +83,24 @@
         opacity: 0.8;
       }
 
-      .form-container .cancel {
-        background-color: #1d99ff;
-      }
+
 
       .form-container .btn:hover, .open-button:hover {
         opacity: 1;
       }
 
-      /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
 
 /* Modal Content */
@@ -431,24 +438,38 @@
                         <option value="KY">Kentucky</option>
                      </select>
                      <button class="open-button" onclick="openForm()">Beli</button>
-                      <button class="open-button" onclick="closeForm()">Batal</button>
-                     <div class="form-popup" id="myForm">
-                       <form class="form-container">
-                         <h1>Verifikasi</h1>
-                         <label style="margin-top:15px;"><b>Email</b></label>
-                         <input type="text" placeholder="Masukkan Email Anda" required>
-                         <label><b>Password</b></label>
-                         <input type="password" placeholder="Masukkan Password" required>
-                         <button type="submit" class="btn" id="myBtn">Beli Sekarang</button>
-                         <div id="myModal" class="modal">
-                           <div class="modal-content">
-                             <span class="close">&times;</span>
-                             <p>Some text in the Modal..</p>
+                       <div class="form-popup" id="myForm">
+                         <form class="form-container">
+                           <h1>Verifikasi</h1>
+                           <label style="margin-top:15px;"><b>Email</b></label>
+                           <input type="text" placeholder="Masukkan Email Anda" required>
+                           <label><b>Password</b></label>
+                           <input type="password" placeholder="Masukkan Password" required>
+                           <button type="submit" class="btn" id="myBtn">Beli Sekarang</button>
+                           <div id="myModal" class="modal">
+                             <div class="modal-content">
+                               <span class="close">&times;</span>
+                               <p style="font-family:verdana ; font-size:20px;">Ringkasan Belanja</span>
+                                 <hr>
+                                 <p style="font-family:verdana;font-size:15px;"> Desain akan dikirimkan ke Inventori anda </span>
+                                   <div class="price-box-right">
+                                      <h4>Harga</h4>
+                                      <h3>Rp 1.000.000 <span>Blueprint + Consult</span></h3>
+                                      <hr>
+                                    <p style="font-family:verdana;font-size:15px;">Pembayaran</p>
+                                      <select class="form-control select2" style="width:100%">
+                                         <option>Dana</option>
+                                         <option value="AK">LinkAja</option>
+                                         <option value="HI">OVO</option>
+                                      </select>
+                                       <button type="submit" class="btn" style="margin-top:50px;">Bayar</button>
+                                    </div>
+                             </div>
                            </div>
-                         </div>
-                         <button type="button" class="btn cancel">Masukkan keranjang</button>
-                       </form>
-                     </div>
+                           <button type="button" class="btn" style="background-color:#1d99ff">Masukkan keranjang</button>
+                         </form>
+                       </div>
+
                      <h5>Rata-rata waktu respon desainer <br><i class="fa fa-clock-o" aria-hidden="true"></i><strong> 16 Jam</strong></h5>
                   </div>
                </div>
@@ -563,8 +584,14 @@
         myForm.style.display="block";
     }
 
+    function toggleForm(){
+      myForm.style.display = "block";
+
+    }
+
     function closeForm(){
-      myForm.style.display="none";
+
+        myForm.style.display="none";
     }
 
     // Modal
