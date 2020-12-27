@@ -46,8 +46,7 @@ CREATE TABLE DesignCategories(
   CategoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryName VARCHAR(20),
   CategoryDesc TEXT,
-  CategoryPhoto VARCHAR(20),
-  
+  CategoryPhoto VARCHAR(20)
 );
 
 CREATE TABLE DesignSubCategories(
