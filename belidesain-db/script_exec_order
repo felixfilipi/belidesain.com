@@ -1,0 +1,6 @@
+user -> UserInfo -> UserPhoto -> ChatSystem -> DesignTheme -> DesignCategories -> 
+DesignSubCategories -> DesignHeader -> DesignRating -> DesignComments -> UserInventory 
+-> TransactionHeader -> TransactionDetails -> DesignDetails -> DesignPhotos -> 
+Design Spesificatiion -> DesignFile
+
+tables = 17
