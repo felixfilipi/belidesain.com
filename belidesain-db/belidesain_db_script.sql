@@ -4,7 +4,8 @@ CREATE TABLE User(
   Password VARCHAR(32),
   LastActivity DATE,
   IsOnline BOOL,
-  IsSupplier BOOL
+  IsSupplier BOOL,
+  IsAdmin BOOL
 );
 
 CREATE TABLE UserInfo(
