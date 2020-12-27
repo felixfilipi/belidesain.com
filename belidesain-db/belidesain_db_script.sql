@@ -36,6 +36,12 @@ CREATE TABLE ChatSystem(
   FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+CREATE TABLE DesignTheme(
+  ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	ThemeName VARCHAR(20),
+  ThemeDesc TEXT,
+);
+
 CREATE TABLE DesignCategories(
   CategoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryName VARCHAR(20),
@@ -43,10 +49,10 @@ CREATE TABLE DesignCategories(
   CategoryPhoto VARCHAR(20),  
 );
 
-CREATE TABLE DesignTheme(
-  ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	ThemeName VARCHAR(20),
-  ThemeDesc TEXT,
+CREATE TABLE DesignSubCategories(
+  SubCategoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  SubCategoryName VARCHAR(64),
+  SubCategoryDesc TEXT,
 );
 
 CREATE TABLE DesignHeader(
@@ -56,19 +62,19 @@ CREATE TABLE DesignHeader(
   ThemeId  INT(32) NOT NULL,
   SupplierUserId INT(32) NOT NULL,
   isSold BOOLEAN,
-  FOREIGN KEY (CategoryId) REFERENCES DesignCategory (CategoryId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategory (SubCategoryId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (ThemeId) REFERENCES DesignTheme (ThemeId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (CategoryId) REFERENCES DesignCategory (CategoryId),
+  FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategory (SubCategoryId),
+  FOREIGN KEY (ThemeId) REFERENCES DesignTheme (ThemeId),
+  FOREIGN KEY (SupplierUserId) REFERENCES User (UserId)
 );
 
 CREATE TABLE DesignRating(
   RatingId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
-  UserId INT(32) NOT NULL,
-  Rating INT(5),
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE
+	DesignId INT(32) NOT NULL,
+	UserId INT(32) NOT NULL,
+	Rating INT(5),
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId),
+	FOREIGN KEY (UserId) REFERENCES User (UserId)
 );
 
 CREATE TABLE DesignComments(
@@ -77,8 +83,8 @@ CREATE TABLE DesignComments(
   UserId  INT(32) NOT NULL,
   Comment TEXT,
   DateSent DATE,
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId),
+  FOREIGN KEY (UserId) REFERENCES User (UserId)
 );
 
 CREATE TABLE UserInventory(
@@ -86,8 +92,8 @@ CREATE TABLE UserInventory(
   UserId  INT(32) NOT NULL,
   DesignId  INT(32) NOT NULL,
   DatePurchased DATE,
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (UserId) REFERENCES User (UserId),
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId)
 );
 
 CREATE TABLE TransactionHeader(
@@ -98,9 +104,9 @@ CREATE TABLE TransactionHeader(
   IsSuccess BOOLEAN,
   IsExpired BOOLEAN,
   TransactionType VARCHAR(32),
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE,
-  FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId),
+  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId),
+  FOREIGN KEY (SupplierUserId) REFERENCES User (UserId)
 );
 
 CREATE TABLE TransactionDetails(
@@ -109,7 +115,7 @@ CREATE TABLE TransactionDetails(
   TransactionDate DATE,
   ExpirationDate DATE,
   DateCreated DATE,
-  FOREIGN KEY (TransactionId) REFERENCES TransactionHeader (TransactionId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (TransactionId) REFERENCES TransactionHeader (TransactionId)
 );
 
 CREATE TABLE DesignDetails(
@@ -118,28 +124,14 @@ CREATE TABLE DesignDetails(
   DesignDesc TEXT,
   DesignPrice INT(32),
   DesignDateCreated DATE,
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId)
 );
 
 CREATE TABLE DesignPhotos(
   DesignPhotoId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(32) NOT NULL,
   DesignPhotoName VARCHAR(64),
-  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-CREATE TABLE DesignFile(
-  DesignFileId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
-  DesignFileName VARCHAR(20),
-  DesignFileType VARCHAR(20),
-  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-CREATE TABLE DesignSubCategories(
-  SubCategoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  SubCategoryName VARCHAR(64),
-  SubCategoryDesc TEXT,
+  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId)
 );
 
 CREATE TABLE DesignSpesification(
@@ -147,5 +139,13 @@ CREATE TABLE DesignSpesification(
   DesignId INT(32) NOT NULL,
   SpesificationName VARCHAR(32),
   SpesificationDesc VARCHAR(32)
-  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON UPDATE CASCADE ON DELETE CASCADE
+  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId)
+);
+
+CREATE TABLE DesignFile(
+  DesignFileId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(32) NOT NULL,
+  DesignFileName VARCHAR(20),
+  DesignFileType VARCHAR(20),
+  FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId)
 );
