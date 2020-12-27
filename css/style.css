@@ -1,44 +1,6 @@
-/*--------------------------------------------------------------------------------------
-	Theme Name: Chamb - Responsive E-commerce HTML5 Template
-----------------------------------------------------------------------------------------
-
-	1. IMPORT FILES
-	2. BASE CSS
-	3. HEADER
-	   - Logo
-	   - Search Bar
-	4. PAGE CONTENT PRODUCT
-	5. SECTION
-	   - Products Exciting
-	   - Start Free
-	6. PRODUCT
-	7. FOOTER
-	   - Copyright
-	8. INNER PAGE
-	   - How it Works
-	   - About Us
-	   - Terms Page
-	   - Cooming Soon
-	   - Category
-	   - Profile
-	   - Pricing
-	   - Product Page
-	   - New Layout css
-
---------------------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------
-	1. IMPORT FILES
--------------------------------------------------------------*/
-
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
 /**-- font-family: 'Raleway', sans-serif; --**/
-
-
-/*-------------------------------------------------------------
-	2. BASE CSS
--------------------------------------------------------------*/
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -433,7 +395,7 @@ header .navbar-default .navbar-header {
 
 .main-product {
 	background-color: #09284b;
-	background: url("../images/bg_main.png") no-repeat fixed center;
+	background: rgba(25, 70, 112) url("../images/background2.png") no-repeat fixed center;
 	padding-bottom: 180px;
 	background-position: center center;
 }
@@ -913,7 +875,7 @@ header .navbar-default .navbar-header {
 
 .products {
 	padding: 40px 0px 60px 0px;
-	background: #fff;
+	background: #d5dded;
 	position: relative;
 }
 
@@ -1887,7 +1849,7 @@ header .navbar-default .navbar-header {
 
 .terms-conditions {
 	padding-bottom: 70px;
-	background: #f4f9fd;
+	background: #d5dded;
 }
 
 .terms-title {
@@ -2072,7 +2034,7 @@ header .navbar-default .navbar-header {
 /*-- Category --*/
 
 .furniture-box {
-	background: #f4f9fd;
+	background: #d5dded;
 }
 
 .furniture-main h2 {
@@ -3037,7 +2999,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .product-page-main {
-	background: #f4f9fd;
+	background: #d5dded;
 }
 
 .prod-page-title {
@@ -3066,8 +3028,8 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .prod-page a {
-	background: #ffffff;
-	color: #333333;
+	background: #00cb96;
+	color: #fff;
 	-webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
