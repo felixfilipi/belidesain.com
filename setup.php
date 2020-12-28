@@ -10,8 +10,8 @@ Setting up database
 	require_once 'function.php';
 
 	createTable('User',
-		'UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  	Email VARCHAR(32),
+    'UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(32),
   	Password VARCHAR(32),
   	LastActivity DATE,
   	IsOnline BOOL,
@@ -19,7 +19,7 @@ Setting up database
     IsAdmin BOOL');
 
 	createTable('UserInfo',
-		'UserId INT(32) NOT NULL,
+    'UserId INT(32) NOT NULL,
   	Name VARCHAR(100),
   	Description TEXT,
   	Company VARCHAR(48),
@@ -28,8 +28,8 @@ Setting up database
   	PhoneNumber VARCHAR(16),
   	FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-	createTable('UserPhoto', 
-		'CREATE TABLE UserPhoto(
+	createTable('UserPhoto',
+    'CREATE TABLE UserPhoto(
   	PhotoId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   	UserId INT(32) NOT NULL,
   	PhotoName VARCHAR(48),
