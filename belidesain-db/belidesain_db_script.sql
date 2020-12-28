@@ -97,7 +97,7 @@ CREATE TABLE UserInventory(
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE TransactionHeader(
+CREATE TABLE DesignTransactionHeader(
   TransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(32) NOT NULL,
   BuyerUserId INT(32) NOT NULL,
@@ -110,7 +110,7 @@ CREATE TABLE TransactionHeader(
   FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE TransactionDetails(
+CREATE TABLE DesignTransactionDetails(
   TransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   TransactionAmount INT(32),
   TransactionDate DATE,
@@ -162,9 +162,10 @@ CREATE TABLE ExpoEvent(
 );
 
 CREATE TABLE UserExpo(
-  UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  UserId INT(32) NOT NULL,
   ExpoEventId INT(32) NOT NULL,
   DatePurchased DATE,
+  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE
 ); 
   
