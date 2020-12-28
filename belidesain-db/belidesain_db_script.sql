@@ -92,31 +92,31 @@ CREATE TABLE UserInventory(
   InventoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   UserId  INT(32) NOT NULL,
   DesignId  INT(32) NOT NULL,
+  DesignTransactionId INT(32) NOT NULL,
   DatePurchased DATE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignTransactionHeader(
-  TransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(32) NOT NULL,
   BuyerUserId INT(32) NOT NULL,
-  SupplierUserId INT(32) NOT NULL,
   IsSuccess BOOLEAN,
   IsExpired BOOLEAN,
   TransactionType VARCHAR(32),
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignTransactionDetails(
-  TransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   TransactionAmount INT(32),
   TransactionDate DATE,
   ExpirationDate DATE,
   DateCreated DATE,
-  FOREIGN KEY (TransactionId) REFERENCES TransactionHeader (TransactionId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignDetails(
