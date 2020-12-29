@@ -102,8 +102,8 @@ CREATE TABLE DesignTransactionHeader(
 
 CREATE TABLE DesignTransactionDetails(
   DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  TransactionAmount INT(32),
-  TransactionDate DATE,
+  DesignTransactionAmount INT(32),
+  DesignTransactionDate DATE,
   ExpirationDate DATE,
   DateCreated DATE,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -151,14 +151,6 @@ CREATE TABLE ExpoEvent(
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE UserExpo(
-  UserId INT(32) NOT NULL,
-  ExpoEventId INT(32) NOT NULL,
-  DatePurchased DATE,
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE
-); 
-  
 CREATE TABLE ExpoTransactionHeader(
   ExpoTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   ExpoEventId INT(32) NOT NULL,   
@@ -167,9 +159,19 @@ CREATE TABLE ExpoTransactionHeader(
   IsExpired BOOL,
   TransactionType VARCHAR(32),
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CACADE
+  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+CREATE TABLE UserExpo(
+  UserId INT(32) NOT NULL,
+  ExpoEventId INT(32) NOT NULL,
+  ExpoTransactionId INT(32) NOT NULL,
+  DatePurchased DATE,
+  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
+  FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader(ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
+); 
+  
 CREATE TABLE ExpoTransactionDetails(
   ExpoTransactionId INT(32) NOT NULL,
   ExpoTransactionAmount INT(32),
