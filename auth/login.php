@@ -2,11 +2,11 @@
 session_start();
 
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-	header("location: ../templates/headers/user.php");
+	header("location: ../index.php");
 	exit;
 }
 
-require_once 'function.php';
+require_once '../function.php';
 
 $email = $password = "";
 $email_err = $password_err = "";
@@ -41,13 +41,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					if($stmt->fetch()){
 						if(password_verify($password, $hashed_password)){
 							session_start();
-							$_SESSION["loggedin"] = true;
+							$_SESSION["loggedin"] = TRUE;
 							$_SESSION["id"] = $id;
-							$_SESSION["username"] = $email;
+							$_SESSION["email"] = $email;
+							
+							if(userToggleIsOnline($id,1) == 0){
+								die("ERROR: Please contact administrator if you see this message");
+							}
 
 							header("location: ../index.php");
 						}else{
-							$passoword_err = "Password invalid for this email";
+							$password_err = "Password invalid for this email";
 						}
 					}
 				}else{

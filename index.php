@@ -2,17 +2,16 @@
 	session_start();
 	require_once 'function.php';
 
-	if(isset($_SESSION['Email'])){
-		$email = $_SESSION['Email'];
+	$loggedin = "";
+	if(isset($_SESSION["loggedin"]) == TRUE){
 		$loggedin = TRUE;
-		$emailstr = "$email";
-		$useridstr = getUserId($email);
+		$userId = htmlspecialchars($_SESSION["id"]);
 	}else{
 		$loggedin = FALSE;
 	}
 
 	if($loggedin){
-		$isSupplier = isSupplier($useridstr);
+		$isSupplier = isSupplier($userId);
 		if($isSupplier == 0){
 			include './templates/headers/user.php';
 		}else if($isSupplier == 1){

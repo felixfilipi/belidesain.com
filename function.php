@@ -7,6 +7,7 @@
 	$dbuser = 'root';
 	$dbpass = '1234';
 	$appname = 'belidesain.com';
+	$fatalError = "ERROR: Please contact Administrator if you see this message!";
 
 //Checks mysqli plugin (for debug only!)	
 //if(!function_exists('mysqli_init') && !extension_loaded('mysqli')) {
@@ -52,6 +53,44 @@
 		$d = strtotime("now");
 		$date = date("Y-m-d h:i:s", $d);
 		return $date;
+	}
+
+	function userToggleIsOnline($userId, $isOnline){ // 1 = online, 0 = offline
+		global $conn;
+		$query = "UPDATE User SET IsOnline = ? WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("ii",$param_isonline, $param_id);
+			$param_isonline = $isOnline;
+			$param_id = $userId;
+			if($stmt->execute()){
+				return 1;
+			}else{
+				return 0;
+			}
+		}
+		$stmt->close();
+		$conn->close();
+	}
+
+	function isSupplier($userId){
+		global $conn;
+		$query = "SELECT IsSupplier FROM User WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("i", $param_id);
+			$param_id = $userId;
+			if($stmt->execute()){
+				$stmt->store_result();
+				$stmt->bind_result($isSupplier);
+				$stmt->fetch();
+				return $isSupplier;
+			}else{
+				die($fatalError);
+			}
+		}else{
+			die($fatalError);
+		}
+		$stmt->close();
+		$conn->close();
 	}
 
 ?>
