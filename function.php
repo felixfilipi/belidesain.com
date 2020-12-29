@@ -1,7 +1,7 @@
 <?php
 
 	$dbhost = 'localhost';
-	$dbname = 'belidesain';
+	$dbname = 'beli_desain';
 	$dbuser = 'root';
 	$dbpass = '1234';
 	$appname = 'belidesain.com';

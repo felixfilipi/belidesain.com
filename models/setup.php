@@ -15,7 +15,7 @@ Setting up database
     Password VARCHAR(32),
     LastActivity DATE,
     IsOnline BOOL,
-    IsSupplier BOOL
+    IsSupplier BOOL,
     IsAdmin BOOL');
 
   createTable('UserInfo',
@@ -29,16 +29,15 @@ Setting up database
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('UserPhoto',
-    'CREATE TABLE UserPhoto(
-    PhotoId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    UserId INT(32) NOT NULL,
+    'PhotoId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    UserId  INT(32) NOT NULL,
     PhotoName VARCHAR(48),
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('ChatSystem',
-    'ChatSystemId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    toUserId INT(32) NOT NULL,
-    fromUserId INT(32) NOT NULL,
+    'ChatSystemId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    toUserId  INT(32) NOT NULL,
+    fromUserId  INT(32) NOT NULL,
     Message VARCHAR(100),
     Timestamp DATE,
     StatusMessage VARCHAR(15),
@@ -73,13 +72,14 @@ Setting up database
     FOREIGN KEY (ThemeId) REFERENCES DesignTheme (ThemeId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-  createTable('DesignRating',
-    'RatingId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+
+  createTable('DesignLikeCount',
+    'LikeCountId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     DesignId INT(32) NOT NULL,
     UserId INT(32) NOT NULL,
-    Rating INT(5),
+    Likes INT(11),
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');  
 
   createTable('DesignComments',
     'CommentId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -90,33 +90,33 @@ Setting up database
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-  createTable('UserInventory',
-    'InventoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    UserId INT(32) NOT NULL,
-    DesignId INT(32) NOT NULL,
-    DatePurchased DATE,
-    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE');
-
-  createTable('TransactionHeader',
-    'TransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  createTable('DesignTransactionHeader',
+    'DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     DesignId INT(32) NOT NULL,
     BuyerUserId INT(32) NOT NULL,
-    SupplierUserId INT(32) NOT NULL,
     IsSuccess BOOLEAN,
     IsExpired BOOLEAN,
     TransactionType VARCHAR(32),
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (SupplierUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+    FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-  createTable('TransactionDetails',
-    'TransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    TransactionAmount INT(32),
-    TransactionDate DATE,
+  createTable('DesignTransactionDetails',
+    'DesignTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    DesignTransactionAmount INT(32),
+    DesignTransactionDate DATE,
     ExpirationDate DATE,
     DateCreated DATE,
-    FOREIGN KEY (TransactionId) REFERENCES TransactionHeader (TransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
+    FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('UserInventory',
+    'InventoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    UserId  INT(32) NOT NULL,
+    DesignId  INT(32) NOT NULL,
+    DesignTransactionId INT(32) NOT NULL,
+    DatePurchased DATE,
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('DesignDetails',
     'DesignId INT(32) NOT NULL PRIMARY KEY,
@@ -145,6 +145,50 @@ Setting up database
     DesignFileName VARCHAR(20),
     DesignFileType VARCHAR(20),
     FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('ExpoEvent',
+    'ExpoEventId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    OrganizerUserId INT(32) NOT NULL,
+    CategoryId INT(32) NOT NULL,
+    DateHeld DATE,
+    IsOnline BOOL,
+    FOREIGN KEY (OrganizerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('ExpoTransactionHeader',
+    'ExpoTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    ExpoEventId INT(32) NOT NULL,   
+    BuyerUserId INT(32) NOT NULL,
+    IsSuccess BOOL,
+    IsExpired BOOL,
+    TransactionType VARCHAR(32),
+    FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('UserExpo',
+    'UserId INT(32) NOT NULL,
+    ExpoEventId INT(32) NOT NULL,
+    ExpoTransactionId INT(32) NOT NULL,
+    DatePurchased DATE,
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('ExpoTransactionDetails',
+    'ExpoTransactionId INT(32) NOT NULL,
+    ExpoTransactionAmount INT(32),
+    ExpoTransactionDate DATE,
+    ExpoExpirationDate DATE,
+    DateCreated DATE,
+    FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('ExpoEventDetails',
+    'ExpoEventId INT(32) NOT NULL,
+    ExpoEventTitle VARCHAR(32),
+    ExpoEventPlace VARCHAR(32),
+    ExpoEventLink TEXT,
+    FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE');
+
 ?>
 <br>
 ...done!
