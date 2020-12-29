@@ -2,7 +2,7 @@ CREATE TABLE User(
   UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   Email VARCHAR(32),
   Password VARCHAR(32),
-  LastActivity DATE,
+  LastActivity DATETIME,
   IsOnline BOOL,
   IsSupplier BOOL,
   IsAdmin BOOL
@@ -31,7 +31,7 @@ CREATE TABLE ChatSystem(
   toUserId  INT(32) NOT NULL,
   fromUserId  INT(32) NOT NULL,
   Message VARCHAR(100),
-  Timestamp DATE,
+  Timestamp DATETIME,
   StatusMessage VARCHAR(15),
   FOREIGN KEY (toUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -83,7 +83,7 @@ CREATE TABLE UserInventory(
   UserId  INT(32) NOT NULL,
   DesignId  INT(32) NOT NULL,
   DesignTransactionId INT(32) NOT NULL,
-  DatePurchased DATE,
+  DatePurchased DATETIME,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -103,9 +103,9 @@ CREATE TABLE DesignTransactionHeader(
 CREATE TABLE DesignTransactionDetails(
   DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignTransactionAmount INT(32),
-  DesignTransactionDate DATE,
-  ExpirationDate DATE,
-  DateCreated DATE,
+  DesignTransactionDate DATETIME,
+  ExpirationDate DATETIME,
+  DateCreated DATETIME,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -114,7 +114,7 @@ CREATE TABLE DesignDetails(
   DesignName VARCHAR(64),
   DesignDesc TEXT,
   DesignPrice INT(32),
-  DesignDateCreated DATE,
+  DesignDateCreated DATETIME,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -145,7 +145,7 @@ CREATE TABLE ExpoEvent(
   ExpoEventId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   OrganizerUserId INT(32) NOT NULL,
   CategoryId INT(32) NOT NULL,
-  DateHeld DATE,
+  DateHeld DATETIME,
   IsOnline BOOL,
   FOREIGN KEY (OrganizerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -166,7 +166,7 @@ CREATE TABLE UserExpo(
   UserId INT(32) NOT NULL,
   ExpoEventId INT(32) NOT NULL,
   ExpoTransactionId INT(32) NOT NULL,
-  DatePurchased DATE,
+  DatePurchased DATETIME,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader(ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -175,9 +175,9 @@ CREATE TABLE UserExpo(
 CREATE TABLE ExpoTransactionDetails(
   ExpoTransactionId INT(32) NOT NULL,
   ExpoTransactionAmount INT(32),
-  ExpoTransactionDate DATE,
-  ExpoExpirationDate DATE,
-  DateCreated DATE,
+  ExpoTransactionDate DATETIME,
+  ExpoExpirationDate DATETIME,
+  DateCreated DATETIME,
   FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
