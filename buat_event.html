@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<style>
+
+ body{
+   background: rgba(25, 70, 112)
+ }
+
+  * {
+    box-sizing: border-box;
+    padding:20px;
+  }
+
+label{
+  color: #fff;
+  font-size: 24px;
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    font-size: 10px;
+    padding: 3px 8px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+input[type=text],input[type=url],input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  resize: vertical;
+  background: #f1f1f1;
+  margin-top:15px;
+}
+
+  textarea{
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    resize: vertical;
+    background: #f1f1f1;
+    font-family: sans-serif;
+  }
+
+input[type=submit] {
+  background-color: #335d87;
+	width: 100%;
+	margin-top: 30px;
+  font-family: sans-serif;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #1d99ff;
+}
+
+.container {
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:#051d36;
+}
+
+.col-25 {
+  float: left;
+  width: 100%;
+  margin-bottom: -35px;
+}
+
+.col-75 {
+  float: left;
+  width: 95%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+<!-- Javascript-->
+<script src="js/jquery.js"></script>
+
+</head>
+		<body>
+      <div class="row clearfix">
+         <div class="find-box">
+            <h1>Buat Event Anda</h1>
+            <h4>Buat event untuk desain dan karya anda disini.</h4>
+            <div class="container">
+              <form action="/action_page.php">
+                <div class="row">
+                    <label>Judul Event*</label>
+                    <input type="text" placeholder="Masukkan Judul Event anda" required>
+                </div>
+                <div class="row">
+                    <label>Metode*</label>
+                    <select>
+                       <option>Online</option>
+                       <option>Offline</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label>Kategori*</label>
+                    <div id="boxscroll" style="background-color:#fff;margin-top:15px;">
+                       <div class="form-check">
+                          <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox1" style="color:#000">
+                          DKV
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox2" style="color:#000">
+                          Furniture
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox3" style="color:#000">
+                          Interior
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox4" style="color:#000">
+                          Arsitekture
+                          </label>
+                       </div>
+                       <div class="form-check">
+                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox4" style="color:#000">
+                          Lawakan
+                          </label>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <label>Lokasi*</label>
+                      <input type="text" placeholder="Masukkan Lokasi Event anda" required>
+                  </div>
+                  <div class="row">
+                      <label>Link (Online)</label>
+                      <input type="url" placeholder="Masukkan Link Event anda" required>
+                  </div>
+                  <div class="row">
+                      <label>Tanggal Berlaku Tiket</label>
+                      <input type="url" placeholder="Masukkan Link Event anda" required>
+                  </div>
+                <div class="row">
+                    <label>Harga*</label>
+                    <input type="text" placeholder="Harga Tiket" required style="width:30%">
+                    <label>Total Tiket*</label>
+                    <input type="number" placeholder="Total Tiket" required style="width:20%">
+                </div>
+                <div class="row">
+                    <label>Tanggal*</label>
+                    <input type="date" placeholder="Tanggal Event" required style="width:30%">
+                    <label>EXP*</label>
+                    <input type="date" placeholder="Kadaluarsa Tiket" required style="width:25%">
+                </div>
+                <div class="row">
+                    <label>Deskripsi*</label>
+                    <textarea placeholder="Deskripsikan Event anda" required></textarea>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label>Poster Event</label>
+                    <br><br><label for="file-upload" class="custom-file-upload">
+                      Upload
+                    </label>
+                    <input id="file-upload" type="file"/>
+                    <img src="images/felix.jpeg">
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Kirim" >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <script src="js/jquery-1.12.4.min.js"></script>
+        <!--bootstrap js-->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/select2.full.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <!--custom js-->
+        <script src="js/custom.js"></script>
+        <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "449ead1e-03fa-4ae2-a06d-5222c40868e1",
+          region: "us-south",
+          serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    </body>
+  </html>
