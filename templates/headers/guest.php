@@ -29,7 +29,7 @@
 	<h2>Choose menu below : </h2>
 	<ul>
 		<li><a href="../../auth/login.php">Login</a></li>
-		<li><a href="../../auth/regiser.php">Register</a></li>
+		<li><a href="../../auth/register.php">Register</a></li>
 	</ul>
 	<div class="dropdown">
 		<span>Categories :</span>

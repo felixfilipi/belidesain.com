@@ -7,13 +7,13 @@
 <body>
 Setting up database
 <?php
-	require_once 'function.php';
+	require_once '../function.php';
 
   createTable('User',
     'UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    Email VARCHAR(32),
-    Password VARCHAR(32),
-    LastActivity DATE,
+    Email VARCHAR(50),
+    Password VARCHAR(255),
+    LastActivity DATETIME,
     IsOnline BOOL,
     IsSupplier BOOL,
     IsAdmin BOOL');
@@ -81,15 +81,6 @@ Setting up database
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');  
 
-  createTable('DesignComments',
-    'CommentId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    DesignId INT(32) NOT NULL,
-    UserId INT(32) NOT NULL,
-    Comment TEXT,
-    DateSent DATE,
-    FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
-
   createTable('DesignTransactionHeader',
     'DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     DesignId INT(32) NOT NULL,
@@ -103,9 +94,9 @@ Setting up database
   createTable('DesignTransactionDetails',
     'DesignTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     DesignTransactionAmount INT(32),
-    DesignTransactionDate DATE,
-    ExpirationDate DATE,
-    DateCreated DATE,
+    DesignTransactionDate DATETIME,
+    ExpirationDate DATETIME,
+    DateCreated DATETIME,
     FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('UserInventory',
@@ -113,7 +104,7 @@ Setting up database
     UserId  INT(32) NOT NULL,
     DesignId  INT(32) NOT NULL,
     DesignTransactionId INT(32) NOT NULL,
-    DatePurchased DATE,
+    DatePurchased DATETIME,
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
@@ -123,7 +114,7 @@ Setting up database
     DesignName VARCHAR(64),
     DesignDesc TEXT,
     DesignPrice INT(32),
-    DesignDateCreated DATE,
+    DesignDateCreated DATETIME,
     FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('DesignPhotos',
@@ -150,7 +141,7 @@ Setting up database
     'ExpoEventId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     OrganizerUserId INT(32) NOT NULL,
     CategoryId INT(32) NOT NULL,
-    DateHeld DATE,
+    DateHeld DATETIME,
     IsOnline BOOL,
     FOREIGN KEY (OrganizerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE');
@@ -169,7 +160,7 @@ Setting up database
     'UserId INT(32) NOT NULL,
     ExpoEventId INT(32) NOT NULL,
     ExpoTransactionId INT(32) NOT NULL,
-    DatePurchased DATE,
+    DatePurchased DATETIME,
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
@@ -177,9 +168,9 @@ Setting up database
   createTable('ExpoTransactionDetails',
     'ExpoTransactionId INT(32) NOT NULL,
     ExpoTransactionAmount INT(32),
-    ExpoTransactionDate DATE,
-    ExpoExpirationDate DATE,
-    DateCreated DATE,
+    ExpoTransactionDate DATETIME,
+    ExpoExpirationDate DATETIME,
+    DateCreated DATETIME,
     FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('ExpoEventDetails',
