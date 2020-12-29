@@ -72,6 +72,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$param_isadmin = 0;
 
 			if($stmt->execute()){
+				$last_id = $conn->insert_id;
+				$query = "INSERT INTO UserInfo VALUES (?, NULL, NULL, NULL, NULL, NULL, NULL)";
+				$stmt = $conn->prepare($query);
+				$stmt->bind_param("i", $param_id);
+				$param_id = $last_id;
+				$stmt->execute();
+
 				header("location: ./register_success.php");
 			}else{
 				echo $stmt->error;

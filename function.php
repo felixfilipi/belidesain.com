@@ -55,6 +55,25 @@
 		return $date;
 	}
 
+	function generateLastActivity($UserId){
+		global $conn;
+		$query = "UPDATE User SET LastActivity = ? WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("si",$param_lastactivity, $param_id);
+			$param_lastactivity = getDateNow();
+			$param_id = $UserId;
+			if($stmt->execute()){
+				return 1;
+			}else{
+				return 0;
+			}
+		}else{
+			die($fatalError);
+		}
+		$stmt->close();
+		$conn->close();
+	}
+
 	function userToggleIsOnline($userId, $isOnline){ // 1 = online, 0 = offline
 		global $conn;
 		$query = "UPDATE User SET IsOnline = ? WHERE UserId = ?";
