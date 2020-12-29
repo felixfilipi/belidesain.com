@@ -1,7 +1,7 @@
 CREATE TABLE User(
   UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  Email VARCHAR(32),
-  Password VARCHAR(32),
+  Email VARCHAR(50),
+  Password VARCHAR(255),
   LastActivity DATETIME,
   IsOnline BOOL,
   IsSupplier BOOL,
