@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Belidesain-category</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="css/slick.min.css">
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="css/responsive.css">
+
+      <style>
+      #a1 {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        margin-bottom: 20px;
+      }
+
+      #a1:hover {
+        background-color:#e04006;
+        color: black;
+      }
+
+      .previous {
+        background-color: #f1f1f1;
+        color: black;
+      }
+
+      .next {
+        background-color: #1d99ff;
+        color: white;
+      }
+
+      .round {
+        border-radius: 50%;
+      }
+
+      .pagin {
+        margin-left:38%;
+        position:static;
+      }
+      </style>
+   </head>
+   <body>
+     <header id="header" class="top-head">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+           <div class="container-fluid">
+              <div class="row">
+                 <div class="col-md-6 col-sm-12 left-rs">
+                    <div class="navbar-header">
+                       <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       </button>
+                       <a href="index.html" class="navbar-brand"><img src="images/belidesain.png"/ style="margin-top: -38%;position:static"></a>
+                    </div>
+                    <form class="navbar-form navbar-left web-sh">
+                         <div class="help-r hidden-xs">
+                          <form action="/action_page.php">
+                         <div class="search-container">
+                            <input type="text" placeholder="Search" name="search" style="width:27vw;  padding: 6px;font-size: 17px; background-color:#faede8">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                        </div>
+                       </div>
+                    </form>
+                 </div>
+                 <div class="col-md-6 col-sm-12">
+                    <div class="right-nav">
+                      <div class="help-r hidden-xs">
+                       <div class="login-sr">
+                          <div class="login-signup">
+                             <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a class="custom-b" href="#">Sign up</a></li>
+                             </ul>
+                          </div>
+                       </div>
+                     </div>
+                       <div class="help-r hidden-xs">
+                          <div class="help-box">
+                             <ul>
+                                <li> <a href="#"><img class="h-i" src="images/inventori.png" alt="" /> Inventory </a> </li>
+                                <li> <a href="#"><img class="h-i" src="images/shopping-trolle.png" alt="" /> Cart </a> </li>
+                                <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
+                             </ul>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </nav>
+     </header>
+
+     <div id="sidebar" class="top-nav">
+        <ul id="sidebar-nav" class="sidebar-nav">
+           <li><a href="#">Help</a></li>
+           <li><a href="#">Cart</a></li>
+           <li><a href="#">Login</a></li>
+           <li><a href="#">Sign Up</a></li>
+        </ul>
+     </div>
+      <div class="furniture-box">
+         <div class="terms-title">
+            <div class="container">
+               <div class="row">
+                  <ol class="breadcrumb">
+                     <li><a href="index.html">Menu Utama</a></li>
+                     <li class="active">Desainer</li>
+                  </ol>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="furniture-box">
+         <div class="container">
+            <div class="row">
+               <div class="furniture-main">
+                  <h2>Desainer</h2>
+                  <div class="col-md-3 col-sm-4">
+                     <div class="furniture-left">
+                        <h3>Cari berdasarkan</h3>
+                        <hr>
+                        <div class="by-box">
+                           <h5>Range Harga</h5>
+                           <div id="slider-range"></div>
+                           <p>
+                              <input type="text" id="amount" readonly style="">
+                           </p>
+                        </div>
+                        <div class="furniture-right">
+                           <br><h3 style="background:#e04006">Kategori</h3>
+                           <div class="right-list-f">
+                              <ul>
+                                 <li><a href="#">Desain Komunikasi Visual</a></li>
+                                 <li><a href="#">Interior</a></li>
+                                 <li><a href="#">Furniture</a></li>
+                                 <li><a href="#">Tata Busana</a></li>
+                                 <li><a href="#">Web Design</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="col-md-9 col-sm-8">
+                     <div class="furniture-middle">
+                       <div class="row cat-pd">
+                          <div class="col-md-6 col-sm-6">
+                             <div class="small-box-c">
+                                <div class="small-img-b">
+                                   <img src="images/felix.jpg" alt="#" />
+                                </div>
+                                <div class="dit-t clearfix">
+                                   <div class="left-ti">
+                                      <h4>Aenean luctus lacus</h4>
+                                      <p>By <span>Beko</span> under <span>Lights</span></p>
+                                   </div>
+                                   <a href="#" tabindex="0">Rp1.000.000</a>
+                                </div>
+                                <div class="prod-btn">
+                                   <a href="#"><i class="fa fa-star" aria-hidden="true"></i> 4.9 / 5</a>
+                                   <p>123 orang</p>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="col-md-6 col-sm-6">
+                             <div class="small-box-c">
+                                <div class="small-img-b">
+                                   <img src="images/febrian.jpeg" alt="#" />
+                                </div>
+                                <div class="dit-t clearfix">
+                                   <div class="left-ti">
+                                      <h4>Sed vestibulum</h4>
+                                      <p>By <span>Beko</span> under <span>Chairs</span></p>
+                                   </div>
+                                   <a href="#" tabindex="0">Rp 2.500.000</a>
+                                </div>
+                                <div class="prod-btn">
+                                   <a href="#"><i class="fa fa-star" aria-hidden="true"></i> 4.9 / 5</a>
+                                   <p>123 orang</p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                        <div class="row cat-pd">
+                           <div class="col-md-6 col-sm-6">
+                              <div class="small-box-c">
+                                 <div class="small-img-b">
+                                    <img src="images/yutaro.jpg" alt="#" />
+                                 </div>
+                                 <div class="dit-t clearfix">
+                                    <div class="left-ti">
+                                       <h4>Aenean luctus lacus</h4>
+                                       <p>By <span>Beko</span> under <span>Lights</span></p>
+                                    </div>
+                                    <a href="#" tabindex="0">Rp 2.500.000</a>
+                                 </div>
+                                 <div class="prod-btn">
+                                    <a href="#"><i class="fa fa-star" aria-hidden="true"></i> 4.9 / 5</a>
+                                    <p>123 orang</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="pagin">
+                    <a href="#" id="a1" class="previous round">&#8249;</a>
+                    <ul class="pagination">
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <a href="#" id="a1" class="next round" style="margin-left:5px;">&#8250;</a>
+                    </ul>
+                </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-top clearfix"  style="margin-left:5%">
+                     <div class="col-md-2 col-sm-6">
+                        <h2>Berikan Masukkan
+                        </h2>
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="form-box">
+                           <input type="text" placeholder="Masukkan Feedback anda" />
+                           <button>Kirim</button>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-12">
+                        <div class="help-box-f">
+                           <h4>Punya pertanyaan?</h4>
+                           <p>Hubungi kami di 0878-9231-4322 atau<br> felixfilipi4@gmail.com</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer-link-box clearfix">
+                     <div class="col-md-12 col-sm-6" style="margin-left:4%;">
+                        <div class="left-f-box">
+                           <div class="col-sm-4">
+                              <h2>jual Desain</h2>
+                              <ul>
+                                 <li><a href="#">Create account</a></li>
+                                 <li><a href="howitworks.html">How it works suppliers</a></li>
+                                 <li><a href="pricing.html">Pricing</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>Beli desain</h2>
+                              <ul>
+                                 <li><a href="#">Create account</a></li>
+                                 <li><a href="#">How it works buyers</a></li>
+                                 <li><a href="#">Categories</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>Perusahaan</h2>
+                              <ul>
+                                 <li><a href="about-us.html">About Us</a></li>
+                                 <li><a href="#">Contact us</a></li>
+                                 <li><a href="#">Press</a></li>
+                                 <li><a href="#">Careers</a></li>
+                                 <li><a href="#">Terms of use</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <p><img width="90" src="images/belidesain.png" alt="#" style="margin-top: -5px;" />©2020, belidesain.com, Inc. or its affiliates</p>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="list-inline socials">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-linkedin" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--main js-->
+      <script src="js/jquery-1.12.4.min.js"></script>
+      <!--bootstrap js-->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/wow.min.js"></script>
+      <!--custom js-->
+      <script src="js/custom.js"></script>
+      <script>
+         $( function() {
+         	$( "#slider-range" ).slider({
+         		range: true,
+         		min: 0,
+         		max: 1500000,
+         		values: [ 0, 1500000 ],
+         		slide: function( event, ui ) {
+         			$( "#amount" ).val( "Rp" + ui.values[ 0 ] + " - Rp" + ui.values[ 1 ] );
+         		}
+         	});
+         	$( "#amount" ).val( "Rp" + $( "#slider-range" ).slider( "values", 0 ) +
+         		" - Rp" + $( "#slider-range" ).slider( "values", 1 ) );
+         } );
+      </script>
+      <script src="js/jquery.nicescroll.min.js"></script>
+      <script>
+         $(document).ready(function() {
+           $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#ededed",boxzoom:true}); // First scrollable DIV
+         });
+      </script>
+   </body>
+</html>

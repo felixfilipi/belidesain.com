@@ -27,7 +27,7 @@
         <nav class="navbar navbar-default">
            <div class="container-fluid">
               <div class="row">
-                 <div class="col-md-7 col-sm-12 left-rs" >
+                 <div class="col-md-6 col-sm-12 left-rs">
                     <div class="navbar-header">
                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                        <span class="sr-only">Toggle navigation</span>
@@ -38,16 +38,17 @@
                        <a href="index.html" class="navbar-brand"><img src="images/belidesain.png"/ style="margin-top: -38%;position:static"></a>
                     </div>
                     <form class="navbar-form navbar-left web-sh">
-                       <div class="form" >
                          <div class="help-r hidden-xs">
-                          <input type="text" class="form-control" placeholder="Cari desainer atau produk" style="width:27vw;
-                          border: 1px solid #000;">
-                          <button><img src="images/search-icon.png"></button>
+                          <form action="/action_page.php">
+                         <div class="search-container">
+                            <input type="text" placeholder="Search" name="search" style="width:27vw;  padding: 6px;font-size: 17px; background-color:#faede8">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
                         </div>
                        </div>
                     </form>
                  </div>
-                 <div class="col-md-5 col-sm-12">
+                 <div class="col-md-6 col-sm-12">
                     <div class="right-nav">
                       <div class="help-r hidden-xs">
                        <div class="login-sr">
@@ -62,6 +63,7 @@
                        <div class="help-r hidden-xs">
                           <div class="help-box">
                              <ul>
+                                <li> <a href="#"><img class="h-i" src="images/inventori.png" alt="" /> Inventory </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/shopping-trolle.png" alt="" /> Cart </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
                              </ul>
@@ -71,9 +73,9 @@
                  </div>
               </div>
            </div>
-           <!--/.container-fluid -->
         </nav>
      </header>
+     
      <div id="sidebar" class="top-nav">
         <ul id="sidebar-nav" class="sidebar-nav">
            <li><a href="#">Help</a></li>

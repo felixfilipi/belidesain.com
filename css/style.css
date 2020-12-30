@@ -208,6 +208,23 @@ header .navbar-default .navbar-header {
 	padding: 0;
 }
 
+.search-container button {
+	float: right;
+	padding: 6px 10px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+.search-container button:hover {
+	background: #ccc;
+}
+
+.search-container {
+	float: right;
+}
+
 #sidebar {
 	margin-right: -100%;
 	right: 0;
@@ -978,7 +995,8 @@ header .navbar-default .navbar-header {
 }
 
 .thi {
-	float: right;
+	float: left;
+	margin-left: 10px;
 }
 
 .dit-btn {
@@ -1849,7 +1867,7 @@ header .navbar-default .navbar-header {
 
 .terms-conditions {
 	padding-bottom: 70px;
-	background: #d5dded;
+	background: #f8f7e8;
 }
 
 .terms-title {
@@ -2034,7 +2052,7 @@ header .navbar-default .navbar-header {
 /*-- Category --*/
 
 .furniture-box {
-	background: #d5dded;
+	background:#f8f7e8;
 }
 
 .furniture-main h2 {
@@ -2082,7 +2100,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .by-box .ui-slider-horizontal .ui-slider-range {
-	background: #123a67;
+	background: #e04006;
 }
 
 .by-box .ui-widget.ui-widget-content {
@@ -2729,7 +2747,7 @@ html .ui-button.ui-state-disabled:active {
 	height: 20px;
 	background: #27cb98;
 	border-radius: 50%;
-	margin: 9px 5px;
+	margin-bottom: -5px;
 	-webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -2770,10 +2788,8 @@ html .ui-button.ui-state-disabled:active {
 	font-weight: 700;
 	padding: 12px 6px;
 	border-radius: 2px;
-	margin-bottom: 19px;
-	display: block;
+	display: inline-block;
 	text-align: center;
-	clear: both;
 }
 
 .pro-img {
@@ -2999,7 +3015,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .product-page-main {
-	background: #d5dded;
+	background: #f8f7e8;
 }
 
 .prod-page-title {
@@ -3030,11 +3046,6 @@ html .ui-button.ui-state-disabled:active {
 .prod-page a {
 	background: #00cb96;
 	color: #fff;
-	-webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.1);
-	border-radius: 2px;
-	clear: both;
-	text-align: center;
 }
 
 .md-prod-page {

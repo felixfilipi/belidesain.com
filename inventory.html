@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default">
            <div class="container-fluid">
               <div class="row">
-                 <div class="col-md-7 col-sm-12 left-rs" >
+                 <div class="col-md-6 col-sm-12 left-rs">
                     <div class="navbar-header">
                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                        <span class="sr-only">Toggle navigation</span>
@@ -37,16 +37,17 @@
                        <a href="index.html" class="navbar-brand"><img src="images/belidesain.png"/ style="margin-top: -38%;position:static"></a>
                     </div>
                     <form class="navbar-form navbar-left web-sh">
-                       <div class="form" >
                          <div class="help-r hidden-xs">
-                          <input type="text" class="form-control" placeholder="Cari desainer atau produk" style="width:27vw;
-                          border: 1px solid #000;">
-                          <button><img src="images/search-icon.png"></button>
+                          <form action="/action_page.php">
+                         <div class="search-container">
+                            <input type="text" placeholder="Search" name="search" style="width:27vw;  padding: 6px;font-size: 17px; background-color:#faede8">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
                         </div>
                        </div>
                     </form>
                  </div>
-                 <div class="col-md-5 col-sm-12">
+                 <div class="col-md-6 col-sm-12">
                     <div class="right-nav">
                       <div class="help-r hidden-xs">
                        <div class="login-sr">
@@ -61,6 +62,7 @@
                        <div class="help-r hidden-xs">
                           <div class="help-box">
                              <ul>
+                                <li> <a href="#"><img class="h-i" src="images/inventori.png" alt="" /> Inventory </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/shopping-trolle.png" alt="" /> Cart </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
                              </ul>
@@ -70,7 +72,6 @@
                  </div>
               </div>
            </div>
-           <!--/.container-fluid -->
         </nav>
      </header>
      <div id="sidebar" class="top-nav">
@@ -81,7 +82,7 @@
            <li><a href="#">Sign Up</a></li>
         </ul>
      </div>
-      <div class="furniture-box">
+      <div class="furniture-box" style="background:white">
          <div class="terms-title">
             <div class="container">
                <div class="row">
@@ -117,12 +118,13 @@
                            <img src="images/felix.jpg" alt="#" />
                         </div>
                         <div class="pof-text">
-                           <h3>Felix Filipi</h3>
+                           <a href="profile.html" style="color:black;background:transparent">Felix Filipi</a>
                            <div class="check-box"></div>
-                           <br><br><p>Malang</p>
-                           <br><p>085100498123</p>
+                           <br><span>felixfilipi4@gmail.com</span>
+                           <br><span>Malang</span>
+                           <br><span>085100498123</span>
                         </div>
-                        <a href="#">Edit Profil</a>
+                        <a href="#" style="margin-top:20px;">Edit Profil </a>
                      </div>
                   </div>
                </div>
@@ -262,19 +264,7 @@
                                     </a>
                                  </div>
                               </div>
-                              <div class="tab-pane fade" id="tab2default">
-                                 <div class="about-box">
-                                    <h2>What Does Chamb Do</h2>
-                                    <p>Chamb brings buyers and suppliers of goods together to create lasting profitable relationships. Through new connections, economic roads, and insightful associations, we want Chamb to help transform your business into the next Apple!</p>
-                                    <p>At Chamb we understand the old adage of ‘it’s not what you know, but Who you know’ is key to success. With that in mind, through much trial and just a little bit of error, we learned the one limiting factor of any business achieving its potential: Their connections.</p>
-                                    <p>Before Chamb existed, we noticed that though the power of the net rested at business’ finger tips, resources for discovering manufacturers and suppliers was limited at best and non-existent at worse. Smaller companies that housed great products and potential, were starving through a lack of connectivity.</p>
-                                    <p>We took it upon ourselves to change that. We developed a burning desire to create something to bridge the chasms between businesses across country and continent. So, with a goal in mind, a skilled team at hand, Chamb sprung forth: the website that helps discover and build profitable long-lasting networks amongst businesses around the world.</p>
-                                 </div>
-                              </div>
-                              <div class="tab-pane fade" id="tab3default">Default 3</div>
-                              <div class="tab-pane fade" id="tab4default">Default 4</div>
-                              <div class="tab-pane fade" id="tab5default">Default 5</div>
-                           </div>
+                            </div>
                         </div>
                      </div>
                   </div>
@@ -311,16 +301,16 @@
                            <div class="col-sm-4">
                               <h2>SELL ON chamb</h2>
                               <ul>
-                                 <li><a href="#">Create account</a></li>
-                                 <li><a href="howitworks.html">How it works suppliers</a></li>
-                                 <li><a href="pricing.html">Pricing</a></li>
+                                 <li><a href="#">Buat Akun Supplier</a></li>
+                                 <li><a href="howitworks.html">Cara Menjual Desain</a></li>
+                                 <li><a href="pricing.html">Paket Supplier</a></li>
                                  <li><a href="#">FAQ for Suppliers</a></li>
                               </ul>
                            </div>
                            <div class="col-sm-4">
                               <h2>BUY ON chamb</h2>
                               <ul>
-                                 <li><a href="#">Create account</a></li>
+                                 <li><a href="#">Buat Akun</a></li>
                                  <li><a href="#">How it works buyers</a></li>
                                  <li><a href="#">Categories</a></li>
                                  <li><a href="#">FAQ for buyers</a></li>

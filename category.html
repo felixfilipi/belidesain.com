@@ -26,7 +26,7 @@
         <nav class="navbar navbar-default">
            <div class="container-fluid">
               <div class="row">
-                 <div class="col-md-7 col-sm-12 left-rs" >
+                 <div class="col-md-6 col-sm-12 left-rs">
                     <div class="navbar-header">
                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                        <span class="sr-only">Toggle navigation</span>
@@ -37,16 +37,17 @@
                        <a href="index.html" class="navbar-brand"><img src="images/belidesain.png"/ style="margin-top: -38%;position:static"></a>
                     </div>
                     <form class="navbar-form navbar-left web-sh">
-                       <div class="form" >
                          <div class="help-r hidden-xs">
-                          <input type="text" class="form-control" placeholder="Cari desainer atau produk" style="width:27vw;
-                          border: 1px solid #000;">
-                          <button><img src="images/search-icon.png"></button>
+                          <form action="/action_page.php">
+                         <div class="search-container">
+                            <input type="text" placeholder="Search" name="search" style="width:27vw;  padding: 6px;font-size: 17px; background-color:#faede8">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
                         </div>
                        </div>
                     </form>
                  </div>
-                 <div class="col-md-5 col-sm-12">
+                 <div class="col-md-6 col-sm-12">
                     <div class="right-nav">
                       <div class="help-r hidden-xs">
                        <div class="login-sr">
@@ -61,6 +62,7 @@
                        <div class="help-r hidden-xs">
                           <div class="help-box">
                              <ul>
+                                <li> <a href="#"><img class="h-i" src="images/inventori.png" alt="" /> Inventory </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/shopping-trolle.png" alt="" /> Cart </a> </li>
                                 <li> <a href="#"><img class="h-i" src="images/help-icon.png" alt="" /> Help </a> </li>
                              </ul>
@@ -70,9 +72,9 @@
                  </div>
               </div>
            </div>
-           <!--/.container-fluid -->
         </nav>
      </header>
+     
      <div id="sidebar" class="top-nav">
         <ul id="sidebar-nav" class="sidebar-nav">
            <li><a href="#">Help</a></li>
@@ -333,7 +335,7 @@
                   </div>
                   <div class="col-md-3 hidden-xs">
                      <div class="furniture-right">
-                        <h3>Subcategories</h3>
+                        <h3 style="background:#e04006">Subcategories</h3>
                         <div class="right-list-f">
                            <ul>
                               <li><a href="#"><img width="32" src="images/product/1.png" alt="#" /> Chairs</a></li>
@@ -472,15 +474,15 @@
          $( function() {
          	$( "#slider-range" ).slider({
          		range: true,
-         		min: 100000,
+         		min: 0,
          		max: 1500000,
-         		values: [ 158, 1230 ],
+         		values: [ 0, 1500000 ],
          		slide: function( event, ui ) {
          			$( "#amount" ).val( "Rp" + ui.values[ 0 ] + " - Rp" + ui.values[ 1 ] );
          		}
          	});
-         	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-         		" - $" + $( "#slider-range" ).slider( "values", 1 ) );
+         	$( "#amount" ).val( "Rp" + $( "#slider-range" ).slider( "values", 0 ) +
+         		" - Rp" + $( "#slider-range" ).slider( "values", 1 ) );
          } );
       </script>
       <script src="js/jquery.nicescroll.min.js"></script>
