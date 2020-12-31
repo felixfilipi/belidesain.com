@@ -112,4 +112,29 @@
 		$conn->close();
 	}
 
+	function isSupplierRequirement($userId){
+		global $conn;
+		$query = "SELECT Name, PhoneNumber FROM UserInfo WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("i", $param_id);
+			$param_id = $userId;
+			if($stmt->execute()){
+				$stmt->store_result();
+				$stmt->bind_result($name, $phoneNumber);
+				$stmt->fetch();
+				if($name == NULL || $phoneNumber == NULL){
+					return 0;
+				}else{
+					return 1;
+				}
+			}else{
+				die($fatalError);
+			}
+		}else{
+			die($fatalError);
+		}
+		$stmt->close();
+		$conn->close();
+	}
+
 ?>
