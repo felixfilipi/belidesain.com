@@ -2,9 +2,14 @@
 	session_start();
 	require_once '../function.php';
 
+	$name = $phoneNumber = "";
+	$name_err = $phoneNumber_err = "";		
+
 	function validateName(){
 		if(empty(trim($_POST["name"]))){
 			$name_err = "Please enter your name!";
+		}else{
+			$name_err = "";
 		}
 		return $name_err;
 	}
@@ -12,8 +17,10 @@
 	function validatePhoneNumber(){
 		if(empty(trim($_POST["phoneNumber"]))){
 			$phoneNumber_err = "Please enter your phone number!";
-		}else if(strlen(trim($_POST["phoneNumber"])) > 12){
+		}else if(strlen(trim($_POST["phoneNumber"])) < 12){
 			$phoneNumber_err = "Phone number must have atleast 12 characters!";
+		}else{
+			$phoneNumber_err = "";
 		}
 		return $phoneNumber_err;
 	}
@@ -46,12 +53,9 @@
 	}
 
 	if($loggedin){
-		if(isSupplierRequirement($id)){
+		if(isSupplierRequirement($userId)){
 			header("./success_page/register_supplier.php");
 		}else{
-			$name = $phoneNumber = "";
-			$name_err = $phoneNumber_err = "";
-			
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
 				$name_err = validateName();
 				$phoneNumber_err = validatePhoneNumber();
@@ -66,10 +70,10 @@
 
 						$param_name = $name;
 						$param_phoneNumber = $phoneNumber;
-						$param_userId = $id;
+						$param_userId = $userId;
 
 						if($stmt->execute()){
-							if(isSupplierToggle()){
+							if(isSupplierToggle($userId, 1)){
 								header("location: ./success_page/register_supplier.php");
 							}else{
 								die($fatalError);

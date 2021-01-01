@@ -34,6 +34,12 @@ Setting up database
     PhotoName VARCHAR(48),
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
+  createTable('UserFeedback',
+    'FeedbackId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    UserId INT(32) NOT NULL,
+    FeedbackMessage TEXT,
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+
   createTable('ChatSystem',
     'ChatSystemId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     toUserId  INT(32) NOT NULL,
@@ -179,6 +185,37 @@ Setting up database
     ExpoEventPlace VARCHAR(32),
     ExpoEventLink TEXT,
     FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('DesignTransactionHeader',
+    'DesignerTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    DesignerId INT(32) NOT NULL,
+    BuyerUserId INT(32) NOT NULL,
+    IsSuccess BOOL,
+    IsExpired BOOL,
+    TransactionType VARCHAR(32),
+    FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('DesignerTransactionDetail',
+    'DesignerTransactionId INT(32) NOT NULL,
+    AssignedDate DATE,
+    DeadlineDate DATE,
+    Confirmed BOOL,
+    FOREIGN KEY (DesignerTransactionId) REFERENCES DesignerTransactionHeader (DesignerTransactionId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('DesignerInfo',
+    'DesignerId INT(32) NOT NULL,
+    DesignerPrice INT(32),
+    Rating INT(32),
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+
+  createTable('DesignerRating',
+    'RatingId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    DesignerId INT(32) NOT NULL,
+    UserId INT(32) NOT NULL,
+    Rating INT(32),
+    FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
 ?>
 <br>

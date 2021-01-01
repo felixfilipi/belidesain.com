@@ -137,4 +137,23 @@
 		$conn->close();
 	}
 
+	function getName($userId){
+		global $conn;
+		$query = "SELECT Name FROM UserInfo WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("i", $param_userId);
+			$param_userId = $userId;
+			if($stmt->execute()){
+				$stmt->store_result();
+				$stmt->bind_result($name);
+				$stmt->fetch();
+				return $name;
+			}
+		}else{
+			die($fatalError);
+		}
+		$stmt->close();
+		$conn->close();
+	}
+
 ?>
