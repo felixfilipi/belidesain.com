@@ -746,5 +746,18 @@
       <script src="js/wow.min.js"></script>
       <!--custom js-->
       <script src="js/custom.js"></script>
+      <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "1360e38b-d7c8-4793-b7a9-ed24bf5ef2ca",
+        region: "us-south",
+        serviceInstanceID: "175ad569-8ba2-4a90-9e24-dbeb7e3d2b8e",
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+      </script>
    </body>
 </html>
