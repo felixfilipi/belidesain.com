@@ -59,8 +59,10 @@ CREATE TABLE DesignCategories(
 
 CREATE TABLE DesignSubCategories(
   SubCategoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  CategoryId INT(32) NOT NULL,
   SubCategoryName VARCHAR(64),
-  SubCategoryDesc TEXT
+  SubCategoryDesc TEXT,
+  FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignHeader(
@@ -116,7 +118,7 @@ CREATE TABLE DesignTransactionDetails(
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE DesignDetails(
+CREATE TABE DesignDetails(
   DesignId INT(32) NOT NULL PRIMARY KEY,
   DesignName VARCHAR(64),
   DesignDesc TEXT,
@@ -230,3 +232,65 @@ CREATE TABLE DesignerRating(
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );  
+
+/*
+Categories : Desain Interior, DKV, Desain Busana, Desain Furnitur, Desain Website
+SubCategories : 
+----Desain Interior
+   |--- Ruang Tamu
+   |--- Dapur
+   |--- Kamar Tidur
+   |--- Ruang Bersantai
+----Desain Busana
+   |--- Batik
+   |--- Kasual
+   |--- Resmi
+   |--- Pesta
+----Desain Furnitur
+   |--- Kursi
+   |--- Meja
+   |--- Lemari
+----Desain Komunikasi Visual
+   |--- Poster
+   |--- Flyer
+   |--- Card
+   |--- Brochure
+----Desain Website
+   |--- Online Shop
+   |--- Portofolio
+   |--- Photography
+   |--- Entertainment
+   |--- Food
+   |--- Event
+*/
+
+INSERT INTO DesignCategories VALUES
+  (NULL, 'Desain Interior', 'Salah satu jenis desain rumah yang berfokus pada interior atau ruangan sebuah rumah. Disini terdapat beberapa desain berdasarkan jenis ruangan, seperti desain ruang tamu, desain kamar tidur, desain dapur, dll'),
+  (NULL, 'Desain Komunikasi Visual', 'Salah satu jenis desain yang bertujuan menyampaikan pesan ditambah dengan aspek visual yang bagus.'),
+  (NULL, 'Desain Furnitur', 'Kategori Desain ini lebih berfokus pada isi dari interior rumah, misalnya Kursi, Meja, Lemari, dll'),
+  (NULL, 'Desain Busana', 'Desain ini berfokus pada pakaian dan sejenisnya. Contoh kategori pada desain ini antara lain: pakaian batik, pakaian pesta, pakaian resmi, dll'),
+  (NULL, 'Desain Website', 'Ditunjukkan pada desainer UI/UX, desain ini lebih berfokus pada bagaiman penyajian konten pada website dibuat lebih bagus. Pada website ini terdapat banyak tema yang disajikan, misalnya online shop, entertainment, event, dll');
+
+INSERT INTO DesignSubCategories VALUES
+  (NULL, '1', 'Ruang Tamu'),
+  (NULL, '1', 'Dapur'),
+  (NULL, '1', 'Kamar Tidur'),
+  (NULL, '1', 'Ruang Bersantai'),
+  (NULL, '2', 'Poster'),
+  (NULL, '2', 'Flyer'),
+  (NULL, '2', 'Card'),
+  (NULL, '2', 'Brochure'),
+  (NULL, '2', 'Logo'),
+  (NULL, '3', 'Kursi'),
+  (NULL, '3', 'Meja'),
+  (NULL, '3', 'Lemari'),
+  (NULL, '4', 'Batik'),
+  (NULL, '4', 'Kasual'),
+  (NULL, '4', 'Resmi'),
+  (NULL, '4', 'Pesta'),
+  (NULL, '5', 'Online Shop'),
+  (NULL, '5', 'Portofolio'),
+  (NULL, '5', 'Photography'),
+  (NULL, '5', 'Entertainment'),
+  (NULL, '5', 'Food'),
+  (NULL, '5', 'Event');
