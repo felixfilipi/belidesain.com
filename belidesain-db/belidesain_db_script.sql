@@ -44,12 +44,6 @@ CREATE TABLE ChatSystem(
   FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE DesignTheme(
-  ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  ThemeName VARCHAR(20),
-  ThemeDesc TEXT
-);
-
 CREATE TABLE DesignCategories(
   CategoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryName VARCHAR(20),
@@ -63,6 +57,13 @@ CREATE TABLE DesignSubCategories(
   SubCategoryName VARCHAR(64),
   SubCategoryDesc TEXT,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE DesignTheme(
+  ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  SubCategoryId INT(32) NOT NULL,
+  ThemeName VARCHAR(20),
+  FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignHeader(
