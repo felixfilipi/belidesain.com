@@ -411,8 +411,7 @@ header .navbar-default .navbar-header {
 .page-content-product {}
 
 .main-product {
-	background-color: #09284b;
-	background: rgba(25, 70, 112) url("../images/background2.png") no-repeat fixed center;
+	background: rgba(211, 142, 98) url("../images/background2.png") no-repeat fixed center;
 	padding-bottom: 180px;
 	background-position: center center;
 }
@@ -526,7 +525,7 @@ header .navbar-default .navbar-header {
 }
 
 .form-sh a.btn {
-	background: #1d99ff;
+	background: #09294c;
 	color: #ffffff;
 	min-height: 55px;
 	width: 100%;
@@ -892,7 +891,7 @@ header .navbar-default .navbar-header {
 
 .products {
 	padding: 40px 0px 60px 0px;
-	background: #d5dded;
+	background: #f6e2e2;
 	position: relative;
 }
 

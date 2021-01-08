@@ -589,15 +589,6 @@
         myForm.style.display="block";
     }
 
-    function toggleForm(){
-      myForm.style.display = "block";
-
-    }
-
-    function closeForm(){
-
-        myForm.style.display="none";
-    }
 
     // Modal
     var modal = document.getElementById("myModal");
@@ -620,7 +611,7 @@
       modal.style.display = "none";
     }
   }
-  <script>
+
   window.watsonAssistantChatOptions = {
     integrationID: "1360e38b-d7c8-4793-b7a9-ed24bf5ef2ca",
     region: "us-south",
@@ -632,7 +623,8 @@
     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
     document.head.appendChild(t);
   });
-  </script>
+
+
     </script>
    </body>
 </html>
