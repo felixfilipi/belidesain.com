@@ -162,5 +162,7 @@
 	<?php echo $userPhoneNumber; ?><br><br>
 	<button><a href="./edit_info.php">Edit info</a></button>
 	<?php } ?>
+
+	<button><a href="../index.php">Go Back</a></button>
 </body>
 </html>
