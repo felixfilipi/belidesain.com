@@ -50,21 +50,22 @@ Setting up database
     FOREIGN KEY (toUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-  createTable('DesignTheme',
-    'ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    ThemeName VARCHAR(20),
-    ThemeDesc TEXT');
-
   createTable('DesignCategories',
     'CategoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    CategoryName VARCHAR(20),
-    CategoryDesc TEXT,
-    CategoryPhoto VARCHAR(20)');
+    CategoryName VARCHAR(64),
+    CategoryDesc TEXT');
 
   createTable('DesignSubCategories',
     'SubCategoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    CategoryId INT(32) NOT NULL,
     SubCategoryName VARCHAR(64),
-    SubCategoryDesc TEXT');
+    FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE');
+  
+  createTable('DesignTheme',
+    'ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    SubCategoryId INT(32) NOT NULL,
+    ThemeName VARCHAR(20),
+    FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('DesignHeader',
     'DesignId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -186,7 +187,7 @@ Setting up database
     ExpoEventLink TEXT,
     FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE');
 
-  createTable('DesignTransactionHeader',
+  createTable('DesignerTransactionHeader',
     'DesignerTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     DesignerId INT(32) NOT NULL,
     BuyerUserId INT(32) NOT NULL,
@@ -207,7 +208,7 @@ Setting up database
     'DesignerId INT(32) NOT NULL,
     DesignerPrice INT(32),
     Rating INT(32),
-    FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
+    FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
   createTable('DesignerRating',
     'RatingId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -217,6 +218,65 @@ Setting up database
     FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE');
 
+  $query = 
+  "INSERT INTO DesignCategories VALUES
+  (NULL, 'Desain Interior', 'Salah satu jenis desain rumah yang berfokus pada interior atau ruangan sebuah rumah. Disini terdapat beberapa desain berdasarkan jenis ruangan, seperti desain ruang tamu, desain kamar tidur, desain dapur, dll'),
+  (NULL, 'Desain Komunikasi Visual', 'Salah satu jenis desain yang bertujuan menyampaikan pesan ditambah dengan aspek visual yang bagus.'),
+  (NULL, 'Desain Furnitur', 'Kategori Desain ini lebih berfokus pada isi dari interior rumah, misalnya Kursi, Meja, Lemari, dll'),
+  (NULL, 'Desain Busana', 'Desain ini berfokus pada pakaian dan sejenisnya. Contoh kategori pada desain ini antara lain: pakaian batik, pakaian pesta, pakaian resmi, dll'),
+  (NULL, 'Desain Website', 'Ditunjukkan pada desainer UI/UX, desain ini lebih berfokus pada bagaiman penyajian konten pada website dibuat lebih bagus. Pada website ini terdapat banyak tema yang disajikan, misalnya online shop, entertainment, event, dll')";
+
+
+  if($stmt = $conn->prepare($query)){
+    if($stmt->execute()){
+      echo "Insert DesignCategories Success";
+    }else{
+      echo $stmt->error;
+      die($fatalError);
+    }
+  }else{
+    die($fatalError);
+  }
+  $stmt->close();
+
+  $query = 
+    "INSERT INTO DesignSubCategories VALUES
+      (NULL, '1', 'Ruang Tamu'),
+      (NULL, '1', 'Dapur'),
+      (NULL, '1', 'Kamar Tidur'),
+      (NULL, '1', 'Ruang Bersantai'),
+      (NULL, '2', 'Poster'),
+      (NULL, '2', 'Flyer'),
+      (NULL, '2', 'Card'),
+      (NULL, '2', 'Brochure'),
+      (NULL, '2', 'Logo'),
+      (NULL, '3', 'Kursi'),
+      (NULL, '3', 'Meja'),
+      (NULL, '3', 'Lemari'),
+      (NULL, '4', 'Batik'),
+      (NULL, '4', 'Kasual'),
+      (NULL, '4', 'Resmi'),
+      (NULL, '4', 'Pesta'),
+      (NULL, '5', 'Online Shop'),
+      (NULL, '5', 'Portofolio'),
+      (NULL, '5', 'Photography'),
+      (NULL, '5', 'Entertainment'),
+      (NULL, '5', 'Food'),
+      (NULL, '5', 'Event')"; 
+
+  if($stmt = $conn->prepare($query)){
+    if($stmt->execute()){
+      echo "Insert DesignSubCategories Success!<br>";
+    }else{
+      die($fatalError);
+    }
+  }else{
+    echo $conn->error;
+    die($fatalError);
+  }
+
+  $stmt->close();
+  $conn->close();
 ?>
 <br>
 ...done!

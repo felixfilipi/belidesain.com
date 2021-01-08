@@ -72,11 +72,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 			$param_isadmin = 0;
 
 			if($stmt->execute()){
+				//INSERT USER INFO TO NULL
 				$last_id = $conn->insert_id;
 				$query = "INSERT INTO UserInfo VALUES (?, NULL, NULL, NULL, NULL, NULL, NULL)";
 				$stmt = $conn->prepare($query);
 				$stmt->bind_param("i", $param_id);
 				$param_id = $last_id;
+				$stmt->execute();
+
+				// INSERT DEFAULT PHOTO TO USER
+				$query = "INSERT INTO UserPhoto VALUES (NULL, ?, ?)";
+				$stmt = $conn->prepare($query);
+				$stmt->bind_param("is", $param_id, $param_photoname);
+				$param_id = $last_id;
+				$param_photoname = "default1.jpg";
 				$stmt->execute();
 
 				header("location: ./register_success.php");

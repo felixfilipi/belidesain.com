@@ -15,16 +15,18 @@
 	$designThemes = $designSpecificationName = $designSpecificationDesc = $designPrice = "";
 	$errorMessage = "";
 
-	function designUploadVerify(){
+	function designFormVerify(){
 		if(empty(trim($_POST["categories"]))
 			|| empty(trim($_POST["subCategories"]))
-			|| empty(trim($_POST["themes"]))){
+			|| empty(trim($_POST["themes"]))
+			|| empty(trim($_POST["name"]))
+			|| empty(trim($_POST["desc"]))){
 			$errorMessage = "Not all fields are entered!";
 		}else{
 			$errorMessage = "";
 		}
 		return $errorMessage;
-	}
+	} 
 
 	if($loggedin){
 		$isSupplier = isSupplier($userId);
