@@ -6,6 +6,7 @@
 	if(isset($_SESSION["loggedin"]) == TRUE ){
 		$loggedin = TRUE;
 		$userId = htmlspecialchars($_SESSION["id"]);
+		$isSupplier = isSupplier($userId);
 	}else{
 		$loggedin = FALSE;
 	}
@@ -22,7 +23,7 @@
 		if(empty($userDesc)){
 			return "empty";
 		}else{
-			return $userName;
+			return $userDesc;
 		}
 	}
 
@@ -61,7 +62,6 @@
 	if($loggedin){
 		$userName = $userDesc = $userComp = $userLoc = $userWebsite = $userPhoneNumber = "";
 		$error = "";
-
 		$query = "SELECT * FROM UserInfo WHERE userId = ?";
 
 		if($stmt = $conn->prepare($query)){
@@ -75,20 +75,30 @@
 					
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 
+					if($isSupplier == 1){
+						$userName = $row["Name"];
+						$userDesc = $row["Description"];
+						$userComp = $row["Company"];
+						$userLoc = $row["Location"];
+						$userWebsite = $row["Website"];
+						$userPhoneNumber = $row["PhoneNumber"];
 
-					$userName = $row["Name"];
-					$userDesc = $row["Description"];
-					$userComp = $row["Company"];
-					$userLoc = $row["Location"];
-					$userWebsite = $row["Website"];
-					$userPhoneNumber = $row["PhoneNumber"];
+						$userName = userNameChk($userName);
+						$userDesc = userDescChk($userDesc);
+						$userComp = userCompChk($userComp);
+						$userLoc = userLocChk($userLoc);
+						$userWebsite = userWebsiteChk($userWebsite);
+						$userPhoneNumber = userPhoneNumberChk($userPhoneNumber);
+					}else{
+						$userName = $row["Name"];
+						$userDesc = $row["Description"];
+						$userPhoneNumber = $row["PhoneNumber"];
 
-					$userName = userNameChk($userName);
-					$userDesc = userDescChk($userDesc);
-					$userComp = userCompChk($userComp);
-					$userLoc = userLocChk($userLoc);
-					$userWebsite = userWebsiteChk($userWebsite);
-					$userPhoneNumber = userPhoneNumberChk($userPhoneNumber);
+						$userName = userNameChk($userName);
+						$userDesc = userDescChk($userDesc);
+						$userPhoneNumber = userPhoneNumberChk($userPhoneNumber);
+					}
+
 
 					$query = "SELECT PhotoName FROM UserPhoto WHERE userId = ?";
 					$stmt = $conn->prepare($query);
@@ -123,20 +133,34 @@
 </head>
 <body>
 	<h1>Profile</h1><br>
-	<img src="../images/profile_pictures/<?php echo $userPhoto; ?>" alt=""><br>
+	<img src="../images/profile_pictures/<?php echo $userPhoto; ?>" alt="" width="70" height="70"><br>
 	<button><a href="./prof_photo_edit.php">Edit Photo</a></button>
+	<?php 
+	if($isSupplier == 1){
+	?>	
 	<h3>Name</h3><br>
-	<?php echo $userName; ?><br>
+	<?php echo $userName; ?>
 	<h3>Description</h3>
-	<?php echo $userDesc; ?><br>
+	<?php echo $userDesc; ?>
 	<h3>Company</h3>
-	<?php echo $userComp; ?><br>
+	<?php echo $userComp; ?>
 	<h3>Location</h3>
-	<?php echo $userLoc; ?><br>
+	<?php echo $userLoc; ?>
 	<h3>Website</h3>
-	<?php echo $userWebsite; ?><br>
+	<?php echo $userWebsite; ?>
 	<h3>Phone Number</h3>
-	<?php echo $userPhoneNumber; ?><br>
+	<?php echo $userPhoneNumber; ?>
 	<button><a href="./edit_info.php">Edit info</a></button>
+	<?php
+	}else{
+	?>
+	<h3>Name</h3>
+	<?php echo $userName; ?>
+	<h3>Description</h3>
+	<?php echo $userDesc; ?>
+	<h3>PhoneNumber</h3>
+	<?php echo $userPhoneNumber; ?><br><br>
+	<button><a href="./edit_info.php">Edit info</a></button>
+	<?php } ?>
 </body>
 </html>
