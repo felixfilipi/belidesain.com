@@ -3,6 +3,7 @@
 	require_once 'function.php';
 
 	$loggedin = "";
+
 	if(isset($_SESSION["loggedin"]) == TRUE){
 		$loggedin = TRUE;
 		$userId = htmlspecialchars($_SESSION["id"]);
