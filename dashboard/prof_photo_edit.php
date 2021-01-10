@@ -48,6 +48,7 @@
 
 						if($stmt->execute()){
 							$message = "File is successfully uploaded.";
+							header("Location: ./profile.php");
 
 						}else{
 							$stmt->error;
