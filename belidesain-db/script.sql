@@ -5,7 +5,8 @@ CREATE TABLE User(
   LastActivity DATE,
   IsOnline BOOL,
   IsSupplier BOOL,
-  IsAdmin BOOL
+  IsAdmin BOOL,
+  IsDesigner BOOL
 );
 
 CREATE TABLE UserInfo(
