@@ -8,7 +8,8 @@
 <style>
 
  body{
-   background: rgba(25, 70, 112)
+   background: url("images/event_bg.jpg") no-repeat fixed center;
+   background-size: cover;
  }
 
   * {
@@ -32,7 +33,7 @@ input[type="file"] {
     margin-left: 20px;
 }
 
-input[type=text],input[type=url],input[type=date], select, textarea {
+input[type=text],[type=number],input[type=url],input[type=date], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -82,7 +83,7 @@ input[type=submit]:hover {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:#051d36;
+  background-color:rgba(5, 29, 54,0.6);
 }
 
 .col-25 {
@@ -102,18 +103,17 @@ input[type=submit]:hover {
   clear: both;
 }
 
-
 </style>
 <!-- Javascript-->
 <script src="js/jquery.js"></script>
-
 </head>
 		<body>
       <div class="row clearfix">
          <div class="find-box">
-            <h1>Buat Event Anda</h1>
-            <h4>Buat event untuk desain dan karya anda disini.</h4>
+            <h1>Daftar Event</h1>
+            <h4>Daftarkan event mengenai desain dan karya anda disini.</h4>
             <div class="container">
+              <div class="opacy" style="opacity:1">
               <form action="/action_page.php">
                 <div class="row">
                     <label>Judul Event*</label>
@@ -128,7 +128,7 @@ input[type=submit]:hover {
                 </div>
                 <div class="row">
                     <label>Kategori*</label>
-                    <div id="boxscroll" style="background-color:#fff;margin-top:15px;">
+                    <div id="boxscroll" style="background-color:#fff;margin-top:15px;border-radius:10px;">
                        <div class="form-check">
                           <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
                           <label for="checkbox1" style="color:#000">
@@ -137,49 +137,55 @@ input[type=submit]:hover {
                        </div>
                        <div class="form-check">
                           <input id="checkbox2" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox2" style="color:#000">
+                          <label for="checkbox2">
                           Furniture
                           </label>
                        </div>
                        <div class="form-check">
                           <input id="checkbox3" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox3" style="color:#000">
+                          <label for="checkbox3">
                           Interior
                           </label>
                        </div>
                        <div class="form-check">
                           <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox4" style="color:#000">
+                          <label for="checkbox4">
                           Arsitekture
                           </label>
                        </div>
                        <div class="form-check">
-                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox4" style="color:#000">
+                          <input id="checkbox5" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox5">
                           Lawakan
                           </label>
                        </div>
                     </div>
                   </div>
-                  <div class="row">
+                <div class="row">
                       <label>Lokasi*</label>
                       <input type="text" placeholder="Masukkan Lokasi Event anda" required>
-                  </div>
-                  <div class="row">
-                      <label>Link (Online)</label>
-                      <input type="url" placeholder="Masukkan Link Event anda" required>
+                </div>
+                  <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.913952094454!2d112.63133642912416!3d-7.9309702996429285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629efffd3bfa9%3A0xbf154c3066a77fe6!2sJl.%20Ikan%20Lumba-Lumba%2036-32%2C%20Tunjungsekar%2C%20Kec.%20Lowokwaru%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065142!5e0!3m2!1sen!2sid!4v1607245747449!5m2!1sen!2sid"
+                    width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe>
                   </div>
                 <div class="row">
+                      <label>Link (Online)</label>
+                      <input type="url" placeholder="Masukkan Link Event anda" required>
+                </div>
+                <div class="row">
                     <label>Harga*</label>
-                    <input type="text" placeholder="Harga Tiket" required style="width:30%">
-                    <label>Total Tiket*</label>
-                    <input type="number" placeholder="Total Tiket" required style="width:20%">
+                    <input type="text" name="currency-field" id="currency-field" pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" placeholder="100,000.00 (Rp)"
+                    required style="width:30%;margin-left:20px">
+                    <input type="number" placeholder="Total Tiket" required style="width:30%;margin-left:10%">
                 </div>
                 <div class="row">
                     <label>Tanggal*</label>
-                    <input type="date" placeholder="Tanggal Event" required style="width:30%">
-                    <label>EXP*</label>
-                    <input type="date" placeholder="Kadaluarsa Tiket" required style="width:25%">
+                    <input type="date" required style="width:30%">
+                </div>
+                <div class="row">
+                    <label>Expired*</label>
+                    <input type="date" placeholder="Kadaluarsa Tiket" required style="width: 30%;margin-left:5px;">
                 </div>
                 <div class="row">
                     <label>Deskripsi*</label>
@@ -202,6 +208,7 @@ input[type=submit]:hover {
             </div>
           </div>
         </div>
+        </div>
         <script src="js/jquery-1.12.4.min.js"></script>
         <!--bootstrap js-->
         <script src="js/bootstrap.min.js"></script>
@@ -211,5 +218,6 @@ input[type=submit]:hover {
         <script src="js/wow.min.js"></script>
         <!--custom js-->
         <script src="js/custom.js"></script>
+        <script src="js/auto-correct.js"></script>
     </body>
   </html>

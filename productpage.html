@@ -83,12 +83,59 @@
         opacity: 0.8;
       }
 
-
+      .sf{
+        font-family:verdana ;
+        font-size:20px;
+      }
 
       .form-container .btn:hover, .open-button:hover {
         opacity: 1;
       }
+      #btn1 {
+        background-color: #09294c;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.8;
+      }
 
+      #btn1:hover {
+        opacity:1;
+      }
+
+      #btn2 {
+        background-color: #0345bf;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        opacity: 0.8;
+        position: relative;
+        margin-right: 8%;
+      }
+      #btn3 {
+        background-color: #df4006;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 40%;
+        opacity: 0.8;
+        position:relative;
+      }
+
+      #btn2:hover {
+        opacity:1;
+      }
+      #btn3:hover {
+        opacity:1;
+      }
 .modal {
   display: none;
   position: fixed;
@@ -110,7 +157,7 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-}
+  }
 
 /* The Close Button */
 .close {
@@ -122,6 +169,22 @@
 
 .close:hover,
 .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  left: -1000px;
+  top: -100px;
+}
+
+.close2:hover,
+.close2:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -256,33 +319,6 @@
                               <div class="prod-btn">
                                  <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Suka</a>
                                  <p>23 likes</p>
-                              </div>
-                           </div>
-                           <div class="right-dit-p">
-                              <div class="like-list">
-                                 <ul>
-                                    <li>
-                                       <div class="im-b"><img class="" src="images/list-img-01.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><img src="images/list-img-02.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><img src="images/list-img-03.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><img src="images/list-img-04.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><img src="images/list-img-05.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><img src="images/list-img-06.png" alt=""></div>
-                                    </li>
-                                    <li>
-                                       <div class="im-b"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                                    </li>
-                                 </ul>
                               </div>
                            </div>
                         </div>
@@ -443,21 +479,13 @@
                         <option value="KS">Kansas</option>
                         <option value="KY">Kentucky</option>
                      </select>
-                     <button class="open-button" onclick="openForm()">Beli</button>
-                       <div class="form-popup" id="myForm">
-                         <form class="form-container">
-                           <h1>Verifikasi</h1>
-                           <label style="margin-top:15px;"><b>Email</b></label>
-                           <input type="text" placeholder="Masukkan Email Anda" required>
-                           <label><b>Password</b></label>
-                           <input type="password" placeholder="Masukkan Password" required>
-                           <button type="submit" class="btn" id="myBtn">Beli Sekarang</button>
+                     <button class="open-button" id="myBtn">Beli</button>
                            <div id="myModal" class="modal">
                              <div class="modal-content">
                                <span class="close">&times;</span>
-                               <p style="font-family:verdana ; font-size:20px;">Ringkasan Belanja</span>
+                               <p style="font-size:20px;">Ringkasan Belanja</span>
                                  <hr>
-                                 <p style="font-family:verdana;font-size:15px;"> Desain akan dikirimkan ke Inventori anda </span>
+                                 <p style="font-size:15px;"> Desain akan dikirimkan ke Inventori anda </span>
                                    <div class="price-box-right">
                                       <h4>Harga</h4>
                                       <h3>Rp 1.000.000 <span>Blueprint + Consult</span></h3>
@@ -468,13 +496,21 @@
                                          <option value="AK">LinkAja</option>
                                          <option value="HI">OVO</option>
                                       </select>
-                                       <button type="submit" class="btn" style="margin-top:50px;">Bayar</button>
+                                       <button class="btn" style="margin-top:50px;" onclick="document.getElementById('id01').style.display='block'" id="btn1">Bayar</button>
+                                       <div id="id01" class="modal">
+                                         <form class="modal-content" action="/action_page.php">
+                                           <span onclick="document.getElementById('id01').style.display='none'" class="close2" title="Close Modal">&times;</span>
+                                           <div class="container">
+                                             <h1>Konfirmasi Pembelian</h1>
+                                             <p style="font-family:verdana;font-size:16px;margin-top:2%">Apakah anda yakin membeli desain ini?</p>
+                                               <button type="button" id="btn3" style="margin-top:24%" onclick="document.getElementById('id01').style.display='none'">Batal</button>
+                                               <button type="button" id="btn2" onclick="document.getElementById('id02').style.display='block'">Beli Sekarang</button>
+                                           </div>
+                                         </form>
+                                       </div>
                                     </div>
-                             </div>
-                           </div>
-                           <button type="button" class="btn" style="background-color:#1d99ff">Masukkan keranjang</button>
-                         </form>
-                       </div>
+                                  </div>
+                                </div>
 
                      <h5>Rata-rata waktu respon desainer <br><i class="fa fa-clock-o" aria-hidden="true"></i><strong> 16 Jam</strong></h5>
                   </div>
