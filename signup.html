@@ -5,11 +5,10 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <style>
-
  body{
-   background: rgba(25, 70, 112)
+   background: url("images/signup_bg.jpg") no-repeat fixed center;
+   background-size: cover;
  }
-
   * {
     box-sizing: border-box;
     padding:20px;
@@ -17,7 +16,8 @@
 
 label{
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
+  text-align: center;
 }
 
 input[type=text],input[type=password],input[type=number],input[type=tel],input[type=email], select, textarea {
@@ -46,7 +46,7 @@ input[type=submit] {
   background-color: #335d87;
 	width: 100%;
 	margin-top: 30px;
-  font-family: Georgia, serif;
+  font-family: 'Raleway';
   border: none;
   color: white;
   text-align: center;
@@ -69,7 +69,7 @@ input[type=submit]:hover {
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:#051d36;
+  background-color:rgba(5, 29, 54,0.6);
 }
 
 .col-25 {
@@ -98,45 +98,34 @@ input[type=submit]:hover {
             <h1>Buat Akun</h1>
             <h4>Cari desain dan produk impian anda disini.</h4>
             <div class="container">
-              <form action="/action_page.php">
+              <form action="/action_page.php" style="opacity:1">
                 <div class="row">
-                  <div class="col-25">
                     <label>Nama*</label>
                     <input type="text" placeholder="Masukkan Nama Lengkap anda" required>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-25">
                     <label>Password*</label>
                     <input type="password" placeholder="Masukkan Password anda" required>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-25">
                     <label>Ulang Password*</label>
                     <input type="password" placeholder="Masukkan lagi password anda" required>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-25">
                     <label>Email*</label>
                     <input type="email" placeholder="Masukkan Email anda" required>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-25">
                     <label>Nomor Telepon*</label>
                     <input type="tel" placeholder="Masukkan Nomor Telepon anda"  pattern="[0-9]{12}" required>
-                  </div>
                 </div>
                 <div class="row">
-                  <div class="col-25">
                     <label>Upload Foto</label>
                     <br><br><label for="file-upload" class="custom-file-upload">
                       Upload Foto
                     </label>
                     <input id="file-upload" type="file"/>
-                  </div>
+                    <img src="images/felix.jpeg">
                 </div>
                 <div class="row">
                   <input type="submit" value="Daftar" >
