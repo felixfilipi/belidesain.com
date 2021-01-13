@@ -5,7 +5,8 @@ CREATE TABLE User(
   LastActivity DATETIME,
   IsOnline BOOL,
   IsSupplier BOOL,
-  IsAdmin BOOL
+  IsAdmin BOOL,
+  CONSTRAINT chk_email CHECK (Email like '%@%.%')
 );
 
 CREATE TABLE UserInfo(
@@ -16,7 +17,9 @@ CREATE TABLE UserInfo(
   Location VARCHAR(48),
   Website VARCHAR(48),
   PhoneNumber VARCHAR(16),
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT chk_phone CHECK (PhoneNumber <= 12 AND PhoneNumber like '08[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
+  CONSTRAINT chk_website CHECK (Website like '%.%')
 );
 
 CREATE TABLE UserPhoto(
@@ -166,8 +169,10 @@ CREATE TABLE ExpoTransactionHeader(
   IsSuccess BOOL,
   IsExpired BOOL,
   TransactionType VARCHAR(32),
+  TicketQty INT(10),
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT chk_ticketQty CHECK (TicketQty <= 10)
 );
 
 CREATE TABLE UserExpo(
@@ -196,7 +201,7 @@ CREATE TABLE ExpoTransactionDetails(
    ExpoEventDesc TEXT,
    TicketQuota INT(10) Not NULL,
    TicketPrice INT(10) Not NULL,
-   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE
+   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
 );
   
 CREATE TABLE DesignerTransactionHeader(
@@ -222,7 +227,8 @@ CREATE TABLE DesignerInfo(
   DesignerId INT(10) NOT NULL,
   DesignerPrice INT(10),
   Rating INT(10),
-  FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT chk_rating CHECK (Rating <= 5 AND Rating > 0)
 );
 
 CREATE TABLE DesignerRating(
@@ -231,7 +237,8 @@ CREATE TABLE DesignerRating(
   UserId INT(10) NOT NULL,
   Rating INT(10),
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
+  FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT chk_rating CHECK (Rating <= 5 AND Rating > 0)
 );  
 
 /*
