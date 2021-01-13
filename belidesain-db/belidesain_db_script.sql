@@ -25,7 +25,7 @@ CREATE TABLE UserInfo(
 CREATE TABLE UserPhoto(
   PhotoId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   UserId  INT(10) NOT NULL,
-  PhotoName VARCHAR(48),
+  PhotoName VARCHAR(48) NOT NULL,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -40,23 +40,23 @@ CREATE TABLE ChatSystem(
   ChatSystemId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   toUserId  INT(10) NOT NULL,
   fromUserId  INT(10) NOT NULL,
-  Message VARCHAR(100),
-  Timestamp DATETIME,
-  StatusMessage ENUM ('Pending', 'Delivered', 'Success'),
+  Message VARCHAR(100) NOT NULL,
+  Timestamp DATETIME NOT NULL,
+  StatusMessage ENUM ('Pending', 'Delivered', 'Success') NOT NULL,
   FOREIGN KEY (toUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignCategories(
   CategoryId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  CategoryName VARCHAR(20),
-  CategoryDesc TEXT
+  CategoryName VARCHAR(20) NOT NULL,
+  CategoryDesc TEXT NOT NULL
 );
 
 CREATE TABLE DesignSubCategories(
   SubCategoryId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryId INT(10) NOT NULL,
-  SubCategoryName VARCHAR(64),
+  SubCategoryName VARCHAR(64) NOT NULL,
   SubCategoryDesc TEXT,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -74,7 +74,7 @@ CREATE TABLE DesignHeader(
   SubCategoryId INT(10) NOT NULL,
   ThemeId  INT(10) NOT NULL,
   SupplierUserId INT(10) NOT NULL,
-  isSold BOOLEAN,
+  isSold BOOLEAN NOT NULL,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ThemeId) REFERENCES DesignTheme (ThemeId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -85,7 +85,7 @@ CREATE TABLE DesignLikeCount(
   LikeCountId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(10) NOT NULL,
   UserId INT(10) NOT NULL,
-  Likes INT(10),
+  Likes INT(10) NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -95,7 +95,7 @@ CREATE TABLE UserInventory(
   UserId  INT(10) NOT NULL,
   DesignId  INT(10) NOT NULL,
   DesignTransactionId INT(10) NOT NULL,
-  DatePurchased DATETIME,
+  DatePurchased DATETIME NOT NULL,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -114,9 +114,9 @@ CREATE TABLE DesignTransactionHeader(
 
 CREATE TABLE DesignTransactionDetails(
   TransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  TransactionDate DATETIME,
-  ExpirationDate DATETIME,
-  DateCreated DATETIME,
+  TransactionDate DATETIME NOT NULL,
+  ExpirationDate DATETIME NOT NULL,
+  DateCreated DATETIME NOT NULL,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -125,14 +125,14 @@ CREATE TABLE DesignDetails(
   DesignName VARCHAR(64),
   DesignDesc TEXT,
   DesignPrice INT(10),
-  DesignDateCreated DATETIME,
+  DesignDateCreated DATETIME NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignPhotos(
   DesignPhotoId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(10) NOT NULL,
-  DesignPhotoName VARCHAR(64),
+  DesignPhotoName VARCHAR(64) NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -147,8 +147,8 @@ CREATE TABLE DesignSpesification(
 CREATE TABLE DesignFile(
   DesignFileId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(10) NOT NULL,
-  DesignFileName VARCHAR(20),
-  DesignFileType VARCHAR(20),
+  DesignFileName VARCHAR(20) NOT NULL,
+  DesignFileType VARCHAR(20) NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -156,8 +156,8 @@ CREATE TABLE ExpoEvent(
   ExpoEventId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   OrganizerUserId INT(10) NOT NULL,
   CategoryId INT(10) NOT NULL,
-  DateHeld DATETIME,
-  IsOnline BOOL,
+  DateHeld DATETIME NOT NULL,
+  IsOnline BOOL NOT NULL,
   FOREIGN KEY (OrganizerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -166,10 +166,10 @@ CREATE TABLE ExpoTransactionHeader(
   ExpoTransactionId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   ExpoEventId INT(10) NOT NULL,   
   BuyerUserId INT(10) NOT NULL,
-  IsSuccess BOOL,
-  IsExpired BOOL,
-  TransactionType ENUM('ovo','linkaja','dana'),
-  TicketQty INT(10),
+  IsSuccess BOOL NOT NULL,
+  IsExpired BOOL NOT NULL,
+  TransactionType ENUM('ovo','linkaja','dana') NOT NULL,
+  TicketQty INT(10) NOT NULL,
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT chk_ticketQty CHECK (TicketQty <= 10)
@@ -179,7 +179,7 @@ CREATE TABLE UserExpo(
   UserId INT(10) NOT NULL,
   ExpoEventId INT(10) NOT NULL,
   ExpoTransactionId INT(10) NOT NULL,
-  DatePurchased DATETIME,
+  DatePurchased DATETIME NOT NULL,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader(ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -187,23 +187,30 @@ CREATE TABLE UserExpo(
   
 CREATE TABLE ExpoTransactionDetails(
   ExpoTransactionId INT(10) NOT NULL,
-  ExpoTransactionDate DATETIME,
-  ExpoExpirationDate DATETIME,
-  DateCreated DATETIME,
+  ExpoTransactionDate DATETIME NOT NULL,
+  ExpoExpirationDate DATETIME NOT NULL,
+  DateCreated DATETIME NOT NULL,
   FOREIGN KEY (ExpoTransactionId) REFERENCES ExpoTransactionHeader (ExpoTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
- CREATE TABLE ExpoEventDetails(
-   ExpoEventId INT(10) NOT NULL,
-   ExpoEventTitle VARCHAR(32),
-   ExpoEventPlace VARCHAR(32),
-   ExpoEventLink VARCHAR(32),
-   ExpoEventDesc TEXT,
-   TicketQuota INT(10) Not NULL,
-   TicketPrice INT(10) Not NULL,
-   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
+CREATE TABLE ExpoEventDetails(
+  ExpoEventId INT(10) NOT NULL,
+  ExpoEventTitle VARCHAR(32)NOT NULL,
+  ExpoEventPlace VARCHAR(32),
+  ExpoEventLink VARCHAR(32),
+  ExpoEventDesc TEXT NOT NULL,
+  TicketQuota INT(10) NOT NULL,
+  TicketPrice INT(10) NOT NULL,
+  FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
 );
   
+CREATE TABLE ExpoEventPhoto(
+  PhotoId INT(10) NOT NULL,
+  ExpoEventId INT(10) NOT NULL,
+  PhotoName VARCHAR(32) NOT NULL,
+  FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 CREATE TABLE DesignerTransactionHeader(
   DesignerTransactionId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignerId INT(10) NOT NULL,
@@ -225,8 +232,8 @@ CREATE TABLE DesignerTransactionDetail(
 
 CREATE TABLE DesignerInfo(
   DesignerId INT(10) NOT NULL,
-  DesignerPrice INT(10),
-  Rating INT(10),
+  DesignerPrice INT(10) NOT NULL,
+  Rating INT(10) NOT NULL,
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT chk_rating CHECK (Rating <= 5 AND Rating > 0)
 );
@@ -235,7 +242,7 @@ CREATE TABLE DesignerRating(
   RatingId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignerId INT(10) NOT NULL,
   UserId INT(10) NOT NULL,
-  Rating INT(10),
+  Rating INT(10) NOT NULL,
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT chk_rating CHECK (Rating <= 5 AND Rating > 0)
