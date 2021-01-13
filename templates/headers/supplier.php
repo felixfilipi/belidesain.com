@@ -13,7 +13,7 @@ $namestr = getName($userId);
   <li>be a designer <a href="../auth/register_designer.php">designer</a></li>
   <li><a href="../../dashboard/profile.php">Profile</a></li>
   <li>Categories</li>
-  <li><a href="../forms/upload_design.php">Upload Design</a></li>
+  <li><a href="../forms/upload_design1.php">Upload Design</a></li>
   <li><a href="../forms/make_event.php">Make Event</a></li>
 </ul>
 </body>

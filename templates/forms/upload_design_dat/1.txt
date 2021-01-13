@@ -1,0 +1,4 @@
+<option>Ruang Tamu</option>
+<option>Dapur</option>
+<option>Kamar Tidur</option>
+<option>Ruang Bersantai</option>

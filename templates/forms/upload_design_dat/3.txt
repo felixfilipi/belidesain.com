@@ -1,0 +1,3 @@
+<option>Kursi</option>
+<option>Meja</option>
+<option>Lemari</option>

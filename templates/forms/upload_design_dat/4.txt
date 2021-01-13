@@ -1,0 +1,4 @@
+<option>Batik</option>
+<option>Kasual</option>
+<option>Resmi</option>
+<option>Pesta</option>

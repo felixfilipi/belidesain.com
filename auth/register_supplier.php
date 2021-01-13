@@ -3,7 +3,41 @@
 	require_once '../function.php';
 
 	$name = $phoneNumber = "";
-	$name_err = $phoneNumber_err = "";		
+	$name_err = $phoneNumber_err = "";
+
+	function isSkipName($userId){
+		$query = "SELECT * FROM UserInfo WHERE UserId = ?";
+		if($stmt = prepare($query)){
+			$stmt->bind_param("i", $param_userId);
+			$param_userId = $userId;
+			if($stmt->execute()){
+				$result = $stmt->get_result();
+
+				if($result->num_rows == 1){
+					$row = $result->fetch_array(MYSQLI_ASSOC);
+					$userName = $row["Name"];
+
+					if(empty($userName)){
+						return 1;
+					}else{
+						return 0;
+					}
+
+				}else{
+					die("ERROR: query not found");
+				}
+
+			}else{
+				$stmt->error;
+				$conn->error;
+				die($fatalError);
+			}
+		}else{
+			die($fatalError);
+			$stmt->error;
+			$conn->error;
+		}
+	}
 
 	function validateName(){
 		if(empty(trim($_POST["name"]))){
@@ -54,7 +88,8 @@
 
 	if($loggedin){
 		if(isSupplierRequirement($userId)){
-			header("./success_page/register_supplier.php");
+			supplierToggle($userId, 1);
+			header("Location: ./success_page/register_supplier.php");
 		}else{
 			if($_SERVER["REQUEST_METHOD"] == "POST"){
 				$name_err = validateName();

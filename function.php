@@ -166,4 +166,20 @@
 		return $randomString;
 	}
 
+	function supplierToggle($userId, $var){ //0 to off, 1 to on
+		global $conn;
+		$query = "UPDATE User SET isSupplier = ? WHERE UserId = ?";
+		if($stmt = $conn->prepare($query)){
+			$stmt->bind_param("ii", $param_isSupplier, $param_userId);
+			$param_isSupplier = $var;
+			$param_userId = $userId;
+
+			$stmt->execute();
+		}else{
+			die($fatalError);
+			$stmt->error;
+			$conn->error;
+		}
+	}
+
 ?>
