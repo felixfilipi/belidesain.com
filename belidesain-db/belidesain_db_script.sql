@@ -47,8 +47,7 @@ CREATE TABLE ChatSystem(
 CREATE TABLE DesignCategories(
   CategoryId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryName VARCHAR(20),
-  CategoryDesc TEXT,
-  CategoryPhoto VARCHAR(20)
+  CategoryDesc TEXT
 );
 
 CREATE TABLE DesignSubCategories(
@@ -111,9 +110,8 @@ CREATE TABLE DesignTransactionHeader(
 );
 
 CREATE TABLE DesignTransactionDetails(
-  DesignTransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignTransactionAmount INT(10),
-  DesignTransactionDate DATETIME,
+  TransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  TransactionDate DATETIME,
   ExpirationDate DATETIME,
   DateCreated DATETIME,
   FOREIGN KEY (DesignTransactionId) REFERENCES DesignTransactionHeader (DesignTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -144,8 +142,8 @@ CREATE TABLE DesignSpesification(
 );
 
 CREATE TABLE DesignFile(
-  DesignFileId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
+  DesignFileId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(10) NOT NULL,
   DesignFileName VARCHAR(20),
   DesignFileType VARCHAR(20),
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -184,7 +182,6 @@ CREATE TABLE UserExpo(
   
 CREATE TABLE ExpoTransactionDetails(
   ExpoTransactionId INT(10) NOT NULL,
-  ExpoTransactionAmount INT(10),
   ExpoTransactionDate DATETIME,
   ExpoExpirationDate DATETIME,
   DateCreated DATETIME,
@@ -195,7 +192,10 @@ CREATE TABLE ExpoTransactionDetails(
    ExpoEventId INT(10) NOT NULL,
    ExpoEventTitle VARCHAR(32),
    ExpoEventPlace VARCHAR(32),
-   ExpoEventLink TEXT,
+   ExpoEventLink VARCHAR(32),
+   ExpoEventDesc TEXT,
+   TicketQuota INT(10) Not NULL,
+   TicketPrice INT(10) Not NULL,
    FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE
 );
   
