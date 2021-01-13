@@ -42,7 +42,7 @@ CREATE TABLE ChatSystem(
   fromUserId  INT(10) NOT NULL,
   Message VARCHAR(100),
   Timestamp DATETIME,
-  StatusMessage VARCHAR(15),
+  StatusMessage ENUM ('Pending', 'Delivered', 'Success'),
   FOREIGN KEY (toUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (fromUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
