@@ -107,7 +107,7 @@ CREATE TABLE DesignTransactionHeader(
   BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOLEAN,
   IsExpired BOOLEAN,
-  TransactionType VARCHAR(32),
+  TransactionType ENUM('ovo', 'linkaja', 'dana'),
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -168,7 +168,7 @@ CREATE TABLE ExpoTransactionHeader(
   BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOL,
   IsExpired BOOL,
-  TransactionType VARCHAR(32),
+  TransactionType ENUM('ovo','linkaja','dana'),
   TicketQty INT(10),
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -210,7 +210,7 @@ CREATE TABLE DesignerTransactionHeader(
   BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOL,
   IsExpired BOOL,
-  TransactionType VARCHAR(32),
+  TransactionType ENUM('ovo', 'linkaja', 'dana'),
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
