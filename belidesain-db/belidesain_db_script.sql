@@ -1,7 +1,7 @@
 CREATE TABLE User(
-  UserId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  Email VARCHAR(50),
-  Password VARCHAR(255),
+  UserId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Email VARCHAR(20),
+  Password VARCHAR(16),
   LastActivity DATETIME,
   IsOnline BOOL,
   IsSupplier BOOL,
@@ -9,34 +9,34 @@ CREATE TABLE User(
 );
 
 CREATE TABLE UserInfo(
-  UserId INT(32) NOT NULL,
-  Name VARCHAR(100),
+  UserId INT(10) NOT NULL,
+  Name VARCHAR(50),
   Description TEXT,
   Company VARCHAR(48),
   Location VARCHAR(48),
-  Website VARCHAR(64),
+  Website VARCHAR(48),
   PhoneNumber VARCHAR(16),
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE UserPhoto(
-  PhotoId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  UserId  INT(32) NOT NULL,
+  PhotoId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  UserId  INT(10) NOT NULL,
   PhotoName VARCHAR(48),
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE UserFeedback(
-  FeedbackId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  UserId INT(32) NOT NULL,
+  FeedbackId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  UserId INT(10) NOT NULL,
   FeedbackMessage TEXT,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE ChatSystem(
-  ChatSystemId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  toUserId  INT(32) NOT NULL,
-  fromUserId  INT(32) NOT NULL,
+  ChatSystemId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  toUserId  INT(10) NOT NULL,
+  fromUserId  INT(10) NOT NULL,
   Message VARCHAR(100),
   Timestamp DATETIME,
   StatusMessage VARCHAR(15),
@@ -45,33 +45,33 @@ CREATE TABLE ChatSystem(
 );
 
 CREATE TABLE DesignCategories(
-  CategoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  CategoryId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   CategoryName VARCHAR(20),
   CategoryDesc TEXT,
   CategoryPhoto VARCHAR(20)
 );
 
 CREATE TABLE DesignSubCategories(
-  SubCategoryId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  CategoryId INT(32) NOT NULL,
+  SubCategoryId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  CategoryId INT(10) NOT NULL,
   SubCategoryName VARCHAR(64),
   SubCategoryDesc TEXT,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignTheme(
-  ThemeId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  SubCategoryId INT(32) NOT NULL,
+  ThemeId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  SubCategoryId INT(10) NOT NULL,
   ThemeName VARCHAR(20),
   FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignHeader(
-  DesignId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  CategoryId  INT(32) NOT NULL,
-  SubCategoryId INT(32) NOT NULL,
-  ThemeId  INT(32) NOT NULL,
-  SupplierUserId INT(32) NOT NULL,
+  DesignId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  CategoryId  INT(10) NOT NULL,
+  SubCategoryId INT(10) NOT NULL,
+  ThemeId  INT(10) NOT NULL,
+  SupplierUserId INT(10) NOT NULL,
   isSold BOOLEAN,
   FOREIGN KEY (CategoryId) REFERENCES DesignCategories (CategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -80,19 +80,19 @@ CREATE TABLE DesignHeader(
 );
 
 CREATE TABLE DesignLikeCount(
-  LikeCountId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
-  UserId INT(32) NOT NULL,
-  Likes INT(11),
+  LikeCountId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(10) NOT NULL,
+  UserId INT(10) NOT NULL,
+  Likes INT(10),
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE UserInventory(
-  InventoryId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  UserId  INT(32) NOT NULL,
-  DesignId  INT(32) NOT NULL,
-  DesignTransactionId INT(32) NOT NULL,
+  InventoryId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  UserId  INT(10) NOT NULL,
+  DesignId  INT(10) NOT NULL,
+  DesignTransactionId INT(10) NOT NULL,
   DatePurchased DATETIME,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -100,9 +100,9 @@ CREATE TABLE UserInventory(
 );
 
 CREATE TABLE DesignTransactionHeader(
-  DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
-  BuyerUserId INT(32) NOT NULL,
+  DesignTransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(10) NOT NULL,
+  BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOLEAN,
   IsExpired BOOLEAN,
   TransactionType VARCHAR(32),
@@ -111,8 +111,8 @@ CREATE TABLE DesignTransactionHeader(
 );
 
 CREATE TABLE DesignTransactionDetails(
-  DesignTransactionId  INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignTransactionAmount INT(32),
+  DesignTransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignTransactionAmount INT(10),
   DesignTransactionDate DATETIME,
   ExpirationDate DATETIME,
   DateCreated DATETIME,
@@ -120,24 +120,24 @@ CREATE TABLE DesignTransactionDetails(
 );
 
 CREATE TABLE DesignDetails(
-  DesignId INT(32) NOT NULL PRIMARY KEY,
+  DesignId INT(10) NOT NULL PRIMARY KEY,
   DesignName VARCHAR(64),
   DesignDesc TEXT,
-  DesignPrice INT(32),
+  DesignPrice INT(10),
   DesignDateCreated DATETIME,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignPhotos(
-  DesignPhotoId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
+  DesignPhotoId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(10) NOT NULL,
   DesignPhotoName VARCHAR(64),
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignSpesification(
-  SpesificationId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignId INT(32) NOT NULL,
+  SpesificationId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignId INT(10) NOT NULL,
   SpesificationName VARCHAR(32),
   SpesificationDesc VARCHAR(32),
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -152,9 +152,9 @@ CREATE TABLE DesignFile(
 );
 
 CREATE TABLE ExpoEvent(
-  ExpoEventId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  OrganizerUserId INT(32) NOT NULL,
-  CategoryId INT(32) NOT NULL,
+  ExpoEventId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  OrganizerUserId INT(10) NOT NULL,
+  CategoryId INT(10) NOT NULL,
   DateHeld DATETIME,
   IsOnline BOOL,
   FOREIGN KEY (OrganizerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -162,9 +162,9 @@ CREATE TABLE ExpoEvent(
 );
 
 CREATE TABLE ExpoTransactionHeader(
-  ExpoTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  ExpoEventId INT(32) NOT NULL,   
-  BuyerUserId INT(32) NOT NULL,
+  ExpoTransactionId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  ExpoEventId INT(10) NOT NULL,   
+  BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOL,
   IsExpired BOOL,
   TransactionType VARCHAR(32),
@@ -173,9 +173,9 @@ CREATE TABLE ExpoTransactionHeader(
 );
 
 CREATE TABLE UserExpo(
-  UserId INT(32) NOT NULL,
-  ExpoEventId INT(32) NOT NULL,
-  ExpoTransactionId INT(32) NOT NULL,
+  UserId INT(10) NOT NULL,
+  ExpoEventId INT(10) NOT NULL,
+  ExpoTransactionId INT(10) NOT NULL,
   DatePurchased DATETIME,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (ExpoEventId) REFERENCES ExpoEvent (ExpoEventId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -183,8 +183,8 @@ CREATE TABLE UserExpo(
 ); 
   
 CREATE TABLE ExpoTransactionDetails(
-  ExpoTransactionId INT(32) NOT NULL,
-  ExpoTransactionAmount INT(32),
+  ExpoTransactionId INT(10) NOT NULL,
+  ExpoTransactionAmount INT(10),
   ExpoTransactionDate DATETIME,
   ExpoExpirationDate DATETIME,
   DateCreated DATETIME,
@@ -192,7 +192,7 @@ CREATE TABLE ExpoTransactionDetails(
 );
 
  CREATE TABLE ExpoEventDetails(
-   ExpoEventId INT(32) NOT NULL,
+   ExpoEventId INT(10) NOT NULL,
    ExpoEventTitle VARCHAR(32),
    ExpoEventPlace VARCHAR(32),
    ExpoEventLink TEXT,
@@ -200,9 +200,9 @@ CREATE TABLE ExpoTransactionDetails(
 );
   
 CREATE TABLE DesignerTransactionHeader(
-  DesignerTransactionId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignerId INT(32) NOT NULL,
-  BuyerUserId INT(32) NOT NULL,
+  DesignerTransactionId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignerId INT(10) NOT NULL,
+  BuyerUserId INT(10) NOT NULL,
   IsSuccess BOOL,
   IsExpired BOOL,
   TransactionType VARCHAR(32),
@@ -211,7 +211,7 @@ CREATE TABLE DesignerTransactionHeader(
 );
 
 CREATE TABLE DesignerTransactionDetail(
-  DesignerTransactionId INT(32) NOT NULL,
+  DesignerTransactionId INT(10) NOT NULL,
   AssignedDate DATE,
   DeadlineDate DATE,
   Confirmed BOOL,
@@ -219,17 +219,17 @@ CREATE TABLE DesignerTransactionDetail(
 );  
 
 CREATE TABLE DesignerInfo(
-  DesignerId INT(32) NOT NULL,
-  DesignerPrice INT(32),
-  Rating INT(32),
+  DesignerId INT(10) NOT NULL,
+  DesignerPrice INT(10),
+  Rating INT(10),
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignerRating(
-  RatingId INT(32) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  DesignerId INT(32) NOT NULL,
-  UserId INT(32) NOT NULL,
-  Rating INT(32),
+  RatingId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignerId INT(10) NOT NULL,
+  UserId INT(10) NOT NULL,
+  Rating INT(10),
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );  
