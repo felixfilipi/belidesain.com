@@ -113,7 +113,7 @@ CREATE TABLE DesignTransactionHeader(
 );
 
 CREATE TABLE DesignTransactionDetails(
-  TransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  DesignTransactionId  INT(10) NOT NULL,
   TransactionDate DATETIME NOT NULL,
   ExpirationDate DATETIME NOT NULL,
   DateCreated DATETIME NOT NULL,
