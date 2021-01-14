@@ -465,3 +465,162 @@ INSERT INTO UserExpo VALUES
   ('1230000003', '8880000004', '05/09/2021'),
   ('1230000010', '8880000006', '22/10/2021'),
   ('1230000002', '8880000008', '04/11/2021');
+
+INSERT INTO DesignTransactionDetails VALUES
+	(1, 250000, 06/01/2021 07:39:10 , 10/01/2021 11:39:10, 05/01/2021 11:39:10),
+	(2, 12000, 10/01/2021 06:42:45, 15/01/2021 06:41:45, 10/01/2021 06:41:45),
+	(3, 121000, 01/01/2021 03:02:12, 05/01/2021 02:35:20, 01/01/2021 02:35:20),
+	(4, 200000, 04/01/2021 12:32:32, 07/01/2021 07:52:59, 02/01/2021 07:52:59),
+	(5, 16000, 04/01/2021 15:04:04, 09/01/2021 10:38:36, 04/01/2021 10:38:36),
+	(6, 140000, 02/01/2021 23:32:11, 07/01/2021 21:42:29, 02/01/2021 21:42:29),
+	(7, 190000, 06/01/2021 13:54:14, 11/01/2021 13:00:13, 06/01/2021 13:00:13),
+	(8, 10000, 09/01/2021 07:23:43, 13/01/2021 06:29:43, 01/08/2021 06:29:43),
+	(9, 25000, 04/01/2021 13:53:36, 07/01/2021 01:29:36, 02/01/2021 01:29:36),
+	(10, 42000, 12/01/2021 01:00:43, 16/01/2021 18:19:19, 11/01/2021 18:19:19);
+	
+INSERT INTO DesignTheme VALUES
+	()
+	
+INSERT INTO DesignHeader VALUES
+	(1, 3, 11, 3, 6, 0),
+	(2, 5, 22, 6, 1, 1),
+	(3, 2, 8, 1, 5, 1),
+	(4, 5, 21, 5, 9, 1),
+	(5, 5, 21, 6, 8, 0),
+	(6, 2, 5, 3, 10, 0),
+	(7, 1, 2, 10, 4, 0),
+	(8, 3, 10, 9, 7, 0),
+	(9, 5, 22, 2, 1, 1),
+	(10, 2, 7, 2, 5, 0);
+	
+INSERT INTO ExpoTransactionHeader VALUES
+	(1, 7, 4, 1, 0, 'ovo', 1),
+	(2, 4, 6, 0, 0, 'dana', 3),
+	(3, 4, 5, 1, 0, 'ovo', 3),
+	(4, 10, 2, 0, 0, 'linkaja', 1),
+	(5, 6, 1, 1, 0, 'linkaja', 5),
+	(6, 8, 9, 1, 0, 'linkaja', 5),
+	(7, 9, 3, 1, 0, 'linkaja', 2),
+	(8, 10, 1, 1, 0, 'ovo', 5),
+	(9, 8, 5, 0, 0, 'dana', 3),
+	(10, 3, 4, 0, 1, 'ovo', 2);
+	
+INSERT INTO DesignDetails VALUES
+	(1, 'Kursi Antik warna hitam', 'Desain kursi yang mempunyai estetika antik dengan warna utama hitam. Kursi ini nyaman untuk diduduki dan tidak membuat orang capai.', 76999, '2021-01-02 16:41:07'),
+	(2, 'Website EventMaker', 'Desain frontend website untuk pembuatan dan publikasi event', 80000, '2021-01-01 05:44:58'),
+	(3, 'Desain eatery', 'Desain brosur untuk promosi makanan dan restoran', 75000, '2021-01-01 13:50:38'),
+	(4, 'RestoSite', 'Desain website untuk promosi makanan dan restoran', 150000, '2021-01-01 17:07:58'),
+	(5, 'MakanYuk', 'Desain website untuk pemesanan online kuliner', 50000, '2021-01-03 01:52:53'),
+	(6, 'DarkPoster', 'Desain poster berestetika hitam/dark cocok untuk konser bertema halloween', 75000, '2021-01-05 10:44:24'),
+	(7, 'DapurForest', 'Desain interior dapur bertema greeny dan organik, cocok untuk konsep alam liar', 250000, '2021-01-05 17:21:32'),
+	(8, 'KursiForest', 'Desain kursi bertema greeny dan organik, cocok untuk konsep alam liar', 78000, '2021-01-06 23:14:29'),
+	(9, 'LombaWeb', 'Desain website untuk mempromosikan event terutama lomba - lomba', 170000, '2021-01-08 18:36:39'),
+	(10, 'ChristmasCard', 'Desain kartu untuk merayakan natal dan tahun-baru', 50000, '2021-01-05 15:23:08');
+
+INSERT INTO DesignPhotos VALUES
+	(1, 1, 'PWEuCI.jpg'),
+	(2, 2, 'YU6HTc.jpg'),
+	(3, 2, 'jb3vgc.jpg'),
+	(4, 2, 'C0jtr0.jpg'),
+	(5, 3, 'BmUDXe.png'),
+	(6, 3, 'mUZNpl.jpg'),
+	(7, 4, 'BajtOu.png'),
+	(8, 5, '4npiUb.png'),
+	(9, 5, 'mSd0NP.png'),
+	(10, 5, 'L9p8QS.jpg'),
+	(11, 6, 'GFB2AN,png'),
+	(12, 7, 'RVkJL4.jpg'),
+	(13, 7, 'MRqlqg.png'),
+	(14, 7, 'odlVWY.jpg'),
+	(15, 8, 'ZvnfHv.png'),
+	(16, 8, 'IjuoqO.png'),
+	(17, 9, '0i9kIY.png'),
+	(18, 9, 'Fi1NOz.png'),
+	(19, 10, 'qG0jGJ.png'),
+	(20, 10, 'XtpRAJ.jpg'),
+	(21, 10, '4tHJG9.jpg');
+	
+
+INSERT INTO ExpoTransactionDetails VALUES
+	(1, '10/01/2021 07:21:32', '14/01/2021 15:54:03', '09/01/2021 15:54:03'),
+	(2, NULL, '15/01/2021 13:40:03', '10/01/2021 13:40:03'),
+	(3, '07/01/2021 09:45:51', '13/01/2021 08:03:51', '07/01/2021 08:03:51'),
+	(4, NULL, '02/01/2021 23:01:57', '02/01/2021 23:01:57'),
+	(5, '06/01/2021 09:00:45', '08/01/2021 11:39:20', '03/01/2021 11:39:20'),
+	(6, '05/01/2021 19:12:01', '10/01/2021 15:47:07', '05/01/2021 15:47:07'),
+	(7, '08/01/2021 21:07:41', '12/01/2021 23:42:24', '07/01/2021 23:42:24'),
+	(8, '11/01/2021 11:05:07', '13/01/2021 13:13:58', '08/01/2021 13:13:58'),
+	(9, NULL, '17/01/2021 07:52:42', '12/01/2021 07:52:42'),
+	(10, NULL, '09/01/2021 15:54:03', '04/01/2021 15:54:03');
+
+INSERT INTO ExpoEvent VALUES
+	(1, 11, 5, '16/01/2021 02:34:00', 0, 0),
+	(2, 12, 2, '27/01/2021 03:30:16', 1, 0),
+	(3, 13, 4, '15/01/2021 08:18:16',1, 1),
+	(4, 14, 5, '25/01/2021 14:03:22', 0, 0),
+	(5, 15, 3, '24/01/2021 07:15:22', 0, 1),
+	(6, 16, 5, '27/01/2021 15:40:07', 0, 0),
+	(7, 17, 3, '14/01/2021 07:53:37', 1, 1),
+	(8, 18, 2, '16/01/2021 05:02:07', 1, 1),
+	(9, 19, 4, '16/01/2021 22:00:47', 1, 0),
+	(10, 20, 3, '18/01/2021 21:38:28', 1, 1);
+
+INSERT INTO ExpoEventPhoto VALUES
+	(1, 1, 'apDSPF.jpg'),
+	(2, 2, 'eSFtG9.jpg'),
+	(3, 3, 'UGPdOI.jpg'),
+	(4, 4, 'nYE4bQ.jpg'),
+	(5, 5, 'zo7xjv.jpg'),
+	(6, 6, 'EClJeC.jpg'),
+	(7, 7, 'ePENx9.jpg'),
+	(8, 8, 'viXcGF.jpg'),
+	(9, 9, 'wsfZBP.jpg'),
+	(10, 10, '2yPWHD.jpg');
+	
+
+INSERT INTO ExpoEventDetails VALUES
+	(1, 'GoE-Commerce', 'Jalan Shah Amanat Market 12/A', NULL, 'Pameran desain website bertema e-commerce', 100, 12000),
+	(2, 'DKVExpo', NULL, 'http://example.com/aunt/alarm#act', 'Pameran desain yang bertajuk komunikasi visual dan promosi', 300, 6000),
+	(3, 'JizCloth', NULL, 'http://example.com/?alarm=alarm&bell=believe#bells', 'Pameran clothing dengan tema milenial', NULL, NULL),
+	(4, 'FrontendMake', 'Jl. Dr Muwardi no.7, Bali', NULL, 'Pameran dan seminar tentang pembuatan frontend pada website', 500, 5000),
+	(5, 'FurnitureCADExpo', 'Gang Nuri 4-6, Jawa Tengah' NULL, 'Pemeran dan seminar pembuatan desain furnitur memakai CAD', NULL, NULL),
+	(6, 'MockUpMaking', 'Jalan Kwitang Raya 36 RT 001/07', NULL, 'Pameran pembuatan tampilan mockup sebuah website', 100, 7000),
+	(7, 'FurniterStarter', NULL, 'http://example.com/bedroom/ants', 'Pameran untuk mengajak mahasiswa - mahasiswa desain interior melakukan startup desain', NULL, NULL),
+	(8, 'MillenialLogo', NULL, 'https://boot.example.edu/acoustics', 'Expo yang mempamerkan logo yang diminati orang milenial masa kini', NULL, NULL),
+	(9, 'PartyClothing', NULL, 'http://amount.example.com/?argument=apparel', 'Expo untuk desain baju santai dan cocok untuk pesta', 50, 15000),
+	(10, 'BedStyles', NULL, 'https://www.example.com/boot.html#badge', 'Pameran desain yang ideal untuk pembuatan ranjang/tempat tidur', NULL, NULL);
+
+INSERT INTO DesignSpesification VALUES
+	(1, 1,),
+	(2, 1,),
+	(3, 1,),
+	(4, 2,),
+	(5, 2,),
+	(6, 3,),
+	(7, 4,),
+	(8, 4,),
+	(9, 4,),
+	(10, 5,),
+	(11, 6,),
+	(12, 6,),
+	(13, 6,),
+	(14, 7,),
+	(15, 7,),
+	(16, 8,),
+	(17, 8,),
+	(18, 9,),
+	(19, 10,),
+	(20, 10,);
+
+INSERT INTO DesignFile VALUES 
+	(1, 1, 'bMV20SKq1YEmvEJ72S2p', '.svg'),
+	(2, 2, 'isfh4PGq1W0ACB0xRdIT', '.zip'),
+	(3, 3, 'Fx2S9DV0ocsEN5dZwygu', '.tar.xz'),
+	(4, 4, '6WZqB38KjsQtOWW20YlR', '.rar'),
+	(5, 5, 'MbHqAu3jRbEFgbFnlmym', '.svg'),
+	(6, 6, 'GPTZXL4kLmpQGiWG0rnd', '.zip'),
+	(7, 7, 'S81uvbeMRXVWNTzEnKAb', '.obj'),
+	(8, 8, '4lOZ7Gy16RQCtN2fu277', '.svg'),
+	(9, 9, 'lebzJReOnR2SKtGTjD7k', '.zip'),
+	(10, 10, 'QFQbVDhjHtWMu3XMmE7k', '.tar.xz');
+	
