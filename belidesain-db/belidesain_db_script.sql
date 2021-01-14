@@ -6,7 +6,7 @@ CREATE TABLE User(
   IsOnline BOOL,
   IsSupplier BOOL,
   IsAdmin BOOL,
-  CONSTRAINT chk_email CHECK (Email like '%@%.%')
+  CONSTRAINT chk_email CHECK (Email like '%@%.com')
 );
 
 CREATE TABLE UserInfo(
@@ -18,7 +18,7 @@ CREATE TABLE UserInfo(
   Website VARCHAR(48),
   PhoneNumber VARCHAR(16),
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT chk_phone CHECK (PhoneNumber <= 12 AND PhoneNumber like '08[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
+  CONSTRAINT chk_phone CHECK (PhoneNumber <= 13 AND PhoneNumber like '08[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'),
   CONSTRAINT chk_website CHECK (Website like '%.%')
 );
 
