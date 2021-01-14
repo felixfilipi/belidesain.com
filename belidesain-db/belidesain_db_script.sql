@@ -6,7 +6,7 @@ CREATE TABLE User(
   IsOnline BOOL,
   IsSupplier BOOL,
   IsAdmin BOOL,
-  CONSTRAINT chk_email CHECK (Email like '%@%.com')
+  CONSTRAINT chk_email CHECK (Email like '%@%.%')
 );
 
 CREATE TABLE UserInfo(
