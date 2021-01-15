@@ -2,18 +2,18 @@ use belidesain;
 
 CREATE TABLE User(
   UserId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  Email VARCHAR(20),
-  Password VARCHAR(16),
-  LastActivity DATETIME,
-  IsOnline BOOL,
-  IsSupplier BOOL,
-  IsAdmin BOOL,
+  Email VARCHAR(20) NOT NULL,
+  Password VARCHAR(16) NOT NULL,
+  LastActivity DATETIME NOT NULL,
+  IsOnline BOOL NOT NULL,
+  IsSupplier BOOL NOT NULL,
+  IsAdmin BOOL NOT NULL,
   CONSTRAINT chk_email CHECK (Email like '%@%.%')
 );
 
 CREATE TABLE UserInfo(
   UserId INT(10) NOT NULL,
-  Name VARCHAR(50),
+  Name VARCHAR(50) NOT NULL,
   Description TEXT,
   Company VARCHAR(48),
   Location VARCHAR(48),
@@ -34,7 +34,7 @@ CREATE TABLE UserPhoto(
 CREATE TABLE UserFeedback(
   FeedbackId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   UserId INT(10) NOT NULL,
-  FeedbackMessage TEXT,
+  FeedbackMessage TEXT NOT NULL,
   FOREIGN KEY (UserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -66,7 +66,7 @@ CREATE TABLE DesignSubCategories(
 CREATE TABLE DesignTheme(
   ThemeId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   SubCategoryId INT(10) NOT NULL,
-  ThemeName VARCHAR(20),
+  ThemeName VARCHAR(20) NOT NULL,
   FOREIGN KEY (SubCategoryId) REFERENCES DesignSubCategories (SubCategoryId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -107,8 +107,8 @@ CREATE TABLE DesignTransactionHeader(
   DesignTransactionId  INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(10) NOT NULL,
   BuyerUserId INT(10) NOT NULL,
-  IsSuccess BOOLEAN,
-  IsExpired BOOLEAN,
+  IsSuccess BOOLEAN NOT NULL,
+  IsExpired BOOLEAN NOT NULL,
   TransactionType ENUM('ovo', 'linkaja', 'dana'),
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
@@ -124,9 +124,9 @@ CREATE TABLE DesignTransactionDetails(
 
 CREATE TABLE DesignDetails(
   DesignId INT(10) NOT NULL,
-  DesignName VARCHAR(64),
-  DesignDesc TEXT,
-  DesignPrice INT(10),
+  DesignName VARCHAR(64) NOT NULL,
+  DesignDesc TEXT NOT NULL,
+  DesignPrice INT(10) NOT NULL,
   DesignDateCreated DATETIME NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignHeader (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -141,8 +141,8 @@ CREATE TABLE DesignPhotos(
 CREATE TABLE DesignSpesification(
   SpesificationId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignId INT(10) NOT NULL,
-  SpesificationName VARCHAR(32),
-  SpesificationDesc VARCHAR(32),
+  SpesificationName VARCHAR(32) NOT NULL,
+  SpesificationDesc VARCHAR(32) NOT NULL,
   FOREIGN KEY (DesignId) REFERENCES DesignDetails (DesignId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
@@ -198,7 +198,7 @@ CREATE TABLE ExpoTransactionDetails(
 CREATE TABLE ExpoEventDetails(
   ExpoEventId INT(10) NOT NULL,
   ExpoEventTitle VARCHAR(32)NOT NULL,
-  ExpoEventPlace VARCHAR(32),
+  ExpoEventPlace VARCHAR(32) NOT NULL,
   ExpoEventLink VARCHAR(32),
   ExpoEventDesc TEXT NOT NULL,
   TicketQuota INT(10) NOT NULL,
@@ -217,18 +217,18 @@ CREATE TABLE DesignerTransactionHeader(
   DesignerTransactionId INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
   DesignerId INT(10) NOT NULL,
   BuyerUserId INT(10) NOT NULL,
-  IsSuccess BOOL,
-  IsExpired BOOL,
-  TransactionType ENUM('ovo', 'linkaja', 'dana'),
+  IsSuccess BOOL NOT NULL,
+  IsExpired BOOL NOT NULL,
+  TransactionType ENUM('ovo', 'linkaja', 'dana') NOT NULL,
   FOREIGN KEY (DesignerId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE,
   FOREIGN KEY (BuyerUserId) REFERENCES User (UserId) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 CREATE TABLE DesignerTransactionDetail(
   DesignerTransactionId INT(10) NOT NULL,
-  AssignedDate DATETIME,
-  DeadlineDate DATETIME,
-  Confirmed BOOL,
+  AssignedDate DATETIME NOT NULL,
+  DeadlineDate DATETIME NOT NULL,
+  Confirmed BOOL NOT NULL,
   FOREIGN KEY (DesignerTransactionId) REFERENCES DesignerTransactionHeader (DesignerTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );  
 
