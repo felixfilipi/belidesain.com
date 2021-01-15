@@ -311,22 +311,26 @@ INSERT INTO DesignSubCategories VALUES
   (NULL, '5', 'Event');
 
 INSERT INTO User VALUES
-  (1, 'bellakia@gmail.com', 'bella545', '2021/01/10 14:05:55', 0, 1, 1),//designer
-  (2, 'annastya@gmail.com', 'ann223', '2021/01/12 20:52:58', 1, 0, 0),
-  (3, 'satriabagus11@gmail.com', 'satbagus110', '2021/01/13 07:51:50', 1, 1, 0), //suppllier
-  (4, 'bagaskara47@gmail.com', 'bagas09', '2021/01/12 13:22:18', 0, 1, 0), //supplier
-  (5, 'rahayuputri15@gmail.com', 'rara05', '2021/01/10 07:51:22', 0, 0, 0),
-  (6, 'selaokta02@gmail.com', 'oktasela20', '2021/01/13 04:15:27', 0, 0, 0),
-  (7, 'robbybagus@gmail.com', 'robbybgs92', '2021/01/10 13:19:43', 1, 1, 0), //supplier
-  (8, 'ahmadsolihin24@gmail.com', 'ahmdsol123', '2021/01/10 08:52:43', 1, 1, 1), //designer
-  (9, 'nurkhamidah10@gmail.com', 'khamidh98', '2021/01/13 15:10:22', 1, 1, 0), //supplier
-  (10, 'zulfainji33@gmail.com', 'zulfainji27', '2021/01/13 00:10:50', 1, 0, 0),
-  (11, 'ahmadqorni84@yahoo.com', 'ahmadqorni99', '2021/01/14 02:51:19', 0, 0, 0),
-  (12, 'yutarotanaka48@gmail.com', 'yutyut99', '2021/01/12 00:06:13', 1, 0, 0),
-  (13, 'felixfilipi69@gmail.com', 'filipi0000', '2021/01/13 11:07:53', 1, 0, 0),
-  (14, 'wildo02@gmail.com', 'wildo914141', '2021/01/12 10:08:06', 1, 0, 0),
-  (15, 'rizoct958@yahoo.com', '}:{:">P:}{:', '2021/01/14 00:38:13', 0, 0, 0),
-  (16, 'raflijas@gmail.com', 'flii93883', '2021/01/10 08:09:29', 0, 0, 0),
+  (1, 'bellakia@gmail.com', 'bella545', '2021-01-12 19:19:49', 0, 1, 1),//designer
+  (2, 'annastya@gmail.com', 'ann223', '2021-01-15 06:49:19', 1, 0, 0),
+  (3, 'satriabagus11@gmail.com', 'satbagus110', '2021-01-06 13:23:48', 1, 1, 0), //suppllier
+  (4, 'bagaskara47@gmail.com', 'bagas09', '2021-01-10 18:40:02', 0, 1, 0), //supplier
+  (5, 'rahayuputri15@gmail.com', 'rara05', '2021/01/04 08:44:42', 0, 0, 0),
+  (6, 'selaokta02@gmail.com', 'oktasela20', '2021/01/12 01:27:52', 0, 0, 0),
+  (7, 'robbybagus@gmail.com', 'robbybgs92', '2021/01/09 15:14:46', 1, 1, 0), //supplier
+  (8, 'ahmadsolihin24@gmail.com', 'ahmdsol123', '2021/01/01 22:11:40', 1, 1, 1), //designer
+  (9, 'nurkhamidah10@gmail.com', 'khamidh98', '2021/01/11 01:15:24', 1, 1, 0), //supplier
+  (10, 'zulfainji33@gmail.com', 'zulfainji27', '04/01/2021 11:54:21', 1, 0, 0),
+  (11, 'ahmadqorni84@yahoo.com', 'ahmadqorni99', '10/01/2021 00:32:29', 0, 0, 0),
+  (12, 'yutarotanaka48@gmail.com', 'yutyut99', '10/01/2021 00:05:13', 1, 0, 0),
+  (13, 'felixfilipi69@gmail.com', 'filipi0000', '02/01/2021 07:07:15', 1, 0, 0),
+  (14, 'wildo02@gmail.com', 'wildo914141', '13/01/2021 19:42:32', 1, 0, 0),
+  (15, 'rizoct958@yahoo.com', '}:{:">P:}{:', '07/01/2021 02:50:33', 0, 0, 0),
+  (16, 'raflijas@gmail.com', 'flii93883', '07/01/2021 02:50:33', 0, 0, 0),
+  (17, 'marcus849@gmail.com', 'sammarcus123', '06/01/2021 22:37:20', 0, 1, 1), //designer
+  (18, 'jarbud42@gmail.com', 'jarbud827', '08/01/2021 06:20:04', 1, 1, 1), //designer
+  (19, 'ericco111@gmail.com', 'rico9182', '14/01/2021 13:15:01', 1, 1, 1),
+  (20, 'dillaeka@yahooo.com', 'fadillaeka123', '07/01/2021 09:20:50', 1, 1, 1);
     
 INSERT INTO UserInfo VALUES
   (1, 'Nabila Askiatus Syifa', 'Halo, saya adalah desainer profesional yang bertempat di daerah Malang', 'InterDesign.co', 'Lowokwaru, Malang', 'Interdesignco.co.id', '089428321458'), //designer
@@ -345,6 +349,10 @@ INSERT INTO UserInfo VALUES
   (14, 'William Deovaldo', NULL, NULL, NULL, NULL, '082472832445'),
   (15, 'Rizki Octavian', NULL, NULL, NULL, NULL, '085837829441'),
   (16, 'Rafli Jaskandi', NULL, NULL, NULL, NULL, '081342332148');
+  (17, 'Marcus Sitohang', 'Desainer busana profesionnal', 'busanaKuy.co', 'busanakuy.com', '086928321123'),
+  (18, 'Fajar Budi', 'Desainer interior. Likes anime, babymetal, and cute', 'bangunRumah.inc', 'bangunrumah.com','089213458928'),
+  (19, 'Errico Zaki', 'Desainer apa saja. Aremania', 'aremanialogo.inc', 'aremanialogo.com', '081234918231'),
+  (20, 'Fadilla Eka', 'seorang desainer DKV bertempat di Jakarta', 'logomaker.com', 'logomaker.com','081777888332');
   
   
 INSERT INTO UserPhoto VALUES
@@ -363,7 +371,11 @@ INSERT INTO UserPhoto VALUES
   (13, 13, '9LWuac.jpg'),
   (14, 14, 'pwVhOH.png'),
   (15, 15, 'NKHPm6.jpg'),
-  (16, 16, 'BNRv3o.jpg');
+  (16, 16, 'BNRv3o.jpg'),
+  (17, 17, 'lxO7pA.png'),
+  (18, 18, 'MHQjer.png'),
+  (19, 19, 'A3tUUM.png'),
+  (20, 20, 'SLnZJK.jpg');
   
 INSERT INTO UserFeedback VALUES
   (1, 15, 'fungsional website dapat lebih baik dan akurat lagi'),
@@ -402,16 +414,12 @@ INSERT INTO DesignLikeCount VALUES
   (10, 10, 3, 1);
   
 INSERT INTO UserInventory VALUES
-  (1, '1', '1', '1', '24-01-2021 09:02:30'),
-  (2, '2', '2', '2', '21-02-2021 17:16:29'),
-  (3, '3', '3', '3', '10-03-2021 01:19:35'),
-  (4, '4', '4', '4', '07-04-2021 11:10:05'),
-  (5, '5', '5', '5', '22-05-2021 16:41:13'),
-  (6, '6', '6', '6', '15-09-2021 05:55:22'),
-  (7, '7', '7', '7', '05-10-2021 18:11:37'),
-  (8, '8', '8', '8', '17-11-2021 06:29:05'),
-  (9, '9', '9', '9', '23-11-2021 12:41:51'),
-  (10, '10', '10', '10', '29-12-2021 23:08:05');
+  (1, 2, 7, 2, '10/01/2021 06:42:45'),
+  (2, 13, 1, 3, '01/01/2021 03:02:12'),
+  (3, 1, 2, 4, '04/01/2021 12:32:32'),
+  (4, 5, 6, 6, '02/01/2021 23:32:11'),
+  (5, 7, 3, 7, '06/01/2021 13:54:14'),
+  (6, 8, 8, 9, '04/01/2021 13:53:36');
   
 INSERT INTO DesignTransactionHeader VALUES
   (1, 5, 7, 0, 0, 'dana'),
@@ -425,65 +433,53 @@ INSERT INTO DesignTransactionHeader VALUES
   (9, 8, 8, 1, 0, 'ovo'),
   (10, 4, 6, 0, 0, 'ovo');
 
-INSERT INTO DesignerTransactionHeader VALUES
-  (1, '1', '1', '0', '1', 'Credit'),
-  (2, '2', '2', '1', '1', 'Deposit'),
-  (3, '3', '3', '1', '0', 'Credit'),
-  (4, '4', '4', '1', '0', 'Debit'),
-  (5, '5', '5', '1', '1', 'Credit'),
-  (6, '6', '6', '1', '0', 'Credit'),
-  (7, '7', '7', '1', '1', 'Debit'),
-  (8, '8', '8', '1', '0', 'Credit'),
-  (9, '9', '9', '0', '0', 'Debit'),
-  (10, '10', '10', '1', '1', 'Deposit');
+INSERT INTO DesignerTransactionHeader VALUES //1,8,17,18,19,20,21,22,23,24
+  (1, 17, 15, 0, 0, 'ovo'),
+  (2, 8, 7, 1, 0, 'ovo'),
+  (3, 1, 14, 1, 0, 'ovo'),
+  (4, 19, 10, 1, 0, 'linkaja'),
+  (5, 18, 2, 1, 0, 'dana'),
+  (6, 20, 3, 0, 1, 'ovo');
     
 INSERT INTO DesignerTransactionDetail VALUES
-  (1, '23/01/2021', '06/03/2021', '0'),
-  (2, '27/05/2021', '04/06/2021', '0'),
-  (3, '08/06/2021', '20/07/2021', '1'),
-  (4, '11/06/2021', '01/08/2021', '1'),
-  (5, '16/08/2021', '23/09/2021', '1'),
-  (6, '22/08/2021', '27/09/2021', '1'),
-  (7, '15/10/2021', '02/11/2021', '0'),
-  (8, '22/10/2021', '18/12/2021', '1'),
-  (9, '11/11/2021', '28/12/2021', '1'),
-  (10, '05/02/2021', '17/04/2021', '0');
+  (1, '2021-01-02 08:41:53', '2021-01-12 23:59:59', 0),
+  (2, '2021-01-05 10:02:21', '2021-01-10 23:59:59', 0),
+  (3, '2021-01-16 20:53:52', '2021-01-20 23:59:59', 1),
+  (4, '2021-01-02 05:17:15', '2021-01-10 23:59:59', 1),
+  (5, '2021-01-15 08:51:06', '2021-01-25 23:59:59', 0),
+  (6, '2021-01-17 19:54:10', '2021-01-27 23:59:59', 0);
   
-INSERT INTO DesignerInfo VALUES
-  (1, '1200000', '9'),
-  (2, '1500000', '7'),
-  (3, '2600000', '7'),
-  (4, '2400000', '4'),
-  (5, '2000000', '10'),
-  (6, '1200000', '6'),
-  (7, '2000000', '10'),
-  (8, '1800000', '9'),
-  (9, '800000', '4'),
-  (10, '3000000', '8');
+INSERT INTO DesignerInfo VALUES //1,8,17,18,19,20
+  (1, '1200000', 4.2),
+  (8, '1500000', 4.3),
+  (17, '2600000', 4.8),
+  (18, '2400000', 3.6),
+  (19, '2000000', 4.2),
+  (20, '1200000', 4.5); 
   
-INSERT INTO DesignerRating VALUES
-  (1, '7', '9', '9'),
-  (2, '8', '10', '7'),
-  (3, '9', '7', '7'),
-  (4, '6', '2', '4'),
-  (5, '8', '3', '10'),
-  (6, '7', '1', '6'),
-  (7, '1', '5', '10'),
-  (8, '3', '4', '9'),
-  (9, '5', '6', '4'),
-  (10, '2', '7', '8');
+INSERT INTO DesignerRating VALUES //1,8,17,18,19,20
+  (1, 8, 6, 3),
+  (2, 17, 1, 5),
+  (3, 20, 12, 5),
+  (4, 20, 13, 4),
+  (5, 1, 6, 5),
+  (6, 17, 10, 3),
+  (7, 19, 4, 4),
+  (8, 19, 3, 3),
+  (9, 1, 17, 3),
+  (10, 20, 11, 4);
   
 INSERT INTO UserExpo VALUES
-  (7, '9', '17/01/2021'),
-  (8, '10', '24/02/2021'),
-  (9, '7', '08/05/2021'),
-  (6, '2', '25/05/2021'),
-  (5, '3', '24/06/2021'),
-  (4, '1', '28/06/2021'),
-  (1, '5', '14/07/2021'),
-  (3, '4', '05/09/2021'),
-  (10, '6', '22/10/2021'),
-  (2, '8', '04/11/2021');
+  (19, 10, '17/01/2021 14:32:11'),
+  (12, 9, '13/01/2021 08:14:45'),
+  (13, 2, '20/01/2021 09:08:54'),
+  (6, 9, '16/01/2021 04:45:13'),
+  (17, 10, '15/01/2021 11:43:58'),
+  (9, 6, '26/01/2021 07:10:06'),
+  (6, 7, '09/01/2021 12:35:23'),
+  (11, 1, '05/01/2021 23:44:08'),
+  (11, 10, '17/01/2021 17:55:45'),
+  (4, 1, '04/01/2021 15:12:34');
   
  INSERT INTO DesignTransactionDetails VALUES
   (1, 250000, 06/01/2021 07:39:10 , 10/01/2021 11:39:10, 05/01/2021 11:39:10),
