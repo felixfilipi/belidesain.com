@@ -224,8 +224,8 @@ CREATE TABLE DesignerTransactionHeader(
 
 CREATE TABLE DesignerTransactionDetail(
   DesignerTransactionId INT(10) NOT NULL,
-  AssignedDate DATE,
-  DeadlineDate DATE,
+  AssignedDate DATETIME,
+  DeadlineDate DATETIME,
   Confirmed BOOL,
   FOREIGN KEY (DesignerTransactionId) REFERENCES DesignerTransactionHeader (DesignerTransactionId) ON DELETE CASCADE ON UPDATE CASCADE
 );  
