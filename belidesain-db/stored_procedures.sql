@@ -1,5 +1,0 @@
-/* View */
-
-/* Trigger */ 
-
-/* Procedure */
