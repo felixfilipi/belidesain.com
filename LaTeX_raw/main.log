@@ -1,0 +1,1813 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.17)  18 JAN 2021 17:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-12-03> xparse <2020-03-03>
+(/usr/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count177
+\c@chapter=\count178
+\c@section=\count179
+\c@subsection=\count180
+\c@subsubsection=\count181
+\c@paragraph=\count182
+\c@subparagraph=\count183
+\c@figure=\count184
+\c@table=\count185
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count186
+\Gm@cntv=\count187
+\c@Gm@tempcnt=\count188
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks19
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box47
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
+))
+Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks20
+\pgfkeys@temptoks=\toks21
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks22
+))
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
+\pgf@xd=\dimen159
+\pgf@yd=\dimen160
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count189
+\c@pgf@countb=\count190
+\c@pgf@countc=\count191
+\c@pgf@countd=\count192
+\t@pgf@toka=\toks23
+\t@pgf@tokb=\toks24
+\t@pgf@tokc=\toks25
+\pgf@sys@id@count=\count193
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/01 v3.1.7a (3.1.7a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfsyssoftpath@smallbuffer@items=\count194
+\pgfsyssoftpath@bigbuffer@items=\count195
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen161
+\pgfmath@count=\count196
+\pgfmath@box=\box48
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count197
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@picminx=\dimen162
+\pgf@picmaxx=\dimen163
+\pgf@picminy=\dimen164
+\pgf@picmaxy=\dimen165
+\pgf@pathminx=\dimen166
+\pgf@pathmaxx=\dimen167
+\pgf@pathminy=\dimen168
+\pgf@pathmaxy=\dimen169
+\pgf@xx=\dimen170
+\pgf@xy=\dimen171
+\pgf@yx=\dimen172
+\pgf@yy=\dimen173
+\pgf@zx=\dimen174
+\pgf@zy=\dimen175
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@path@lastx=\dimen176
+\pgf@path@lasty=\dimen177
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@shorten@end@additional=\dimen178
+\pgf@shorten@start@additional=\dimen179
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
+\pgf@picture@serial@count=\count198
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgflinewidth=\dimen180
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@pt@x=\dimen181
+\pgf@pt@y=\dimen182
+\pgf@pt@temp=\dimen183
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfarrowsep=\dimen184
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@max=\dimen185
+\pgf@sys@shading@range@num=\count199
+\pgf@shadingcount=\count266
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfexternal@startupbox=\box52
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfnodeparttextbox=\box53
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@nodesepstart=\dimen186
+\pgf@nodesepend=\dimen187
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen188
+\pgffor@skip=\dimen189
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/01 v3.1.7a (3.1.7a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgf@plot@mark@count=\count267
+\pgfplotmarksize=\dimen190
+)
+\tikz@lastx=\dimen191
+\tikz@lasty=\dimen192
+\tikz@lastxsaved=\dimen193
+\tikz@lastysaved=\dimen194
+\tikz@lastmovetox=\dimen195
+\tikz@lastmovetoy=\dimen196
+\tikzleveldistance=\dimen197
+\tikzsiblingdistance=\dimen198
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
+\tikztreelevel=\count268
+\tikznumberofchildren=\count269
+\tikznumberofcurrentchild=\count270
+\tikz@fig@count=\count271
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+\pgfmatrixcurrentrow=\count272
+\pgfmatrixcurrentcolumn=\count273
+\pgf@matrix@numberofcolumns=\count274
+)
+\tikz@expandcount=\count275
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+))) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks36
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+calc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+) (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks37
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count276
+\LTcapwidth=\dimen199
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@cols=\count277
+\LT@rows=\count278
+\c@LT@tables=\count279
+\c@LT@chunks=\count280
+\LT@p@ftn=\toks38
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip56
+\f@nch@O@elh=\skip57
+\f@nch@O@erh=\skip58
+\f@nch@O@olh=\skip59
+\f@nch@O@orh=\skip60
+\f@nch@O@elf=\skip61
+\f@nch@O@erf=\skip62
+\f@nch@O@olf=\skip63
+\f@nch@O@orf=\skip64
+)
+(/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen256
+\calc@Bdimen=\dimen257
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count283
+\calc@Cskip=\skip67
+)
+(/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen258
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen259
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count284
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count285
+\leftroot@=\count286
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count287
+\DOTSCASE@=\count288
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box62
+\strutbox@=\box63
+\big@size=\dimen260
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count289
+\c@MaxMatrixCols=\count290
+\dotsspace@=\muskip16
+\c@parentequation=\count291
+\dspbrk@lvl=\count292
+\tag@help=\toks40
+\row@=\count293
+\column@=\count294
+\maxfields@=\count295
+\andhelp@=\toks41
+\eqnshift@=\dimen261
+\alignsep@=\dimen262
+\tagshift@=\dimen263
+\tagwidth@=\dimen264
+\totwidth@=\dimen265
+\lineht@=\dimen266
+\@envbody=\toks42
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count296
+\l_MT_multwidth_dim=\dimen267
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen268
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen269
+\l_MT_above_intertext_sep=\dimen270
+\l_MT_below_intertext_sep=\dimen271
+\l_MT_above_shortintertext_sep=\dimen272
+\l_MT_below_shortintertext_sep=\dimen273
+\xmathstrut@box=\box64
+\xmathstrut@dim=\dimen274
+)
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count297
+\l__pdf_internal_box=\box65
+) (./main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
+* v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79134pt
+* \textheight=645.87756pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-9.68535pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count298
+\scratchdimen=\dimen275
+\scratchbox=\box66
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen276
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks45
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<images//binusmalang.png, id=4, 968.6589pt x 685.3605pt>
+File: images//binusmalang.png Graphic file (type png)
+<use images//binusmalang.png>
+Package pdftex.def Info: images//binusmalang.png  used on input line 33.
+(pdftex.def)             Requested size: 256.0774pt x 181.18044pt.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//binusmalang.png>
+]
+(./chapters/lembar_persetujuan_proyek_akhir.tex
+Overfull \hbox (64.51099pt too wide) in paragraph at lines 24--28
+ [] 
+ []
+
+) [1] (./main.toc)
+\tf@toc=\write4
+ [2
+
+] (./main.lof)
+\tf@lof=\write5
+ [3
+
+] (./main.lot)
+\tf@lot=\write6
+
+(./chapters/pendahuluan.tex [4
+
+]
+BAB 1.
+
+Overfull \hbox (6.55257pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10.95 Untuk mewu-jud-kan hal terse-but, kami mengem-bangkan se-b
+uah ap-likasi web-site bernama
+ []
+
+[5
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 13.59999pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[6]) (./chapters/landasan_teori.tex [7]
+BAB 2.
+
+Overfull \hbox (3.4834pt too wide) in paragraph at lines 3--4
+\OT1/cmr/m/n/10.95 Electronic Com-merce (E-commerce) adalah ak-tiv-i-tas pen-ju
+alan, pem-be-lian atau pe-masaran
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+[10]) (./chapters/analisis.tex [11]
+BAB 3.
+<images//usecase.png, id=52, 186.9165pt x 312.4035pt>
+File: images//usecase.png Graphic file (type png)
+<use images//usecase.png>
+Package pdftex.def Info: images//usecase.png  used on input line 5.
+(pdftex.def)             Requested size: 186.91603pt x 312.40274pt.
+[12
+
+ <./images//usecase.png>]) (./chapters/design.tex [13]
+BAB 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+[]|\OT1/cmr/m/n/10.95 Setiap user da-pat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+\OT1/cmr/m/n/10.95 melakukan per-gan-tian
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 10--10
+\OT1/cmr/m/n/10.95 tuk peny-im-panan dan
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 10--10
+\OT1/cmr/m/n/10.95 sekali-gus melakukan per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+[]|\OT1/cmr/m/n/10.95 Menjadi wadah bagi
+ []
+
+
+Underfull \hbox (badness 5533) in paragraph at lines 11--11
+\OT1/cmr/m/n/10.95 user un-tuk men-girim
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+\OT1/cmr/m/n/10.95 saran atau ma-sukan
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 11--11
+[]|\OT1/cmr/m/n/10.95 Setiap user da-pat men-
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 11--11
+\OT1/cmr/m/n/10.95 girim saran dan pe-san
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\OT1/cmr/m/n/10.95 plier atau peng-guna
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/10.95 User da-pat di-hadap-kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\OT1/cmr/m/n/10.95 kepada sis-tem chat-ting
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 13--13
+[]|\OT1/cmr/m/n/10.95 Pilihan kat-e-gori atau
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 13--13
+\OT1/cmr/m/n/10.95 pem-i-natan se-buah de-
+ []
+
+
+Overfull \hbox (0.79048pt too wide) in paragraph at lines 14--14
+[]|\OT1/cmr/m/n/10.95 DesignSubCategories| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\OT1/cmr/m/n/10.95 Pilihan sub-kategori
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+\OT1/cmr/m/n/10.95 dibuat berdasarkan
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 15--15
+[]|\OT1/cmr/m/n/10.95 Tema akan ditem-patkan
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 16--16
+[]|\OT1/cmr/m/n/10.95 Menjadi ikatan re-lasi
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 16--16
+\OT1/cmr/m/n/10.95 an-tara kat-e-gori, sub-
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 16--16
+\OT1/cmr/m/n/10.95 plier/designer. En-ti-
+ []
+
+
+Underfull \hbox (badness 4505) in paragraph at lines 17--17
+[]|\OT1/cmr/m/n/10.95 Berfungsi menam-pung
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 18--18
+[]|\OT1/cmr/m/n/10.95 Berisi de-sain - de-sain
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 18--18
+[]|\OT1/cmr/m/n/10.95 Entitas ini akan muncul
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\OT1/cmr/m/n/10.95 saat peng-guna telah
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 18--18
+\OT1/cmr/m/n/10.95 mem-beli dan melakukan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 3471) in paragraph at lines 19--19
+\OT1/cmr/m/n/10.95 peng-guna den-gan de-
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 19--19
+\OT1/cmr/m/n/10.95 sain yang akan atau
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 19--19
+\OT1/cmr/m/n/10.95 peng-guna akan mem-beli
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\OT1/cmr/m/n/10.95 Detail transaksi akan
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 20--20
+\OT1/cmr/m/n/10.95 muncul seir-ing transaksi
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 22--22
+\OT1/cmr/m/n/10.95 akan di-u-pload oleh sup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\OT1/cmr/m/n/10.95 Berisi spe-si-fikasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+\OT1/cmr/m/n/10.95 mende-tail ten-tang
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 24--24
+[]|\OT1/cmr/m/n/10.95 File da-pat di-ak-ses oleh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 peng-guna jika telah
+ []
+
+
+Underfull \hbox (badness 5203) in paragraph at lines 24--24
+\OT1/cmr/m/n/10.95 mem-beli dan mem-ba-yar
+ []
+
+
+Underfull \hbox (badness 7256) in paragraph at lines 25--25
+\OT1/cmr/m/n/10.95 pent-ing yang berkai-
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 25--25
+[]|\OT1/cmr/m/n/10.95 Jadwal dan sta-tus expo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/cmr/m/n/10.95 akan dite-tap-kan oleh
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 25--25
+\OT1/cmr/m/n/10.95 sup-plier/designer se-ba-gai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\OT1/cmr/m/n/10.95 Berisi sta-tus utama
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 26--26
+\OT1/cmr/m/n/10.95 transaksi tiket un-tuk
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\OT1/cmr/m/n/10.95 Transaksi akan dim-u-lai
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 26
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10.95 Berisi de-tail tang-gal
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 28--28
+\OT1/cmr/m/n/10.95 - tang-gal dan sta-tus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+\OT1/cmr/m/n/10.95 seir-ing den-gan sta-tus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10.95 Informasi - in-for-masi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+\OT1/cmr/m/n/10.95 ini akan di-t-ulis oleh
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\OT1/cmr/m/n/10.95 pam-flet yang berisi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+\OT1/cmr/m/n/10.95 in-for-masi penye-leng-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10.95 Supplier/Designer da-pat
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 30--30
+\OT1/cmr/m/n/10.95 melakukan proses up-load
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\OT1/cmr/m/n/10.95 DesignerTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\OT1/cmr/m/n/10.95 Transaksi akan dim-u-lai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/cmr/m/n/10.95 melakukan perse-waan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 DesignerTransaction
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 32--32
+\OT1/cmr/m/n/10.95 jalan-nya transaksi an-
+ []
+
+
+Underfull \hbox (badness 2111) in paragraph at lines 32--32
+\OT1/cmr/m/n/10.95 tara user den-gan de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+[]|\OT1/cmr/m/n/10.95 Detail in-for-masi akan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+\OT1/cmr/m/n/10.95 muncul saat in-for-masi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--33
+[]|\OT1/cmr/m/n/10.95 Berisi in-for-masi de-
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 33--33
+[]|\OT1/cmr/m/n/10.95 Informasi akan dite-tap-
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 33--33
+\OT1/cmr/m/n/10.95 kan oleh peng-guna saat
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 33--33
+\OT1/cmr/m/n/10.95 pendaf-taran men-jadi de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--34
+[]|\OT1/cmr/m/n/10.95 Berfungsi un-tuk
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 34--34
+\OT1/cmr/m/n/10.95 menam-pung ma-sukkan
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 34--34
+\OT1/cmr/m/n/10.95 rat-ing atau pe-ni-la-ian
+ []
+
+[14
+
+] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Overfull \hbox (0.92883pt too wide) in paragraph at lines 57--57
+[]|\OT1/cmr/m/n/10.95 DesignerTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--58
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\OT1/cmr/m/n/10.95 DesignTransaction
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 61
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction
+ []
+
+
+Overfull \hbox (3.63594pt too wide) in paragraph at lines 73--73
+[]|\OT1/cmr/m/n/10.95 DesignSubCategories| 
+ []
+
+
+Overfull \hbox (3.63594pt too wide) in paragraph at lines 74--74
+[]|\OT1/cmr/m/n/10.95 DesignSubCategories| 
+ []
+
+
+Overfull \hbox (3.63594pt too wide) in paragraph at lines 75--75
+[]|\OT1/cmr/m/n/10.95 DesignSubCategories| 
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+[]|\OT1/cmr/m/n/10.95 Multi
+ []
+
+
+Underfull \hbox (badness 3849) in paragraph at lines 88--88
+[]|\OT1/cmr/m/n/10.95 Terakhir kali user
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 90--90
+[]|\OT1/cmr/m/n/10.95 User se-o-rang sup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\OT1/cmr/m/n/10.95 User se-o-rang de-
+ []
+
+
+Underfull \hbox (badness 5607) in paragraph at lines 99--99
+[]|\OT1/cmr/m/n/10.95 Nomor Telp Sup-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\OT1/cmr/m/n/10.95 UserFeed-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 107
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]|\OT1/cmr/m/n/10.95 Feedback-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10.95 DesignSub-
+ []
+
+
+Overfull \hbox (0.68198pt too wide) in paragraph at lines 120--120
+[]|\OT1/cmr/m/n/10.95 SubCategoryId| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+[]|\OT1/cmr/m/n/10.95 SubCategory-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/cmr/m/n/10.95 SubCategory-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[]|\OT1/cmr/m/n/10.95 Deskripsi sub-kat-e-
+ []
+
+
+Overfull \hbox (2.40453pt too wide) in paragraph at lines 125--125
+[]|\OT1/cmr/m/n/10.95 DesignTheme| 
+ []
+
+
+Overfull \hbox (0.68198pt too wide) in paragraph at lines 126--126
+[]|\OT1/cmr/m/n/10.95 SubCategoryId| 
+ []
+
+
+Overfull \hbox (3.34744pt too wide) in paragraph at lines 129--129
+[]|\OT1/cmr/m/n/10.95 DesignHeader| 
+ []
+
+
+Overfull \hbox (0.68198pt too wide) in paragraph at lines 131--131
+[]|\OT1/cmr/m/n/10.95 SubCategoryId| 
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 136--136
+[]|\OT1/cmr/m/n/10.95 DesignLike-
+ []
+
+
+Overfull \hbox (4.7466pt too wide) in paragraph at lines 141--141
+[]|\OT1/cmr/m/n/10.95 UserInventory| 
+ []
+
+
+Overfull \hbox (2.17233pt too wide) in paragraph at lines 144--144
+[]|\OT1/cmr/m/n/10.95 DesignTransac-
+ []
+
+
+Overfull \hbox (1.04694pt too wide) in paragraph at lines 145--145
+[]|\OT1/cmr/m/n/10.95 DatePurchased| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--145
+[]|\OT1/cmr/m/n/10.95 transaksi tang-gal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 151--151
+[]|\OT1/cmr/m/n/10.95 Konfirmasi kadalu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Overfull \hbox (2.81116pt too wide) in paragraph at lines 156--156
+[]|\OT1/cmr/m/n/10.95 ExpirationDate| 
+ []
+
+
+Overfull \hbox (0.64037pt too wide) in paragraph at lines 159--159
+[]|\OT1/cmr/m/n/10.95 Designdetails| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\OT1/cmr/m/n/10.95 DesignDate-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
+[]|\OT1/cmr/m/n/10.95 Tanggal Per-il-isan
+ []
+
+
+Overfull \hbox (2.61745pt too wide) in paragraph at lines 165--165
+[]|\OT1/cmr/m/n/10.95 DesignPhotos| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
+[]|\OT1/cmr/m/n/10.95 Identifikasi spe-si-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--171
+[]|\OT1/cmr/m/n/10.95 Spesification-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[]|\OT1/cmr/m/n/10.95 Spesification-
+ []
+
+
+Overfull \hbox (6.79572pt too wide) in paragraph at lines 176--176
+[]|\OT1/cmr/m/n/10.95 DesignFileName| 
+ []
+
+
+Overfull \hbox (3.75404pt too wide) in paragraph at lines 177--177
+[]|\OT1/cmr/m/n/10.95 DesignFileType| 
+ []
+
+
+Overfull \hbox (7.4953pt too wide) in paragraph at lines 180--180
+[]|\OT1/cmr/m/n/10.95 OrganizerUserId| 
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 188--188
+[]|\OT1/cmr/m/n/10.95 Konfirmasi pem-be-
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 189--189
+[]|\OT1/cmr/m/n/10.95 Konfirmasi kadalu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[]|\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--194
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Overfull \hbox (1.04694pt too wide) in paragraph at lines 195--195
+[]|\OT1/cmr/m/n/10.95 DatePurchased| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--197
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--198
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\OT1/cmr/m/n/10.95 Expiration-
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 199--199
+[]|\OT1/cmr/m/n/10.95 Tanggal kadalu-arsa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
+[]|\OT1/cmr/m/n/10.95 Expo-Event-
+ []
+
+
+Overfull \hbox (4.90988pt too wide) in paragraph at lines 203--203
+[]|\OT1/cmr/m/n/10.95 ExpoEventTitle| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--204
+[]|\OT1/cmr/m/n/10.95 ExpoEvent-
+ []
+
+[19]
+Overfull \hbox (3.54115pt too wide) in paragraph at lines 205--205
+[]|\OT1/cmr/m/n/10.95 ExpoEventLink| 
+ []
+
+
+Overfull \hbox (4.21028pt too wide) in paragraph at lines 206--206
+[]|\OT1/cmr/m/n/10.95 ExpoEventDesc| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--210
+[]|\OT1/cmr/m/n/10.95 Identifikasi
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 213--213
+[]|\OT1/cmr/m/n/10.95 Konfirmasi pem-be-
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 214--214
+[]|\OT1/cmr/m/n/10.95 Konfirmasi kadalu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--217
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[]|\OT1/cmr/m/n/10.95 Tanggal mu-lai
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--219
+[]|\OT1/cmr/m/n/10.95 Tanggal akhir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/10.95 Identifikasi Pe-ni-la-
+ []
+
+[20] [21]
+Overfull \hbox (2.81424pt too wide) in paragraph at lines 241--242
+[]\OT1/cmr/m/n/10.95 Atribut Tick-etQty pada tabel Ex-po-Trans-ac-tion-Header a
+dalah con-straint yang bertipe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]|\OT1/cmr/m/n/10.95 DesignSub-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 268
+ []
+
+
+Overfull \hbox (6.80432pt too wide) in paragraph at lines 275--275
+[]|\OT1/cmr/m/n/10.95 DesignTransaction-
+ []
+
+
+Overfull \hbox (7.50137pt too wide) in paragraph at lines 275--275
+[]|\OT1/cmr/m/n/10.95 DesignTransactionId| 
+ []
+
+
+Overfull \hbox (6.80432pt too wide) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 DesignTransaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Design-
+ []
+
+
+Overfull \hbox (6.77394pt too wide) in paragraph at lines 282--282
+[]|\OT1/cmr/m/n/10.95 DesignSpesification| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--289
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]|\OT1/cmr/m/n/10.95 ExpoTransaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]|\OT1/cmr/m/n/10.95 Expo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]|\OT1/cmr/m/n/10.95 ExpoEvent-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+\OT1/cmr/m/n/10.95 Transaction-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
+[]|\OT1/cmr/m/n/10.95 Designer-
+ []
+
+[22] [23]
+<images//erd.png, id=92, 1807.75375pt x 1335.99126pt>
+File: images//erd.png Graphic file (type png)
+<use images//erd.png>
+Package pdftex.def Info: images//erd.png  used on input line 329.
+(pdftex.def)             Requested size: 426.78067pt x 315.40536pt.
+<images//classdiagram.png, id=93, 1747.52875pt x 1687.30376pt>
+File: images//classdiagram.png Graphic file (type png)
+<use images//classdiagram.png>
+Package pdftex.def Info: images//classdiagram.png  used on input line 336.
+(pdftex.def)             Requested size: 426.77504pt x 412.06711pt.
+) [24 <./images//erd.png>] [25 <./images//classdiagram.png>] [26]
+(./main.aux) ) 
+Here is how much of TeX's memory you used:
+ 14147 strings out of 479383
+ 276419 string characters out of 5875830
+ 628449 words of memory out of 5000000
+ 30966 multiletter control sequences out of 15000+600000
+ 410267 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 108i,12n,111p,838b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl
+10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (27 pages, 911954 bytes).
+PDF statistics:
+ 128 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+

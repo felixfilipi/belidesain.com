@@ -1,0 +1,62 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[a4paper, width=150mm, top=35mm, bottom=35mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{amsthm}
+\usetikzlibrary{calc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{mathtools}
+\renewcommand{\chaptername}{BAB}
+\renewcommand{\figurename}{Gambar}
+\pagestyle{fancy}
+\graphicspath{{images/}}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[line width = 1pt] ($(current page.north west) + (1in,-1in)$) rectangle ($(current page.south east) + (-1in,1in)$);
+	\end{tikzpicture}
+	
+	\Large
+	\textbf{SISTEM MARKETPLACE DAN EO EXPO KHUSUS PARA DESIGNER INTERIOR DAN EKSTERIOR}
+	
+	\vspace{0.8cm}
+	\large
+	LAPORAN PROYEK AKHIR \\
+	MATA KULIAH ISYS6028 - DATABASE SYSTEM \\
+	KELAS BA20 - LAB
+	
+	\vspace{1.4cm}
+	\includegraphics[width=0.6\textwidth]{binusmalang.png} \\
+	\vspace{1.4cm}
+	OLEH: \\
+	\vspace{0.8cm}
+	UMI HARUM - 2301922581 \\
+	FEBRIAN NUGROHO - 2301930551 \\
+	FELIXFILIPI - 2301877590
+	
+	\large
+	\vfill
+	Semester Ganjil 2020/2021  \\
+	Malang
+\end{center}
+\end{titlepage}
+
+\input{chapters/lembar_persetujuan_proyek_akhir}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{chapters/pendahuluan}
+
+\input{chapters/landasan_teori}
+
+\input{chapters/analisis}
+
+\input{chapters/design}
+
+\end{document}
