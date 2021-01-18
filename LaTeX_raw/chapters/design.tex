@@ -331,12 +331,45 @@ List of attribute domain:
 \end{figure}
 
 \subsection{Logical Model (Class Diagram)}
-\begin{figure}
+
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{classdiagram}
 	\caption{Class Diagram Belidesain}
 \end{figure}
 
-
 \section{Physical Model}
 \subsection{List of Index}
+	\begin{longtable}{| p{3.0cm} | p{2.8cm} | p{3.0cm} | c | c |}
+		\hline
+		Entity Name 				& Index Name 			& Index 				& \multicolumn{2}{c|}{Type} \\ \cline{4-5}
+									& 						&		 				& Clustered 	& Non-Clustered	\\ \hline
+		User						& UserId				& UserId				& \checkmark 	& 				\\	\hline
+		UserInfo					& 						&						&				& \checkmark	\\ \hline
+		UserPhoto					& PhotoId				& PhotoId				& \checkmark	&				\\ \hline
+		UserFeedback				& FeedbackId			& FeedbackId			& \checkmark	&				\\ \hline
+		ChatSystem					& ChatSystemId			& ChatSystemId			& \checkmark	&				\\ \hline
+		DesignCategories 			& CategoriesId			& CategoriesId			& \checkmark	&				\\ \hline
+		DesignSub-Categories			& Sub-CategoriesId		& SubCategoriesId		& \checkmark	& 				\\ \hline
+		DesignTheme					& ThemeId				& ThemeId				& \checkmark	&				\\ \hline
+		DesignHeader				& DesignId				& DesignId				& \checkmark	&				\\ \hline
+		DesignLikeCount				& LikeCountId			& LikeCountId			& \checkmark	& 				\\ \hline
+		UserInventory				& InventoryId			& InventoryId			& \checkmark	&				\\ \hline
+		DesignTransaction-Header		& Design-TransactionId	& Design-TransactionId	& \checkmark	& 				\\ \hline
+		DesignTransaction-Details	& TransactionId			& TransactionId			& \checkmark	&				\\ \hline
+		DesignDetails				&						&						&				& \checkmark	\\ \hline
+		DesignPhotos				& DesignPhotoId			& DesignPhotoId			& \checkmark	&				\\ \hline
+		DesignSpesification			& SpesificationId		& SpesificationId		& \checkmark	&				\\ \hline
+		DesignFile					& DesignFileId			& DesignFileId			& \checkmark	&				\\ \hline
+		ExpoEvent					& ExpoEventId			& ExpoEventId			& \checkmark	&				\\ \hline
+		ExpoTransaction-Header		& ExpoTransaction-Id		& ExpoTransaction-Id		& \checkmark	&				\\ \hline
+		UserExpo					& 						&						&				& \checkmark	\\ \hline
+		ExpoTransaction-Header		& 						&						&				& \checkmark	\\ \hline
+		ExpoEventDetails			&						&						&				& \checkmark	\\ \hline
+		ExpoEventPhoto				&						&						&				& \checkmark	\\ \hline
+		Designer-Transaction-Header	& Designer-TransactionId	& Designer-TransactionId	& \checkmark	&				\\ \hline
+		Designer-Transaction-Details	&						&						&				& \checkmark	\\ \hline
+		DesignerInfo				&						&						&				& \checkmark	\\ \hline
+		DesignerRating				& RatingId				& RatingId				& \checkmark	&				\\ \hline
+		\caption{List of Index}		
+	\end{longtable}
