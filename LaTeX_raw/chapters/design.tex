@@ -330,7 +330,7 @@ List of attribute domain:
 	\caption{ERD Sistem Belidesain}
 \end{figure}
 
-\subsection{Logical Model (Class Diagram)}
+\section{Logical Model (Class Diagram)}
 
 \begin{figure}[H]
 	\centering
@@ -373,3 +373,461 @@ List of attribute domain:
 		DesignerRating				& RatingId				& RatingId				& \checkmark	&				\\ \hline
 		\caption{List of Index}		
 	\end{longtable}
+
+\subsection{Analyze Transaction}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{analyzetransaction}
+	\caption{Analyze Transaction}	
+\end{table}
+\subsection{User View, Procedure, and Function}
+\subsubsection{Data Tabel}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert1}
+	\caption{Insert Table 1}
+\end{table}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert2}
+	\caption{Insert Table 2}
+\end{table}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert3}
+	\caption{Insert Table 3}
+\end{table}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert4}
+	\caption{Insert Table 4}
+\end{table}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert5}
+	\caption{Insert Table 5}
+\end{table}
+\begin{table}[H]
+	\centering
+	\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{insert6}
+	\caption{Insert Table 6}
+\end{table}
+\subsubsection{User Views}
+\begin{enumerate}
+	\item 	Fungsi \textit{view} untuk melihat desainer dengan nilai \textit{rating} tertinggi sampai terendah \\
+			Source Code :
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+				showspaces=false,                
+				showstringspaces=false,
+				showtabs=false,                  
+				tabsize=2]
+	create view Designer_Rating_Tertinggi as
+	select distinct B.Name, D.Rating
+	from User A join UserInfo B
+	on A.UserId = B.UserId
+	join DesignerRating C
+	on A.UserId = C.DesignerId
+	join DesignerInfo D
+	on D.DesignerId = C.DesignerId
+	order by D.Rating desc;
+		
+	select * from Designer_Rating_Tertinggi;
+	drop view Designer_Rating_Tertinggi;
+			\end{lstlisting} 
+		Hasil : 
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{view1}
+			\caption{Hasil View 1}
+		\end{figure}
+	\item	Fungsi \textit{view} untuk melihat desain dengan harga tertinggi sampai terendah \\
+			Source Code :
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+				showspaces=false,                
+				showstringspaces=false,
+				showtabs=false,                  
+				tabsize=2]
+	create view design_harga_tertinggi as
+	select B.DesignName, B.DesignPrice
+	from DesignHeader A join DesignDetails B
+	on A.DesignId = B.DesignId
+	join User C
+	on C.UserId = A.SupplierUserId
+	order by B.DesignPrice desc;
+	
+	select * from design_harga_tertinggi;
+	drop view design_harga_tertinggi;
+			\end{lstlisting}
+		Hasil : 
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\textwidth]{view2}
+			\caption{Hasil View 2}
+		\end{figure}
+	
+	\item 	Melihat daftar transaksi dengan tipe pembayaran '\textit{ovo}' \\
+			Source Code :
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2]
+	create view design_harga_tertinggi as
+	select B.DesignName, B.DesignPrice
+	from DesignHeader A join DesignDetails B
+	on A.DesignId = B.DesignId
+	join User C
+	on C.UserId = A.SupplierUserId
+	order by B.DesignPrice desc;
+	
+	select * from design_harga_tertinggi;
+	drop view design_harga_tertinggi;
+			\end{lstlisting}
+		Hasil:
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{view3}
+			\caption{Hasil View 3}
+		\end{figure}
+\end{enumerate}
+\subsubsection{User Triggers}
+\begin{enumerate}
+	\item	Fungsi \textit{trigger} untuk saat eksekusi \textit{insert}, melakukan \textit{insert} pada tabel 'UserPhoto' \\
+			Source Code:
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+				showspaces=false,                
+				showstringspaces=false,
+				showtabs=false,                  
+				tabsize=2]
+	Delimiter $$
+	Create Trigger trig1
+	after insert on User for each row 
+	begin
+	insert into UserPhoto value (NULL,new.UserId,'default.jpg');
+	end $$
+	Delimiter ;
+	
+	drop trigger trig1;
+	insert into User value(NULL,'wasd@gmail.com','asd3',now(),1,0,0);
+	select *from userphoto;
+			\end{lstlisting}
+		Hasil (Sebelum Trigger):
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{trig1_before}
+			\caption{Hasil Tabel Sebelum Trigger 1}
+		\end{figure}
+		Hasil (Setelah Trigger):
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth]{trig1_after}
+			\caption{Hasil Tabel Setelah Trigger 1}
+		\end{figure}
+	
+	\item 	Fungsi \textit{trigger} untuk saat eksekusi \textit{delete}, memindahkan \textit{row} yang didelete menuju tabel \textit{temporary} \\
+			Source Code:
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+				showspaces=false,                
+				showstringspaces=false,
+				showtabs=false,                  
+				tabsize=2]
+	Delimiter $$
+	Create Trigger trig2
+	after delete on UserInfo for each row 
+	begin
+	create temporary table temp1(
+	UserId INT(10) NOT NULL,
+	Name VARCHAR(50) NOT NULL,
+	Description TEXT,
+	Company VARCHAR(48),
+	Location VARCHAR(48),
+	Website VARCHAR(48),
+	PhoneNumber VARCHAR(16)
+	);
+	insert into temp1 values (old.UserId,old.name,old.description,old.company,old.location
+	,old.website,old.phonenumber);
+	end $$
+	Delimiter ;
+	
+	delete from userInfo where userId=1;
+			\end{lstlisting}
+		Hasil (Sebelum Trigger):
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{trig2_before}
+			\caption{Hasil Tabel Sebelum Trigger 2}
+		\end{figure}
+		Hasil (Setelah Trigger):
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{trig2_after}
+			\caption{Hasil Tabel Setelah Trigger 2}
+		\end{figure}
+	
+	\item	Fungsi \textit{trigger} untuk saat eksekusi \textit{insert}, memasukkan data kosong pada 'UserInfo' \\
+			Source Code:
+			\begin{lstlisting}[
+				language=SQL,
+				backgroundcolor=\color{backcolour},   
+				commentstyle=\color{codegreen},
+				keywordstyle=\color{magenta},
+				numberstyle=\tiny\color{codegray},
+				stringstyle=\color{codepurple},
+				basicstyle=\ttfamily\footnotesize,
+				breakatwhitespace=false,         
+				breaklines=true,                 
+				captionpos=b,                    
+				keepspaces=true,                 
+				numbers=left,                    
+				numbersep=5pt,                  
+				showspaces=false,                
+				showstringspaces=false,
+				showtabs=false,                  
+				tabsize=2]
+	Delimiter $$
+	Create Trigger trig3
+	after insert on User for each row 
+	begin
+	INSERT INTO UserInfo VALUES (new.UserId, NULL, NULL, NULL, NULL, NULL, NULL);
+	end $$
+	Delimiter ;
+	
+	insert into DesignFile value(NULL,'2','Naskle123','.svg');
+			\end{lstlisting}
+		Hasil (Sebelum Trigger):
+		\\
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{trig3_before}
+			\caption{Hasil Tabel Sebelum Trigger 3}
+		\end{figure}
+		Hasil (Setelah Trigger):
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{trig3_after}
+			\caption{Hasil Tabel Setelah Trigger 3}
+		\end{figure}
+\end{enumerate}
+\subsubsection{User Procedures}
+\begin{enumerate}
+	\item 	Fungsi \textit{Procedure} untuk melihat rata - rata \textit{rating} designer \\
+	Source Code :
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		Delimiter $$
+		CREATE PROCEDURE getDesignerRating (
+			IN DesignerId_param INT(10)
+		)
+		BEGIN
+			SELECT 
+				DesignerRating.DesignerId, 
+				UserInfo.Name,
+				AVG(DesignerRating.Rating) as Average
+			FROM 
+				DesignerRating, 
+				UserInfo,User
+			WHERE
+				DesignerRating.DesignerId = User.UserId AND
+				DesignerRating.DesignerId = DesignerId_param;
+			END $$
+		delimiter ;
+		
+		call getdesignerrating (20);
+	\end{lstlisting} 
+	Hasil : 
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{proc1}
+		\caption{Hasil Procedure 1}
+	\end{figure}
+	\item	Fungsi \textit{procedure} untuk melihat total \textit{like} pada desain \\
+	Source Code :
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		Delimiter $$
+		CREATE PROCEDURE like_unlike(
+			IN designId_param INT(10)
+		)
+		BEGIN
+			SELECT
+				DesignDetails.DesignName, 
+				Count(DesignLikeCount.Likes) as 'Like'		
+			FROM
+				DesignHeader,
+				DesignLikeCount,
+				DesignDetails
+			WHERE 
+				DesignHeader.DesignId = DesignLikeCount.DesignId AND 
+				DesignHeader.DesignId = DesignDetails.DesignId AND 
+				DesignHeader.DesignId = designId_param and
+				DesignLikeCount.Likes = 1;
+		END $$
+		delimiter ;
+		
+		call like_unlike (1);
+	\end{lstlisting}
+	Hasil : 
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{proc2}
+		\caption{Hasil Procedure 2}
+	\end{figure}
+	
+	\item 	Fungsi \textit{procedure} untuk melihat total harga suatu \textit{event} \\
+	Source Code:
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		DELIMITER $$
+		CREATE PROCEDURE total_ticket(
+			IN ExpoTransactionId_param INT(10)
+		)
+		BEGIN
+			SELECT
+				ExpoEventDetails.ExpoEventTitle,
+				ExpoEventDetails.TicketPrice,
+				ExpoTransactionHeader.TicketQty,
+				(ExpoEventDetails.TicketPrice * ExpoTransactionHeader.TicketQty) as "Total"
+			FROM 
+				ExpoTransactionHeader,
+				ExpoEvent,
+				ExpoEventDetails
+			WHERE
+				ExpoTransactionHeader.ExpoEventId = ExpoEvent.ExpoEventId AND
+				ExpoEvent.ExpoEventId = ExpoEventDetails.ExpoEventId AND
+				ExpoEvent.ExpoEventId = ExpoTransactionid_param;
+			END $$
+		DELIMITER ;
+	\end{lstlisting}
+	Hasil:
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{proc3}
+		\caption{Hasil Procedure 3}
+	\end{figure}
+\end{enumerate}

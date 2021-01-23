@@ -9,12 +9,24 @@
 \usepackage{enumerate}
 \usepackage{longtable}
 \usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
 \usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[shortlabels]{enumitem}
 \usepackage{amssymb}
+\usepackage{multirow}
 \renewcommand{\chaptername}{BAB}
 \renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\contentsname}{DAFTAR ISI}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
 \pagestyle{fancy}
 \graphicspath{{images/}}
+\titleformat{\chapter}[display]
+{\normalfont\huge\bfseries\centering}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
 \begin{document}
 \begin{titlepage}
 \begin{center}
@@ -60,5 +72,11 @@
 \input{chapters/analisis}
 
 \input{chapters/design}
+
+\input{chapters/daftarpustaka}
+
+\input{chapters/lampiran}
+
+\input{chapters/lembarpenilaian}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.17)  19 JAN 2021 03:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.22)  23 JAN 2021 08:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,20 +392,45 @@ s
 \f@nch@O@olf=\skip63
 \f@nch@O@orf=\skip64
 )
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count282
+\lst@gtempboxa=\box64
+\lst@token=\toks41
+\lst@length=\count283
+\lst@currlwidth=\dimen256
+\lst@column=\count284
+\lst@pos=\count285
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count286
+\lst@lineno=\count287
+\lst@maxwidth=\dimen259
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count288
+\lst@skipnumbers=\count289
+\lst@framebox=\box65
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
 (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count282
-\calc@Bcount=\count283
-\calc@Adimen=\dimen256
-\calc@Bdimen=\dimen257
+\calc@Acount=\count290
+\calc@Bcount=\count291
+\calc@Adimen=\dimen260
+\calc@Bdimen=\dimen261
 \calc@Askip=\skip65
 \calc@Bskip=\skip66
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count284
+\calc@Ccount=\count292
 \calc@Cskip=\skip67
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -421,51 +446,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks41
-\ex@=\dimen258
+\@emptytoks=\toks42
+\ex@=\dimen262
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen259
+\pmbraise@=\dimen263
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count285
+\inf@bad=\count293
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count286
-\leftroot@=\count287
+\uproot@=\count294
+\leftroot@=\count295
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count288
-\DOTSCASE@=\count289
+\classnum@=\count296
+\DOTSCASE@=\count297
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box64
-\strutbox@=\box65
-\big@size=\dimen260
+\Mathstrutbox@=\box66
+\strutbox@=\box67
+\big@size=\dimen264
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count290
-\c@MaxMatrixCols=\count291
+\macc@depth=\count298
+\c@MaxMatrixCols=\count299
 \dotsspace@=\muskip16
-\c@parentequation=\count292
-\dspbrk@lvl=\count293
-\tag@help=\toks42
-\row@=\count294
-\column@=\count295
-\maxfields@=\count296
-\andhelp@=\toks43
-\eqnshift@=\dimen261
-\alignsep@=\dimen262
-\tagshift@=\dimen263
-\tagwidth@=\dimen264
-\totwidth@=\dimen265
-\lineht@=\dimen266
-\@envbody=\toks44
+\c@parentequation=\count300
+\dspbrk@lvl=\count301
+\tag@help=\toks43
+\row@=\count302
+\column@=\count303
+\maxfields@=\count304
+\andhelp@=\toks44
+\eqnshift@=\dimen265
+\alignsep@=\dimen266
+\tagshift@=\dimen267
+\tagwidth@=\dimen268
+\totwidth@=\dimen269
+\lineht@=\dimen270
+\@envbody=\toks45
 \multlinegap=\skip69
 \multlinetaggap=\skip70
-\mathdisplay@stack=\toks45
+\mathdisplay@stack=\toks46
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
@@ -473,17 +498,59 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count297
-\l_MT_multwidth_dim=\dimen267
+\g_MT_multlinerow_int=\count305
+\l_MT_multwidth_dim=\dimen271
 \origjot=\skip71
-\l_MT_shortvdotswithinadjustabove_dim=\dimen268
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen269
-\l_MT_above_intertext_sep=\dimen270
-\l_MT_below_intertext_sep=\dimen271
-\l_MT_above_shortintertext_sep=\dimen272
-\l_MT_below_shortintertext_sep=\dimen273
-\xmathstrut@box=\box66
-\xmathstrut@dim=\dimen274
+\l_MT_shortvdotswithinadjustabove_dim=\dimen272
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen273
+\l_MT_above_intertext_sep=\dimen274
+\l_MT_below_intertext_sep=\dimen275
+\l_MT_above_shortintertext_sep=\dimen276
+\l_MT_below_shortintertext_sep=\dimen277
+\xmathstrut@box=\box68
+\xmathstrut@dim=\dimen278
+)
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen279
+\ar@mcellbox=\box69
+\extrarowheight=\dimen280
+\NC@list=\toks47
+\extratabsurround=\skip72
+\backup@length=\skip73
+\ar@cellbox=\box70
+)
+\TX@col@width=\dimen281
+\TX@old@table=\dimen282
+\TX@old@col=\dimen283
+\TX@target=\dimen284
+\TX@delta=\dimen285
+\TX@cols=\count306
+\TX@ftn=\toks48
+)
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box71
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
+\ttl@plus=\dimen286
+\ttl@minus=\dimen287
+\ttl@toksa=\toks49
+\titlewidth=\dimen288
+\titlewidthlast=\dimen289
+\titlewidthfirst=\dimen290
+)
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip76
+\enit@outerparindent=\dimen291
+\enit@toks=\toks50
+\enit@inbox=\box72
+\enit@count@id=\count307
+\enitdp@description=\count308
 )
 (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -496,25 +563,32 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip77
+\multirow@cntb=\count309
+\multirow@dima=\skip78
+\bigstrutjot=\dimen292
+)
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count298
-\l__pdf_internal_box=\box67
+\l__kernel_color_stack_int=\count310
+\l__pdf_internal_box=\box73
 ) (./main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -552,17 +626,17 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count299
-\scratchdimen=\dimen275
-\scratchbox=\box68
-\nofMPsegments=\count300
-\nofMParguments=\count301
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count302
-\MPscratchDim=\dimen276
-\MPnumerator=\count303
-\makeMPintoPDFobject=\count304
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count311
+\scratchdimen=\dimen293
+\scratchbox=\box74
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen294
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks52
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -572,68 +646,85 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count317
 <images//binusmalang.png, id=4, 968.6589pt x 685.3605pt>
 File: images//binusmalang.png Graphic file (type png)
 <use images//binusmalang.png>
-Package pdftex.def Info: images//binusmalang.png  used on input line 35.
+Package pdftex.def Info: images//binusmalang.png  used on input line 47.
 (pdftex.def)             Requested size: 256.0774pt x 181.18044pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//binusmalang.png>
 ]
 (./chapters/lembar_persetujuan_proyek_akhir.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (64.51099pt too wide) in paragraph at lines 24--28
+<images//umi_ttd.jpeg, id=14, 1084.05pt x 1927.2pt>
+File: images//umi_ttd.jpeg Graphic file (type jpg)
+<use images//umi_ttd.jpeg>
+Package pdftex.def Info: images//umi_ttd.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 85.35696pt x 151.73839pt.
+<images//brian_ttd.jpeg, id=15, 722.7pt x 452.69125pt>
+File: images//brian_ttd.jpeg Graphic file (type jpg)
+<use images//brian_ttd.jpeg>
+Package pdftex.def Info: images//brian_ttd.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 149.37956pt x 93.56903pt.
+<images//felix_ttd.jpeg, id=16, 1284.8pt x 1266.7325pt>
+File: images//felix_ttd.jpeg Graphic file (type jpg)
+<use images//felix_ttd.jpeg>
+Package pdftex.def Info: images//felix_ttd.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 85.35696pt x 84.13808pt.
+
+Overfull \hbox (64.51099pt too wide) in paragraph at lines 26--31
  [] 
  []
 
-) [1] (./main.toc)
+) [1 <./images//umi_ttd.jpeg> <./images//brian_ttd.jpeg> <./images//felix_ttd.j
+peg>] (./main.toc [2
+
+])
 \tf@toc=\write4
- [2
 
-] (./main.lof)
-\tf@lof=\write5
- [3
-
-] (./main.lot)
-\tf@lot=\write6
-
-(./chapters/pendahuluan.tex [4
-
-]
-BAB 1.
-
-Overfull \hbox (6.55257pt too wide) in paragraph at lines 11--12
-[]\OT1/cmr/m/n/10.95 Untuk mewu-jud-kan hal terse-but, kami mengem-bangkan se-b
-uah ap-likasi web-site bernama
- []
-
-[5
-
-]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6]) (./chapters/landasan_teori.tex [7]
+[3] (./main.lof)
+\tf@lof=\write5
+ [4
+
+] (./main.lot)
+\tf@lot=\write6
+ (./chapters/pendahuluan.tex [5
+
+]
+BAB 1.
+
+Overfull \hbox (6.19489pt too wide) in paragraph at lines 11--12
+[]\OT1/cmr/m/n/10.95 Untuk mewu-jud-kan hal terse-but, kami mengem-bangkan se-b
+uah ap-likasi \OT1/cmr/m/it/10.95 web-site \OT1/cmr/m/n/10.95 bernama
+ []
+
+[6
+
+] [7]) (./chapters/landasan_teori.tex [8]
 BAB 2.
 
-Overfull \hbox (3.4834pt too wide) in paragraph at lines 3--4
-\OT1/cmr/m/n/10.95 Electronic Com-merce (E-commerce) adalah ak-tiv-i-tas pen-ju
-alan, pem-be-lian atau pe-masaran
+Overfull \hbox (3.18079pt too wide) in paragraph at lines 3--5
+\OT1/cmr/m/it/10.95 Electronic Com-merce (E-commerce) \OT1/cmr/m/n/10.95 adalah
+ ak-tiv-i-tas pen-jualan, pem-be-lian atau pe-masaran
  []
 
 
@@ -681,7 +772,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-[8
+[9
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--21
@@ -758,7 +849,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-[9]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -768,16 +859,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-[10]) (./chapters/analisis.tex [11]
+[11]) (./chapters/analisis.tex [12]
 BAB 3.
-<images//usecase.png, id=52, 186.9165pt x 312.4035pt>
+<images//usecase.png, id=61, 186.9165pt x 312.4035pt>
 File: images//usecase.png Graphic file (type png)
 <use images//usecase.png>
 Package pdftex.def Info: images//usecase.png  used on input line 5.
 (pdftex.def)             Requested size: 186.91603pt x 312.40274pt.
-[12
+[13
 
- <./images//usecase.png>]) (./chapters/design.tex [13]
+ <./images//usecase.png>]) (./chapters/design.tex [14]
 BAB 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -881,7 +972,7 @@ Underfull \hbox (badness 4429) in paragraph at lines 16--16
 
 
 Underfull \hbox (badness 2443) in paragraph at lines 16--16
-\OT1/cmr/m/n/10.95 plier/designer. En-ti-
+\OT1/cmr/m/n/10.95 pli-er/de-signer. En-ti-
  []
 
 
@@ -945,11 +1036,6 @@ Underfull \hbox (badness 3209) in paragraph at lines 20--20
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 22--22
-\OT1/cmr/m/n/10.95 akan di-u-pload oleh sup-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 23--23
 []|\OT1/cmr/m/n/10.95 Berisi spe-si-fikasi
  []
@@ -991,7 +1077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
 
 Underfull \hbox (badness 6510) in paragraph at lines 25--25
-\OT1/cmr/m/n/10.95 sup-plier/designer se-ba-gai
+\OT1/cmr/m/n/10.95 sup-pli-er/de-signer se-ba-gai
  []
 
 
@@ -1039,13 +1125,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--28
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-[]|\OT1/cmr/m/n/10.95 Informasi - in-for-masi
+Underfull \hbox (badness 1043) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10.95 Informasi - in-for-masi ini
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--29
-\OT1/cmr/m/n/10.95 ini akan di-t-ulis oleh
+Underfull \hbox (badness 1412) in paragraph at lines 29--29
+\OT1/cmr/m/n/10.95 akan di-t-ulis oleh sup-pli-
  []
 
 
@@ -1143,9 +1229,9 @@ Underfull \hbox (badness 4621) in paragraph at lines 34--34
 \OT1/cmr/m/n/10.95 rat-ing atau pe-ni-la-ian
  []
 
-[14
+[15
 
-] [15]
+] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 49--49
 []|\OT1/cmr/m/n/10.95 DesignTransaction
  []
@@ -1191,6 +1277,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--60
  []
 
 
+Overfull \hbox (1.45857pt too wide) in alignment at lines 39--61
+ [] [] [] [] [] 
+ []
+
+
 Underfull \vbox (badness 10000) detected at line 61
  []
 
@@ -1229,7 +1320,12 @@ Overfull \hbox (3.63594pt too wide) in paragraph at lines 75--75
 []|\OT1/cmr/m/n/10.95 DesignSubCategories| 
  []
 
-[16]
+
+Overfull \hbox (1.45857pt too wide) in alignment at lines 61--78
+ [] [] [] [] [] 
+ []
+
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 []|\OT1/cmr/m/n/10.95 Multi
  []
@@ -1257,6 +1353,11 @@ Underfull \hbox (badness 5607) in paragraph at lines 99--99
 
 Underfull \hbox (badness 10000) in paragraph at lines 105--105
 []|\OT1/cmr/m/n/10.95 UserFeed-
+ []
+
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 80--107
+ [] [] [] [] [] [] 
  []
 
 
@@ -1318,7 +1419,12 @@ Overfull \hbox (0.68198pt too wide) in paragraph at lines 131--131
 []|\OT1/cmr/m/n/10.95 SubCategoryId| 
  []
 
-[17]
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 107--132
+ [] [] [] [] [] [] 
+ []
+
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 136--136
 []|\OT1/cmr/m/n/10.95 DesignLike-
  []
@@ -1404,6 +1510,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--155
  []
 
 
+Overfull \hbox (2.75865pt too wide) in alignment at lines 132--156
+ [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (2.81116pt too wide) in paragraph at lines 156--156
 []|\OT1/cmr/m/n/10.95 ExpirationDate| 
  []
@@ -1468,7 +1579,12 @@ Overfull \hbox (7.4953pt too wide) in paragraph at lines 180--180
 []|\OT1/cmr/m/n/10.95 OrganizerUserId| 
  []
 
-[18]
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 156--181
+ [] [] [] [] [] [] 
+ []
+
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\OT1/cmr/m/n/10.95 Expo-
  []
@@ -1578,7 +1694,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--204
 []|\OT1/cmr/m/n/10.95 ExpoEvent-
  []
 
-[19]
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 181--205
+ [] [] [] [] [] [] 
+ []
+
+[20]
 Overfull \hbox (3.54115pt too wide) in paragraph at lines 205--205
 []|\OT1/cmr/m/n/10.95 ExpoEventLink| 
  []
@@ -1658,7 +1779,17 @@ Underfull \hbox (badness 7522) in paragraph at lines 226--226
 []|\OT1/cmr/m/n/10.95 Identifikasi Pe-ni-la-
  []
 
-[20] [21]
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 205--229
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.75865pt too wide) in alignment at lines 229--232
+ [] [] [] [] [] [] 
+ []
+
+[21] [22]
 Overfull \hbox (2.81424pt too wide) in paragraph at lines 241--242
 []\OT1/cmr/m/n/10.95 Atribut Tick-etQty pada tabel Ex-po-Trans-ac-tion-Header a
 dalah con-straint yang bertipe
@@ -1778,18 +1909,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\OT1/cmr/m/n/10.95 Designer-
  []
 
-[22] [23]
-<images//erd.png, id=92, 1807.75375pt x 1335.99126pt>
+[23] [24]
+<images//erd.png, id=101, 1807.75375pt x 1335.99126pt>
 File: images//erd.png Graphic file (type png)
 <use images//erd.png>
 Package pdftex.def Info: images//erd.png  used on input line 329.
 (pdftex.def)             Requested size: 426.78067pt x 315.40536pt.
-<images//classdiagram.png, id=93, 1747.52875pt x 1687.30376pt>
+<images//classdiagram.png, id=102, 1747.52875pt x 1687.30376pt>
 File: images//classdiagram.png Graphic file (type png)
 <use images//classdiagram.png>
 Package pdftex.def Info: images//classdiagram.png  used on input line 337.
 (pdftex.def)             Requested size: 426.77504pt x 412.06711pt.
- [24 <./images//erd.png>]
+ [25 <./images//erd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []|\OT1/cmr/m/n/10.95 DesignSub-
  []
@@ -1822,6 +1953,11 @@ Overfull \hbox (6.80432pt too wide) in paragraph at lines 359--359
 
 Overfull \hbox (6.77394pt too wide) in paragraph at lines 362--362
 []|\OT1/cmr/m/n/10.95 DesignSpesification| 
+ []
+
+
+Overfull \hbox (0.84645pt too wide) in alignment at lines 343--364
+ [] [] [] [] [] 
  []
 
 
@@ -1883,27 +2019,293 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--371
 \OT1/cmr/m/n/10.95 Transaction-
  []
 
-[25 <./images//classdiagram.png>]) [26] (./main.aux) ) 
+
+Overfull \hbox (0.84645pt too wide) in alignment at lines 364--375
+ [] [] [] [] [] 
+ []
+
+[26 <./images//classdiagram.png>]
+<images//analyzetransaction.png, id=112, 604.2575pt x 429.605pt>
+File: images//analyzetransaction.png Graphic file (type png)
+<use images//analyzetransaction.png>
+Package pdftex.def Info: images//analyzetransaction.png  used on input line 385
+.
+(pdftex.def)             Requested size: 426.79454pt x 303.4353pt.
+ [27]
+<images//insert1.png, id=116, 1249.66875pt x 543.02875pt>
+File: images//insert1.png Graphic file (type png)
+<use images//insert1.png>
+Package pdftex.def Info: images//insert1.png  used on input line 392.
+(pdftex.def)             Requested size: 426.78859pt x 185.45592pt.
+<images//insert2.png, id=117, 1031.855pt x 534.99875pt>
+File: images//insert2.png Graphic file (type png)
+<use images//insert2.png>
+Package pdftex.def Info: images//insert2.png  used on input line 397.
+(pdftex.def)             Requested size: 426.79482pt x 221.28563pt.
+<images//insert3.png, id=118, 1192.455pt x 485.815pt>
+File: images//insert3.png Graphic file (type png)
+<use images//insert3.png>
+Package pdftex.def Info: images//insert3.png  used on input line 402.
+(pdftex.def)             Requested size: 426.79071pt x 173.87769pt.
+ [28 <./images//analyzetransaction.png> <./images//insert1.png>]
+<images//insert4.png, id=122, 915.42pt x 421.575pt>
+File: images//insert4.png Graphic file (type png)
+<use images//insert4.png>
+Package pdftex.def Info: images//insert4.png  used on input line 407.
+(pdftex.def)             Requested size: 426.78336pt x 196.54495pt.
+<images//insert5.png, id=123, 1230.5975pt x 492.84125pt>
+File: images//insert5.png Graphic file (type png)
+<use images//insert5.png>
+Package pdftex.def Info: images//insert5.png  used on input line 412.
+(pdftex.def)             Requested size: 426.7911pt x 170.9253pt.
+ [29 <./images//insert2.png> <./images//insert3.png>]
+<images//insert6.png, id=127, 914.41624pt x 266.9975pt>
+File: images//insert6.png Graphic file (type png)
+<use images//insert6.png>
+Package pdftex.def Info: images//insert6.png  used on input line 417.
+(pdftex.def)             Requested size: 426.78978pt x 124.61697pt.
+
+(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) [30 <./images//insert4.png> <./images//insert5.png> <./images//insert6.png>]
+<images//view1.jpeg, id=132, 153.57375pt x 88.83188pt>
+File: images//view1.jpeg Graphic file (type jpg)
+<use images//view1.jpeg>
+Package pdftex.def Info: images//view1.jpeg  used on input line 459.
+(pdftex.def)             Requested size: 170.71393pt x 98.75227pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--461
+
+ []
+
+<images//view2.jpeg, id=133, 201.00093pt x 153.57375pt>
+File: images//view2.jpeg Graphic file (type jpg)
+<use images//view2.jpeg>
+Package pdftex.def Info: images//view2.jpeg  used on input line 497.
+(pdftex.def)             Requested size: 170.71393pt x 130.43285pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--499
+
+ []
+
+[31 <./images//view1.jpeg>]
+<images//view3.jpeg, id=139, 254.45062pt x 97.86563pt>
+File: images//view3.jpeg Graphic file (type jpg)
+<use images//view3.jpeg>
+Package pdftex.def Info: images//view3.jpeg  used on input line 536.
+(pdftex.def)             Requested size: 256.0774pt x 98.49554pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 532--538
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+562.
+(/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [32 <./images//view2.jpeg> <./images//view3.jpeg>]
+<images//trig1_before.jpeg, id=144, 217.5628pt x 134.00063pt>
+File: images//trig1_before.jpeg Graphic file (type jpg)
+<use images//trig1_before.jpeg>
+Package pdftex.def Info: images//trig1_before.jpeg  used on input line 578.
+(pdftex.def)             Requested size: 256.0774pt x 157.74312pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--580
+
+ []
+
+<images//trig1_after.jpeg, id=145, 189.70876pt x 139.27031pt>
+File: images//trig1_after.jpeg Graphic file (type jpg)
+<use images//trig1_after.jpeg>
+Package pdftex.def Info: images//trig1_after.jpeg  used on input line 584.
+(pdftex.def)             Requested size: 256.0774pt x 188.01317pt.
+[33 <./images//trig1_before.jpeg> <./images//trig1_after.jpeg>]
+<images//trig2_before.jpeg, id=149, 606.01407pt x 19.57312pt>
+File: images//trig2_before.jpeg Graphic file (type jpg)
+<use images//trig2_before.jpeg>
+Package pdftex.def Info: images//trig2_before.jpeg  used on input line 632.
+(pdftex.def)             Requested size: 426.79134pt x 13.7847pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 628--634
+
+ []
+
+<images//trig2_after.jpeg, id=150, 515.67656pt x 47.42719pt>
+File: images//trig2_after.jpeg Graphic file (type jpg)
+<use images//trig2_after.jpeg>
+Package pdftex.def Info: images//trig2_after.jpeg  used on input line 638.
+(pdftex.def)             Requested size: 426.79134pt x 39.2531pt.
+<images//trig3_before.jpeg, id=151, 410.2828pt x 138.5175pt>
+File: images//trig3_before.jpeg Graphic file (type jpg)
+<use images//trig3_before.jpeg>
+Package pdftex.def Info: images//trig3_before.jpeg  used on input line 676.
+(pdftex.def)             Requested size: 426.79134pt x 144.09071pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--678
+
+ []
+
+[34 <./images//trig2_before.jpeg> <./images//trig2_after.jpeg>]
+<images//trig3_after.jpeg, id=155, 455.45157pt x 134.75343pt>
+File: images//trig3_after.jpeg Graphic file (type jpg)
+<use images//trig3_after.jpeg>
+Package pdftex.def Info: images//trig3_after.jpeg  used on input line 682.
+(pdftex.def)             Requested size: 426.79134pt x 126.2755pt.
+ [35 <./images//trig3_before.jpeg> <./images//trig3_after.jpeg>]
+<images//proc1.jpeg, id=159, 216.81pt x 49.68562pt>
+File: images//proc1.jpeg Graphic file (type jpg)
+<use images//proc1.jpeg>
+Package pdftex.def Info: images//proc1.jpeg  used on input line 732.
+(pdftex.def)             Requested size: 170.71393pt x 39.12384pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 728--734
+
+ []
+
+<images//proc2.jpeg, id=160, 161.10187pt x 44.41594pt>
+File: images//proc2.jpeg Graphic file (type jpg)
+<use images//proc2.jpeg>
+Package pdftex.def Info: images//proc2.jpeg  used on input line 781.
+(pdftex.def)             Requested size: 170.71393pt x 47.06778pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 777--783
+
+ []
+
+[36 <./images//proc1.jpeg> <./images//proc2.jpeg>]
+<images//proc3.jpeg, id=165, 254.45062pt x 54.9553pt>
+File: images//proc3.jpeg Graphic file (type jpg)
+<use images//proc3.jpeg>
+Package pdftex.def Info: images//proc3.jpeg  used on input line 830.
+(pdftex.def)             Requested size: 256.0774pt x 55.30902pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 826--832
+
+ []
+
+) (./chapters/daftarpustaka.tex [37 <./images//proc3.jpeg>]
+Overfull \hbox (21.24667pt too wide) in paragraph at lines 4--5
+\OT1/cmr/m/n/10.95 detail/30653/dirjen-ppi-survei-penetrasi-pengguna-internet-d
+i-indonesia-bagian-penting-
+ []
+
+
+Overfull \hbox (15.46756pt too wide) in paragraph at lines 5--6
+\OT1/cmr/m/n/10.95 https://kominfo.go.id/content/detail/17233/jumlah-startup-di
+-indonesia-ratusan-atau-
+ []
+
+
+Overfull \hbox (16.23805pt too wide) in paragraph at lines 8--9
+\OT1/cmr/m/n/10.95 enta, 09-Nov-2020. [On-line]. Avail-able: https://www.talent
+a.co/blog/insight-talenta/e-
+ []
+
+
+Overfull \hbox (3.49348pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/10.95 rasi Us-aha & Ke-se-hatan Ter-per-caya. [On-line]. Avail-abl
+e: https://www.daya.id/usah-
+ []
+
+
+Overfull \hbox (10.93536pt too wide) in paragraph at lines 9--10
+\OT1/cmr/m/n/10.95 a/artikel-daya/keuangan/macam-macam-sistem-pembayaran-pada-b
+isnis-e-commerce.
+ []
+
+
+Overfull \hbox (4.51756pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/10.95 "12 Man-faat Ba-sis Data dalam Ke-hidu-pan Se-hari Hari - 
+DosenIT.com", DosenIT.com,
+ []
+
+) (./chapters/lampiran.tex [38
+
+] [39
+
+] [40] [41] [42] [43] [44] [45] [46]
+[47] [48] [49] [50] [51] [52] [53] [54]) (./chapters/lembarpenilaian.tex
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]\OT1/cmr/bx/n/10 TOTAL
+ []
+
+
+Overfull \hbox (3.69562pt too wide) in paragraph at lines 25--25
+\OT1/cmr/bx/n/10 KREDIT 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 28--28
+[]|\OT1/cmr/m/n/10 20%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 29--29
+[]|\OT1/cmr/m/n/10 20%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 40%| 
+ []
+
+
+Overfull \hbox (5.82773pt too wide) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 20&| 
+ []
+
+) [56
+
+] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 14275 strings out of 479383
- 275020 string characters out of 5875830
- 620427 words of memory out of 5000000
- 31101 multiletter control sequences out of 15000+600000
- 411502 words of font info for 56 fonts, out of 8000000 for 9000
+ 17303 strings out of 479383
+ 317567 string characters out of 5875830
+ 1305307 words of memory out of 5000000
+ 34073 multiletter control sequences out of 15000+600000
+ 414846 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,111p,838b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fo
-nts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfrm1095.pfb>
-Output written on main.pdf (27 pages, 921103 bytes).
+ 108i,12n,111p,838b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
+c}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm10
+95.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on main.pdf (57 pages, 1671361 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 272 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
