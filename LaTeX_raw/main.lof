@@ -1,19 +1,25 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram Sistem Belidesain}}{13}{}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use Case Diagram Sistem Belidesain}}{13}{figure.3.1}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces ERD Sistem Belidesain}}{25}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Diagram Belidesain}}{26}{}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hasil View 1}}{31}{}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Hasil View 2}}{32}{}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Hasil View 3}}{32}{}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hasil Tabel Sebelum Trigger 1}}{33}{}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Hasil Tabel Setelah Trigger 1}}{33}{}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Hasil Tabel Sebelum Trigger 2}}{34}{}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Hasil Tabel Setelah Trigger 2}}{34}{}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Hasil Tabel Sebelum Trigger 3}}{35}{}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil Tabel Setelah Trigger 3}}{35}{}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil Procedure 1}}{36}{}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil Procedure 2}}{36}{}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Hasil Procedure 3}}{37}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces ERD Sistem Belidesain}}{25}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Class Diagram Belidesain}}{26}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hasil View 1}}{31}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Hasil View 2}}{32}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Hasil View 3}}{32}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hasil View 4}}{33}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Hasil Tabel Sebelum Trigger 1}}{33}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Hasil Tabel Setelah Trigger 1}}{34}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Hasil Tabel Sebelum Trigger 2}}{34}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Hasil Tabel Setelah Trigger 2}}{35}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Hasil Tabel Sebelum Trigger 3}}{35}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Hasil Tabel Setelah Trigger 3}}{35}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Hasil Procedure 1}}{36}{figure.4.13}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Hasil Procedure 2}}{37}{figure.4.14}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Hasil Procedure 3}}{37}{figure.4.15}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Hasil Procedure 4 (ascending)}}{38}{figure.4.16}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Hasil Procedure 4 (descending)}}{38}{figure.4.17}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Hasil Procedure 5}}{39}{figure.4.18}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Hasil Procedure 6 (\textit {min})}}{41}{figure.4.19}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Hasil Procedure 6 (\textit {max})}}{41}{figure.4.20}%

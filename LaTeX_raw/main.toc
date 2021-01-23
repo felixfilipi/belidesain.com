@@ -1,37 +1,37 @@
-\contentsline {chapter}{\numberline {1}PENDAHULUAN}{6}{}%
-\contentsline {section}{\numberline {1.1}Latar Belakang}{6}{}%
-\contentsline {section}{\numberline {1.2}Rumusan Masalah}{7}{}%
-\contentsline {section}{\numberline {1.3}Tujuan Penelitian}{7}{}%
-\contentsline {section}{\numberline {1.4}Manfaat Penelitian}{7}{}%
-\contentsline {section}{\numberline {1.5}Sistematika Penulisan}{7}{}%
-\contentsline {chapter}{\numberline {2}LANDASAN TEORI}{9}{}%
-\contentsline {section}{\numberline {2.1}\textit {E-commerce}}{9}{}%
-\contentsline {section}{\numberline {2.2}Konsep \textit {Database}}{11}{}%
-\contentsline {section}{\numberline {2.3}Definisi \textit {Database}}{11}{}%
-\contentsline {section}{\numberline {2.4}Tujuan database}{11}{}%
-\contentsline {section}{\numberline {2.5}Tahap pengembangan}{12}{}%
-\contentsline {chapter}{\numberline {3}ANALISIS}{13}{}%
-\contentsline {section}{\numberline {3.1}System Definition}{13}{}%
-\contentsline {section}{\numberline {3.2}Identifikasi Permasalahan}{13}{}%
-\contentsline {section}{\numberline {3.3}Identifikasi Kebutuhan Pengguna}{14}{}%
-\contentsline {chapter}{\numberline {4}DESIGN}{15}{}%
-\contentsline {section}{\numberline {4.1}Conceptual Design}{15}{}%
-\contentsline {subsection}{\numberline {4.1.1}Entity Types}{15}{}%
-\contentsline {subsection}{\numberline {4.1.2}Relationship Types}{17}{}%
-\contentsline {subsection}{\numberline {4.1.3}Attributes}{18}{}%
-\contentsline {subsection}{\numberline {4.1.4}Attribute Domains}{22}{}%
-\contentsline {subsection}{\numberline {4.1.5}Candidate Keys, Primary Key, and Alternate Keys}{23}{}%
-\contentsline {subsection}{\numberline {4.1.6}List of User Transaction}{25}{}%
-\contentsline {subsection}{\numberline {4.1.7}Entity Relationship Diagram}{25}{}%
-\contentsline {section}{\numberline {4.2}Logical Model (Class Diagram)}{26}{}%
-\contentsline {section}{\numberline {4.3}Physical Model}{26}{}%
-\contentsline {subsection}{\numberline {4.3.1}List of Index}{26}{}%
-\contentsline {subsection}{\numberline {4.3.2}Analyze Transaction}{28}{}%
-\contentsline {subsection}{\numberline {4.3.3}User View, Procedure, and Function}{28}{}%
-\contentsline {subsubsection}{Data Tabel}{28}{}%
-\contentsline {subsubsection}{User Views}{31}{}%
-\contentsline {subsubsection}{User Triggers}{32}{}%
-\contentsline {subsubsection}{User Procedures}{35}{}%
-\contentsline {chapter}{DAFTAR PUSTAKA}{38}{}%
-\contentsline {chapter}{LAMPIRAN}{39}{}%
-\contentsline {chapter}{LEMBAR PENILAIAN}{56}{}%
+\contentsline {chapter}{\numberline {1}PENDAHULUAN}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Latar Belakang}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Tujuan Penelitian}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Manfaat Penelitian}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Sistematika Penulisan}{7}{section.1.5}%
+\contentsline {chapter}{\numberline {2}LANDASAN TEORI}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textit {E-commerce}}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Konsep \textit {Database}}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Definisi \textit {Database}}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Tujuan database}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Tahap pengembangan}{12}{section.2.5}%
+\contentsline {chapter}{\numberline {3}ANALISIS}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Definition}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Identifikasi Permasalahan}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Identifikasi Kebutuhan Pengguna}{14}{section.3.3}%
+\contentsline {chapter}{\numberline {4}DESIGN}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Conceptual Design}{15}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Entity Types}{15}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Relationship Types}{17}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Attributes}{18}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Attribute Domains}{22}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}Candidate Keys, Primary Key, and Alternate Keys}{23}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}List of User Transaction}{25}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Entity Relationship Diagram}{25}{subsection.4.1.7}%
+\contentsline {section}{\numberline {4.2}Logical Model (Class Diagram)}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Physical Model}{26}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}List of Index}{26}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Analyze Transaction}{28}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}User View, Procedure, and Function}{28}{subsection.4.3.3}%
+\contentsline {subsubsection}{Data Tabel}{28}{subsubsection*.4}%
+\contentsline {subsubsection}{User Views}{31}{subsubsection*.5}%
+\contentsline {subsubsection}{User Triggers}{33}{subsubsection*.6}%
+\contentsline {subsubsection}{User Procedures}{36}{subsubsection*.7}%
+\contentsline {chapter}{DAFTAR PUSTAKA}{42}{chapter*.8}%
+\contentsline {chapter}{LAMPIRAN}{44}{chapter*.9}%
+\contentsline {chapter}{LEMBAR PENILAIAN}{61}{chapter*.10}%

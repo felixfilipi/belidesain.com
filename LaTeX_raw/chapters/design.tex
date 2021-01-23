@@ -536,6 +536,51 @@ List of attribute domain:
 			\includegraphics[width=0.6\textwidth]{view3}
 			\caption{Hasil View 3}
 		\end{figure}
+	
+	\item Melihat daftar data nama dan lokasi \textit{user} yang paling banyak melakukan transaksi
+	Source Code :
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		CREATE VIEW getMaxMin AS 
+			SELECT
+				UserInfo.Name,
+				UserInfo.Location,
+				count(*) as "Occurences"
+			FROM
+				UserInfo,
+				User,
+				UserInventory
+			WHERE
+				UserInfo.UserId = User.UserId AND
+				User.UserId = UserInventory.Userid
+			GROUP BY
+				UserInventory.UserId
+			ORDER BY
+				count(*) DESC;
+	\end{lstlisting}
+	Hasil : 
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.4\textwidth]{view4}
+		\caption{Hasil View 4}
+	\end{figure}
 \end{enumerate}
 \subsubsection{User Triggers}
 \begin{enumerate}
@@ -830,4 +875,195 @@ List of attribute domain:
 		\includegraphics[width=0.6\textwidth]{proc3}
 		\caption{Hasil Procedure 3}
 	\end{figure}
+
+	\item 	Fungsi \textit{procedure} untuk menghitung \textit{max}, \textit{min}, dan total tiket dari sebuah \textit{event} \\
+	Source Code:
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		Delimiter $$
+		CREATE procedure procedure1 (in sort_parameter varchar(4))
+		begin
+		if sort_parameter='DESC' then
+		select expoevent.expoeventid, ExpoEventDetails.ExpoEventTitle, ticketqty*ticketprice
+		as Total_Penjualan_Ticket from ExpoEventDetails,ExpoEvent,ExpoTransactionHeader
+		where ExpoEventDetails.ExpoEventId=ExpoEvent.ExpoEventId 
+		and ExpoEvent.ExpoEventId=ExpoTransactionHeader.ExpoEventId and ExpoTransactionHeader.IsSuccess=1 
+		order by Total_Penjualan_Ticket desc;
+		
+		elseif sort_parameter='ASC' then
+		select expoevent.expoeventid, ExpoEventDetails.ExpoEventTitle, ticketqty*ticketprice
+		as Total_Penjualan_Ticket from ExpoEventDetails,ExpoEvent,ExpoTransactionHeader
+		where ExpoEventDetails.ExpoEventId=ExpoEvent.ExpoEventId 
+		and ExpoEvent.ExpoEventId=ExpoTransactionHeader.ExpoEventId and ExpoTransactionHeader.IsSuccess=1 
+		order by Total_Penjualan_Ticket asc;
+		end if;
+		end $$
+		delimiter ;
+	\end{lstlisting}
+	Hasil:
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{proc4_asc}
+		\caption{Hasil Procedure 4 (ascending)}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{proc4_desc}
+		\caption{Hasil Procedure 4 (descending)}
+	\end{figure}
+
+	\item 	Fungsi \textit{procedure} untuk melihat desain dan nama desainer paling favorit di setiap kategori desain \\
+	Source Code:
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		CREATE PROCEDURE Desain_Favorit ()
+		select
+		DesignName1,
+		CategoryName,
+		DesainerName
+		from
+		(select
+		UserInfo.UserId as UserId,
+		DesignDetails.DesignName as DesignName1,
+		count(*) as DesignCount,
+		DesignCategories.CategoryName as CategoryName,
+		UserInfo.Name as DesainerName
+		from 
+		DesignTransactionHeader,
+		User,
+		UserInfo,
+		DesignHeader,
+		DesignDetails,
+		DesignCategories
+		where
+		User.UserId = UserInfo.UserId and
+		User.UserId = DesignTransactionHeader.BuyerUserId and 
+		DesignTransactionHeader.DesignId = DesignHeader.DesignId and
+		DesignHeader.DesignId = DesignDetails.DesignId and
+		DesignCategories.CategoryId = DesignHeader.CategoryId
+		group by
+		DesignDetails.DesignName) a,
+		DesignDetails
+		where
+		DesignName1 = DesignDetails.DesignName
+		group by 
+		CategoryName;
+		
+		CALL Desain_Favorit;
+	\end{lstlisting}
+	Hasil:
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{proc5}
+		\caption{Hasil Procedure 5}
+	\end{figure}
+
+	\item 	Fungsi \textit{procedure} untuk melihat tanggal dengan \textit{profit} penjualan maksimal dan minimal \\
+	Source Code:
+	\begin{lstlisting}[
+		language=SQL,
+		backgroundcolor=\color{backcolour},   
+		commentstyle=\color{codegreen},
+		keywordstyle=\color{magenta},
+		numberstyle=\tiny\color{codegray},
+		stringstyle=\color{codepurple},
+		basicstyle=\ttfamily\footnotesize,
+		breakatwhitespace=false,         
+		breaklines=true,                 
+		captionpos=b,                    
+		keepspaces=true,                 
+		numbers=left,                    
+		numbersep=5pt,                  
+		showspaces=false,                
+		showstringspaces=false,
+		showtabs=false,                  
+		tabsize=2]
+		Delimiter $$
+		create procedure proc4(in min_max char(3))
+		begin create temporary table temp1(penjualan int(50),tanggal datetime);
+		
+		insert into temp1
+		select sum(designdetails.designprice) as penjualan,designtransactiondetails.transactiondate
+		from designtransactiondetails,designdetails,designtransactionheader,designheader
+		where designtransactiondetails.designtransactionid=designtransactionheader.designtransactionid
+		and designdetails.designid=designheader.designid and 
+		designheader.designid=designtransactionheader.designtransactionid and
+		designtransactionheader.issuccess=1 group by cast(transactiondate as date)
+		union all
+		select designerinfo.designerprice as penjualan,designertransactiondetail.assigneddate
+		from designertransactiondetail,user,designertransactionheader,designerinfo
+		where designertransactiondetail.designertransactionid=designertransactionheader.designertransactionid
+		and designertransactionheader.designerid=user.userid and
+		user.userid=designerinfo.designerid and
+		designertransactionheader.issuccess=1 and designertransactiondetail.confirmed=1 
+		group by cast(assigneddate as date)
+		union all
+		select expotransactionheader.ticketqty* #kali
+		expoeventdetails.ticketprice as penjualan,
+		expotransactiondetails.expotransactiondate
+		from expotransactiondetails,Expotransactionheader,expoevent,expoeventdetails
+		where expotransactiondetails.expotransactionid=expotransactionheader.Expotransactionid
+		and expotransactionheader.expoeventid=expoevent.expoeventid and
+		expoevent.expoeventid=expoeventdetails.expoeventid and
+		expotransactionheader.issuccess=1 group by cast(expotransactiondate as date);
+		
+		if min_max='min' then
+		select cast(tanggal as date) as tanggalmax, max(a.total) as maksimal_penjualan
+		from (select cast(tanggal as date) as tanggal_penjualan, sum(penjualan) as total 
+		from temp1 group by tanggal_penjualan) a, temp1 where cast(tanggal as date) = tanggal_penjualan
+		group by cast(tanggal as date) order by maksimal_penjualan asc limit 1;
+		elseif min_max='max' then select cast(tanggal as date) as tanggalmax, max(a.total) as maksimal_penjualan
+		from(select cast(tanggal as date) as tanggal_penjualan, sum(penjualan) as total from temp1 group by
+		tanggal_penjualan) a,temp1 where cast(tanggal as date) = tanggal_penjualan group by cast(tanggal as date)
+		order by maksimal_penjualan desc limit 1;
+		end if;
+		end $$
+		Delimiter ;
+	\end{lstlisting}
+	Hasil:
+	\\
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{proc6_max}
+		\caption{Hasil Procedure 6 (\textit{min})}
+	\end{figure}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{proc6_min}
+	\caption{Hasil Procedure 6 (\textit{max})}
+\end{figure}
 \end{enumerate}

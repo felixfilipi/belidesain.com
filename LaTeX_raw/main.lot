@@ -2,15 +2,15 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{Entity Types}}{17}{}%
-\contentsline {table}{\numberline {4.2}{Relationship Types}}{18}{}%
-\contentsline {table}{\numberline {4.3}{Attributes}}{22}{}%
-\contentsline {table}{\numberline {4.4}{Candidate Keys, Primary Keys, dan Alternate Keys}}{24}{}%
-\contentsline {table}{\numberline {4.5}{List of Index}}{27}{}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Analyze Transaction}}{28}{}%
-\contentsline {table}{\numberline {4.7}{\ignorespaces Insert Table 1}}{28}{}%
-\contentsline {table}{\numberline {4.8}{\ignorespaces Insert Table 2}}{29}{}%
-\contentsline {table}{\numberline {4.9}{\ignorespaces Insert Table 3}}{29}{}%
-\contentsline {table}{\numberline {4.10}{\ignorespaces Insert Table 4}}{30}{}%
-\contentsline {table}{\numberline {4.11}{\ignorespaces Insert Table 5}}{30}{}%
-\contentsline {table}{\numberline {4.12}{\ignorespaces Insert Table 6}}{30}{}%
+\contentsline {table}{\numberline {4.1}{Entity Types}}{17}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{Relationship Types}}{18}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{Attributes}}{22}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{Candidate Keys, Primary Keys, dan Alternate Keys}}{24}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{List of Index}}{27}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Analyze Transaction}}{28}{table.4.6}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Insert Table 1}}{28}{table.4.7}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Insert Table 2}}{29}{table.4.8}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Insert Table 3}}{29}{table.4.9}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Insert Table 4}}{30}{table.4.10}%
+\contentsline {table}{\numberline {4.11}{\ignorespaces Insert Table 5}}{30}{table.4.11}%
+\contentsline {table}{\numberline {4.12}{\ignorespaces Insert Table 6}}{30}{table.4.12}%

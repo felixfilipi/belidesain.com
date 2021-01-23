@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.22)  23 JAN 2021 08:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.1.22)  23 JAN 2021 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,25 +570,152 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip78
 \bigstrutjot=\dimen292
 )
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen293
+\Hy@linkcounter=\count310
+\Hy@pagecounter=\count311
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count312
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count313
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen294
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count314
+\Field@Width=\dimen295
+\Fld@charsize=\dimen296
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+
+(/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count315
+\c@Item=\count316
+\c@Hfootnote=\count317
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+
+(/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip79
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count310
+\l__kernel_color_stack_int=\count320
 \l__pdf_internal_box=\box73
 ) (./main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -626,16 +753,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
-\scratchdimen=\dimen293
+\scratchcounter=\count321
+\scratchdimen=\dimen297
 \scratchbox=\box74
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count322
+\nofMParguments=\count323
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count314
-\MPscratchDim=\dimen294
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen298
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -646,17 +773,35 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count317
-<images//binusmalang.png, id=4, 968.6589pt x 685.3605pt>
+\c@lstlisting=\count327
+Package hyperref Info: Link coloring ON on input line 38.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count328
+)
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
+
+(./main.out) (./main.out)
+\@outlinefile=\write4
+<images//binusmalang.png, id=139, 968.6589pt x 685.3605pt>
 File: images//binusmalang.png Graphic file (type png)
 <use images//binusmalang.png>
-Package pdftex.def Info: images//binusmalang.png  used on input line 47.
+Package pdftex.def Info: images//binusmalang.png  used on input line 55.
 (pdftex.def)             Requested size: 256.0774pt x 181.18044pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//binusmalang.png>
-]
-(./chapters/lembar_persetujuan_proyek_akhir.tex
+] (./chapters/lembar_persetujuan_proyek_akhir.tex
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
 
@@ -669,17 +814,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images//umi_ttd.jpeg, id=14, 1084.05pt x 1927.2pt>
+<images//umi_ttd.jpeg, id=149, 1084.05pt x 1927.2pt>
 File: images//umi_ttd.jpeg Graphic file (type jpg)
 <use images//umi_ttd.jpeg>
 Package pdftex.def Info: images//umi_ttd.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 85.35696pt x 151.73839pt.
-<images//brian_ttd.jpeg, id=15, 722.7pt x 452.69125pt>
+<images//brian_ttd.jpeg, id=150, 722.7pt x 452.69125pt>
 File: images//brian_ttd.jpeg Graphic file (type jpg)
 <use images//brian_ttd.jpeg>
 Package pdftex.def Info: images//brian_ttd.jpeg  used on input line 27.
 (pdftex.def)             Requested size: 149.37956pt x 93.56903pt.
-<images//felix_ttd.jpeg, id=16, 1284.8pt x 1266.7325pt>
+<images//felix_ttd.jpeg, id=151, 1284.8pt x 1266.7325pt>
 File: images//felix_ttd.jpeg Graphic file (type jpg)
 <use images//felix_ttd.jpeg>
 Package pdftex.def Info: images//felix_ttd.jpeg  used on input line 27.
@@ -689,11 +834,16 @@ Overfull \hbox (64.51099pt too wide) in paragraph at lines 26--31
  [] 
  []
 
-) [1 <./images//umi_ttd.jpeg> <./images//brian_ttd.jpeg> <./images//felix_ttd.j
-peg>] (./main.toc [2
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.72 \tableofcontents
+                      [1 <./images//umi_ttd.jpeg> <./images//brian_ttd.jpeg> <.
+/images//felix_ttd.jpeg>] (./main.toc [2
 
 ])
-\tf@toc=\write4
+\tf@toc=\write5
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -702,11 +852,11 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [3] (./main.lof)
-\tf@lof=\write5
+\tf@lof=\write6
  [4
 
 ] (./main.lot)
-\tf@lot=\write6
+\tf@lot=\write7
  (./chapters/pendahuluan.tex [5
 
 ]
@@ -861,7 +1011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
 [11]) (./chapters/analisis.tex [12]
 BAB 3.
-<images//usecase.png, id=61, 186.9165pt x 312.4035pt>
+<images//usecase.png, id=314, 186.9165pt x 312.4035pt>
 File: images//usecase.png Graphic file (type png)
 <use images//usecase.png>
 Package pdftex.def Info: images//usecase.png  used on input line 5.
@@ -1910,12 +2060,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--302
  []
 
 [23] [24]
-<images//erd.png, id=101, 1807.75375pt x 1335.99126pt>
+<images//erd.png, id=376, 1807.75375pt x 1335.99126pt>
 File: images//erd.png Graphic file (type png)
 <use images//erd.png>
 Package pdftex.def Info: images//erd.png  used on input line 329.
 (pdftex.def)             Requested size: 426.78067pt x 315.40536pt.
-<images//classdiagram.png, id=102, 1747.52875pt x 1687.30376pt>
+<images//classdiagram.png, id=377, 1747.52875pt x 1687.30376pt>
 File: images//classdiagram.png Graphic file (type png)
 <use images//classdiagram.png>
 Package pdftex.def Info: images//classdiagram.png  used on input line 337.
@@ -2025,41 +2175,41 @@ Overfull \hbox (0.84645pt too wide) in alignment at lines 364--375
  []
 
 [26 <./images//classdiagram.png>]
-<images//analyzetransaction.png, id=112, 604.2575pt x 429.605pt>
+<images//analyzetransaction.png, id=395, 604.2575pt x 429.605pt>
 File: images//analyzetransaction.png Graphic file (type png)
 <use images//analyzetransaction.png>
 Package pdftex.def Info: images//analyzetransaction.png  used on input line 385
 .
 (pdftex.def)             Requested size: 426.79454pt x 303.4353pt.
  [27]
-<images//insert1.png, id=116, 1249.66875pt x 543.02875pt>
+<images//insert1.png, id=400, 1249.66875pt x 543.02875pt>
 File: images//insert1.png Graphic file (type png)
 <use images//insert1.png>
 Package pdftex.def Info: images//insert1.png  used on input line 392.
 (pdftex.def)             Requested size: 426.78859pt x 185.45592pt.
-<images//insert2.png, id=117, 1031.855pt x 534.99875pt>
+<images//insert2.png, id=401, 1031.855pt x 534.99875pt>
 File: images//insert2.png Graphic file (type png)
 <use images//insert2.png>
 Package pdftex.def Info: images//insert2.png  used on input line 397.
 (pdftex.def)             Requested size: 426.79482pt x 221.28563pt.
-<images//insert3.png, id=118, 1192.455pt x 485.815pt>
+<images//insert3.png, id=402, 1192.455pt x 485.815pt>
 File: images//insert3.png Graphic file (type png)
 <use images//insert3.png>
 Package pdftex.def Info: images//insert3.png  used on input line 402.
 (pdftex.def)             Requested size: 426.79071pt x 173.87769pt.
  [28 <./images//analyzetransaction.png> <./images//insert1.png>]
-<images//insert4.png, id=122, 915.42pt x 421.575pt>
+<images//insert4.png, id=408, 915.42pt x 421.575pt>
 File: images//insert4.png Graphic file (type png)
 <use images//insert4.png>
 Package pdftex.def Info: images//insert4.png  used on input line 407.
 (pdftex.def)             Requested size: 426.78336pt x 196.54495pt.
-<images//insert5.png, id=123, 1230.5975pt x 492.84125pt>
+<images//insert5.png, id=409, 1230.5975pt x 492.84125pt>
 File: images//insert5.png Graphic file (type png)
 <use images//insert5.png>
 Package pdftex.def Info: images//insert5.png  used on input line 412.
 (pdftex.def)             Requested size: 426.7911pt x 170.9253pt.
  [29 <./images//insert2.png> <./images//insert3.png>]
-<images//insert6.png, id=127, 914.41624pt x 266.9975pt>
+<images//insert6.png, id=414, 914.41624pt x 266.9975pt>
 File: images//insert6.png Graphic file (type png)
 <use images//insert6.png>
 Package pdftex.def Info: images//insert6.png  used on input line 417.
@@ -2068,7 +2218,7 @@ Package pdftex.def Info: images//insert6.png  used on input line 417.
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [30 <./images//insert4.png> <./images//insert5.png> <./images//insert6.png>]
-<images//view1.jpeg, id=132, 153.57375pt x 88.83188pt>
+<images//view1.jpeg, id=420, 153.57375pt x 88.83188pt>
 File: images//view1.jpeg Graphic file (type jpg)
 <use images//view1.jpeg>
 Package pdftex.def Info: images//view1.jpeg  used on input line 459.
@@ -2078,7 +2228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 455--461
 
  []
 
-<images//view2.jpeg, id=133, 201.00093pt x 153.57375pt>
+<images//view2.jpeg, id=421, 201.00093pt x 153.57375pt>
 File: images//view2.jpeg Graphic file (type jpg)
 <use images//view2.jpeg>
 Package pdftex.def Info: images//view2.jpeg  used on input line 497.
@@ -2089,7 +2239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--499
  []
 
 [31 <./images//view1.jpeg>]
-<images//view3.jpeg, id=139, 254.45062pt x 97.86563pt>
+<images//view3.jpeg, id=458, 254.45062pt x 97.86563pt>
 File: images//view3.jpeg Graphic file (type jpg)
 <use images//view3.jpeg>
 Package pdftex.def Info: images//view3.jpeg  used on input line 536.
@@ -2099,133 +2249,190 @@ Underfull \hbox (badness 10000) in paragraph at lines 532--538
 
  []
 
+[32 <./images//view2.jpeg> <./images//view3.jpeg>]
+<images//view4.png, id=487, 458.71375pt x 160.6pt>
+File: images//view4.png Graphic file (type png)
+<use images//view4.png>
+Package pdftex.def Info: images//view4.png  used on input line 581.
+(pdftex.def)             Requested size: 170.71393pt x 59.76904pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--583
+
+ []
+
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-562.
+607.
 (/usr/share/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [32 <./images//view2.jpeg> <./images//view3.jpeg>]
-<images//trig1_before.jpeg, id=144, 217.5628pt x 134.00063pt>
+)
+<images//trig1_before.jpeg, id=488, 217.5628pt x 134.00063pt>
 File: images//trig1_before.jpeg Graphic file (type jpg)
 <use images//trig1_before.jpeg>
-Package pdftex.def Info: images//trig1_before.jpeg  used on input line 578.
+Package pdftex.def Info: images//trig1_before.jpeg  used on input line 623.
 (pdftex.def)             Requested size: 256.0774pt x 157.74312pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--580
+Underfull \hbox (badness 10000) in paragraph at lines 619--625
 
  []
 
-<images//trig1_after.jpeg, id=145, 189.70876pt x 139.27031pt>
+<images//trig1_after.jpeg, id=489, 189.70876pt x 139.27031pt>
 File: images//trig1_after.jpeg Graphic file (type jpg)
 <use images//trig1_after.jpeg>
-Package pdftex.def Info: images//trig1_after.jpeg  used on input line 584.
+Package pdftex.def Info: images//trig1_after.jpeg  used on input line 629.
 (pdftex.def)             Requested size: 256.0774pt x 188.01317pt.
-[33 <./images//trig1_before.jpeg> <./images//trig1_after.jpeg>]
-<images//trig2_before.jpeg, id=149, 606.01407pt x 19.57312pt>
+[33 <./images//view4.png> <./images//trig1_before.jpeg>]
+<images//trig2_before.jpeg, id=518, 606.01407pt x 19.57312pt>
 File: images//trig2_before.jpeg Graphic file (type jpg)
 <use images//trig2_before.jpeg>
-Package pdftex.def Info: images//trig2_before.jpeg  used on input line 632.
+Package pdftex.def Info: images//trig2_before.jpeg  used on input line 677.
 (pdftex.def)             Requested size: 426.79134pt x 13.7847pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 628--634
+Underfull \hbox (badness 10000) in paragraph at lines 673--679
 
  []
 
-<images//trig2_after.jpeg, id=150, 515.67656pt x 47.42719pt>
+<images//trig2_after.jpeg, id=519, 515.67656pt x 47.42719pt>
 File: images//trig2_after.jpeg Graphic file (type jpg)
 <use images//trig2_after.jpeg>
-Package pdftex.def Info: images//trig2_after.jpeg  used on input line 638.
+Package pdftex.def Info: images//trig2_after.jpeg  used on input line 683.
 (pdftex.def)             Requested size: 426.79134pt x 39.2531pt.
-<images//trig3_before.jpeg, id=151, 410.2828pt x 138.5175pt>
+[34 <./images//trig1_after.jpeg> <./images//trig2_before.jpeg>]
+<images//trig3_before.jpeg, id=547, 410.2828pt x 138.5175pt>
 File: images//trig3_before.jpeg Graphic file (type jpg)
 <use images//trig3_before.jpeg>
-Package pdftex.def Info: images//trig3_before.jpeg  used on input line 676.
+Package pdftex.def Info: images//trig3_before.jpeg  used on input line 721.
 (pdftex.def)             Requested size: 426.79134pt x 144.09071pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 672--678
+Underfull \hbox (badness 10000) in paragraph at lines 717--723
 
  []
 
-[34 <./images//trig2_before.jpeg> <./images//trig2_after.jpeg>]
-<images//trig3_after.jpeg, id=155, 455.45157pt x 134.75343pt>
+<images//trig3_after.jpeg, id=548, 455.45157pt x 134.75343pt>
 File: images//trig3_after.jpeg Graphic file (type jpg)
 <use images//trig3_after.jpeg>
-Package pdftex.def Info: images//trig3_after.jpeg  used on input line 682.
+Package pdftex.def Info: images//trig3_after.jpeg  used on input line 727.
 (pdftex.def)             Requested size: 426.79134pt x 126.2755pt.
- [35 <./images//trig3_before.jpeg> <./images//trig3_after.jpeg>]
-<images//proc1.jpeg, id=159, 216.81pt x 49.68562pt>
+[35 <./images//trig2_after.jpeg> <./images//trig3_before.jpeg> <./images//trig3
+_after.jpeg>]
+<images//proc1.jpeg, id=565, 216.81pt x 49.68562pt>
 File: images//proc1.jpeg Graphic file (type jpg)
 <use images//proc1.jpeg>
-Package pdftex.def Info: images//proc1.jpeg  used on input line 732.
+Package pdftex.def Info: images//proc1.jpeg  used on input line 777.
 (pdftex.def)             Requested size: 170.71393pt x 39.12384pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 728--734
+Underfull \hbox (badness 10000) in paragraph at lines 773--779
 
  []
 
-<images//proc2.jpeg, id=160, 161.10187pt x 44.41594pt>
+[36 <./images//proc1.jpeg>]
+<images//proc2.jpeg, id=615, 161.10187pt x 44.41594pt>
 File: images//proc2.jpeg Graphic file (type jpg)
 <use images//proc2.jpeg>
-Package pdftex.def Info: images//proc2.jpeg  used on input line 781.
+Package pdftex.def Info: images//proc2.jpeg  used on input line 826.
 (pdftex.def)             Requested size: 170.71393pt x 47.06778pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 777--783
+Underfull \hbox (badness 10000) in paragraph at lines 822--828
 
  []
 
-[36 <./images//proc1.jpeg> <./images//proc2.jpeg>]
-<images//proc3.jpeg, id=165, 254.45062pt x 54.9553pt>
+<images//proc3.jpeg, id=616, 254.45062pt x 54.9553pt>
 File: images//proc3.jpeg Graphic file (type jpg)
 <use images//proc3.jpeg>
-Package pdftex.def Info: images//proc3.jpeg  used on input line 830.
+Package pdftex.def Info: images//proc3.jpeg  used on input line 875.
 (pdftex.def)             Requested size: 256.0774pt x 55.30902pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--832
+Underfull \hbox (badness 10000) in paragraph at lines 871--877
 
  []
 
-) (./chapters/daftarpustaka.tex [37 <./images//proc3.jpeg>]
-Overfull \hbox (21.24667pt too wide) in paragraph at lines 4--5
+[37 <./images//proc2.jpeg> <./images//proc3.jpeg>]
+<images//proc4_asc.png, id=652, 328.22626pt x 132.495pt>
+File: images//proc4_asc.png Graphic file (type png)
+<use images//proc4_asc.png>
+Package pdftex.def Info: images//proc4_asc.png  used on input line 923.
+(pdftex.def)             Requested size: 256.0774pt x 103.37195pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 919--925
+
+ []
+
+<images//proc4_desc.png, id=653, 325.215pt x 132.495pt>
+File: images//proc4_desc.png Graphic file (type png)
+<use images//proc4_desc.png>
+Package pdftex.def Info: images//proc4_desc.png  used on input line 928.
+(pdftex.def)             Requested size: 256.0774pt x 104.3363pt.
+[38 <./images//proc4_asc.png> <./images//proc4_desc.png>]
+<images//proc5.png, id=677, 307.1475pt x 73.27374pt>
+File: images//proc5.png Graphic file (type png)
+<use images//proc5.png>
+Package pdftex.def Info: images//proc5.png  used on input line 991.
+(pdftex.def)             Requested size: 256.0774pt x 61.09445pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 987--993
+
+ []
+
+[39 <./images//proc5.png>]
+<images//proc6_max.png, id=725, 205.76875pt x 39.14626pt>
+File: images//proc6_max.png Graphic file (type png)
+<use images//proc6_max.png>
+Package pdftex.def Info: images//proc6_max.png  used on input line 1061.
+(pdftex.def)             Requested size: 256.0774pt x 48.72122pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1057--1063
+
+ []
+
+[40]
+<images//proc6_min.png, id=768, 213.79875pt x 44.165pt>
+File: images//proc6_min.png Graphic file (type png)
+<use images//proc6_min.png>
+Package pdftex.def Info: images//proc6_min.png  used on input line 1066.
+(pdftex.def)             Requested size: 256.0774pt x 52.90268pt.
+) (./chapters/daftarpustaka.tex [41 <./images//proc6_max.png> <./images//proc6_
+min.png>]
+Overfull \hbox (21.24667pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/10.95 detail/30653/dirjen-ppi-survei-penetrasi-pengguna-internet-d
 i-indonesia-bagian-penting-
  []
 
 
-Overfull \hbox (15.46756pt too wide) in paragraph at lines 5--6
+Overfull \hbox (15.46756pt too wide) in paragraph at lines 7--8
 \OT1/cmr/m/n/10.95 https://kominfo.go.id/content/detail/17233/jumlah-startup-di
 -indonesia-ratusan-atau-
  []
 
 
-Overfull \hbox (16.23805pt too wide) in paragraph at lines 8--9
+Overfull \hbox (16.23805pt too wide) in paragraph at lines 10--11
 \OT1/cmr/m/n/10.95 enta, 09-Nov-2020. [On-line]. Avail-able: https://www.talent
 a.co/blog/insight-talenta/e-
  []
 
 
-Overfull \hbox (3.49348pt too wide) in paragraph at lines 9--10
+Overfull \hbox (3.49348pt too wide) in paragraph at lines 11--12
 \OT1/cmr/m/n/10.95 rasi Us-aha & Ke-se-hatan Ter-per-caya. [On-line]. Avail-abl
 e: https://www.daya.id/usah-
  []
 
 
-Overfull \hbox (10.93536pt too wide) in paragraph at lines 9--10
+Overfull \hbox (10.93536pt too wide) in paragraph at lines 11--12
 \OT1/cmr/m/n/10.95 a/artikel-daya/keuangan/macam-macam-sistem-pembayaran-pada-b
 isnis-e-commerce.
  []
 
 
-Overfull \hbox (4.51756pt too wide) in paragraph at lines 13--14
+Overfull \hbox (4.51756pt too wide) in paragraph at lines 15--16
 []\OT1/cmr/m/n/10.95 "12 Man-faat Ba-sis Data dalam Ke-hidu-pan Se-hari Hari - 
 DosenIT.com", DosenIT.com,
  []
 
-) (./chapters/lampiran.tex [38
+[42
 
-] [39
+]) (./chapters/lampiran.tex [43] [44
 
-] [40] [41] [42] [43] [44] [45] [46]
-[47] [48] [49] [50] [51] [52] [53] [54]) (./chapters/lembarpenilaian.tex
-[55]
+] [45] [46] [47] [48] [49] [50] [51]
+[52] [53] [54] [55] [56] [57] [58] [59]) (./chapters/lembarpenilaian.tex
+[60]
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []\OT1/cmr/bx/n/10 TOTAL
  []
@@ -2276,36 +2483,39 @@ Overfull \hbox (6.38329pt too wide) in paragraph at lines 30--30
  []
 
 
-Overfull \hbox (5.82773pt too wide) in paragraph at lines 30--30
-[]|\OT1/cmr/m/n/10 20&| 
+Overfull \hbox (6.38329pt too wide) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10 20%| 
  []
 
-) [56
+) [61
 
-] (./main.aux) ) 
+] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 8BCB745C5081BEBFC8BF124A8F9FA0C0;2132.
+ ) 
 Here is how much of TeX's memory you used:
- 17303 strings out of 479383
- 317567 string characters out of 5875830
- 1305307 words of memory out of 5000000
- 34073 multiletter control sequences out of 15000+600000
+ 22459 strings out of 479383
+ 398277 string characters out of 5875830
+ 1393657 words of memory out of 5000000
+ 37832 multiletter control sequences out of 15000+600000
  414846 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,111p,838b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
-c}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm10
-95.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on main.pdf (57 pages, 1671361 bytes).
+ 108i,12n,111p,838b,2052s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on main.pdf (62 pages, 1842888 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2042 PDF objects out of 2073 (max. 8388607)
+ 1910 compressed objects within 20 object streams
+ 1298 named destinations out of 1440 (max. 500000)
+ 437 words of extra memory for PDF output out of 10000 (max. 10000000)
 
