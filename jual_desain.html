@@ -9,107 +9,16 @@
    background: url("images/desain_bg.jpg") no-repeat fixed center;
    background-size: cover;
   }
-
-  * {
-    box-sizing: border-box;
-    padding:20px;
-  }
-
-label{
-  color: #fff;
-  font-size: 24px;
-}
-
-button{
-  background-color: transparent;
-  border-color: transparent;
-  cursor: pointer;
-  color: white;
-  font-family: 'Raleway';
-  font-size: 20px;
-}
-
-input[type=text],input[type=url],input[type=textarea], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: inline-block;
-  resize: vertical;
-  background: #f1f1f1;
-  margin-top:15px;
-}
-
-  textarea{
-    width: 100%;
-    height: 150px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: inline-block;
-    resize: vertical;
-    background: #f1f1f1;
-    font-family: sans-serif;
-  }
-
-input[type=submit] {
-  background-color: #335d87;
-	width: 100%;
-	margin-top: 30px;
-  font-family: sans-serif;
-  border: none;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #1d99ff;
-}
-
-.container {
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color:rgba(5, 29, 54,0.6);
-}
-
-.col-25 {
-  float: left;
-  width: 100%;
-  margin-bottom: -35px;
-}
-
-.col-75 {
-  float: left;
-  width: 95%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 </style>
 <!-- Javascript-->
 <script src="js/jquery.js"></script>
 
 </head>
 		<body>
-      <div class="row clearfix">
+      <div class="form">
          <div class="find-box">
             <h1>Jual Desain</h1>
-            <h4>Jual desain dan karya anda disini.</h4>
+            <h4>Jual desain serta karya terbaik anda disini.</h4>
             <div class="container">
               <form action="/action_page.php" style="opacity:1">
                 <div class="row">
@@ -155,8 +64,8 @@ input[type=submit]:hover {
                           </label>
                        </div>
                        <div class="form-check">
-                          <input id="checkbox4" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox4" style="color:#000">
+                          <input id="checkbox5" class="filled-in chk-col-blue" type="checkbox">
+                          <label for="checkbox5" style="color:#000">
                           Yami
                           </label>
                        </div>
@@ -172,9 +81,9 @@ input[type=submit]:hover {
                     <textarea placeholder="Deskripsikan Desain anda" required></textarea>
                 </div>
                 <div class="row">
-                    <label style="font-size:16px">Spesifikasi</label>
-                    <input type="text" placeholder="Masukkan Spesifikasi" required style="width:35%">
-                    <input type="text" placeholder="Jelaskan Spesifikasi" required style="width:35%">
+                    <label>Spesifikasi</label>
+                    <input type="text" placeholder="Masukkan Spesifikasi" required>
+                    <input type="text" placeholder="Jelaskan Spesifikasi" required>
                 </div>
                 <div class="row">
                     <button>+ Spesifikasi</button>

@@ -5,105 +5,29 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <style>
-
  body{
    background: url("images/desainer_bg.jpg") no-repeat fixed center;
    background-size: cover;
  }
-
-
-  * {
-    box-sizing: border-box;
-    padding:20px;
-  }
-
-label{
-  color: #fff;
-  font-size: 24px;
-}
-
-input[type=text],input[type=url], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: inline-block;
-  resize: vertical;
-  background: #f1f1f1;
-  margin-top:15px;
-}
-
-input[type=submit] {
-  background-color: #335d87;
-	width: 100%;
-	margin-top: 30px;
-  font-family: Georgia, serif;
-  border: none;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #1d99ff;
-}
-
-.container {
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color:rgba(5, 29, 54,0.6);
-}
-
-.col-25 {
-  float: left;
-  width: 100%;
-  margin-bottom: -35px;
-}
-
-.col-75 {
-  float: left;
-  width: 95%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 </style>
 <!-- Javascript-->
 <script src="js/jquery.js"></script>
-
 </head>
 		<body>
-      <div class="row clearfix">
+      <div class="form">
          <div class="find-box">
             <h1>Buat Akun Supplier</h1>
             <h4>Jual desain dan produk karya anda disini.</h4>
             <div class="container">
               <form action="/action_page.php" style="opacity:1">
                 <div class="row">
-                  <div class="col-25">
                     <label>Tarif Anda*</label>
-                    <input type="text" placeholder="Masukkan Alamat Lengkap anda" required>
+                    <input type="text" placeholder="Alamat Lengkap anda" required>
                   </div>
-                </div>
                 <div class="row">
-                  <div class="col-25">
-                    <label>Deskripsikan diri Anda</label>
-                    <input type="text" placeholder="Masukkan Nama Instansi anda">
+                    <label>Deskripsi diri Anda*</label>
+                    <input type="text" placeholder="Kalimat yang mendeskripsikan anda">
                   </div>
-                </div>
                 <div class="row">
                   <input type="submit" value="Daftar" >
                 </div>

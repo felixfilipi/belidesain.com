@@ -6,101 +6,9 @@
 <link rel="stylesheet" href="css/responsive.css">
 
 <style>
-
- body{
-   background: url("images/event_bg.jpg") no-repeat fixed center;
-   background-size: cover;
- }
-
-  * {
-    box-sizing: border-box;
-    padding:20px;
-  }
-
-label{
-  color: #fff;
-  font-size: 24px;
-}
-
-input[type="file"] {
-    display: none;
-}
-.custom-file-upload {
-    border: 1px solid #ccc;
-    font-size: 10px;
-    padding: 3px 8px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-input[type=text],[type=number],input[type=url],input[type=date], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  display: inline-block;
-  resize: vertical;
-  background: #f1f1f1;
-  margin-top:15px;
-}
-
-  textarea{
-    width: 100%;
-    height: 150px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: inline-block;
-    resize: vertical;
-    background: #f1f1f1;
-    font-family: sans-serif;
-  }
-
-input[type=submit] {
-  background-color: #335d87;
-	width: 100%;
-	margin-top: 30px;
-  font-family: sans-serif;
-  border: none;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 20px;
-  border-radius: 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #1d99ff;
-}
-
-.container {
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color:rgba(5, 29, 54,0.6);
-}
-
-.col-25 {
-  float: left;
-  width: 100%;
-  margin-bottom: -35px;
-}
-
-.col-75 {
-  float: left;
-  width: 95%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.form{
+	background: url("images/event_bg.jpg") no-repeat fixed center;
+	background-size: cover;
 }
 
 </style>
@@ -108,12 +16,12 @@ input[type=submit]:hover {
 <script src="js/jquery.js"></script>
 </head>
 		<body>
-      <div class="row clearfix">
+      <div class="form">
          <div class="find-box">
             <h1>Daftar Event</h1>
             <h4>Daftarkan event mengenai desain dan karya anda disini.</h4>
             <div class="container">
-              <form action="/action_page.php" style="opacity:1">
+              <form action="/action_page.php">
                 <div class="row">
                     <label>Judul Event*</label>
                     <input type="text" placeholder="Masukkan Judul Event anda" required>
@@ -127,10 +35,10 @@ input[type=submit]:hover {
                 </div>
                 <div class="row">
                     <label>Kategori*</label>
-                    <div id="boxscroll" style="background-color:#fff;margin-top:15px;border-radius:10px;">
+                    <div id="boxscroll">
                        <div class="form-check">
                           <input id="checkbox1" class="filled-in chk-col-blue" type="checkbox">
-                          <label for="checkbox1" style="color:#000">
+                          <label for="checkbox1">
                           DKV
                           </label>
                        </div>
@@ -166,7 +74,7 @@ input[type=submit]:hover {
                 </div>
                   <div id="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d987.913952094454!2d112.63133642912416!3d-7.9309702996429285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629efffd3bfa9%3A0xbf154c3066a77fe6!2sJl.%20Ikan%20Lumba-Lumba%2036-32%2C%20Tunjungsekar%2C%20Kec.%20Lowokwaru%2C%20Kota%20Malang%2C%20Jawa%20Timur%2065142!5e0!3m2!1sen!2sid!4v1607245747449!5m2!1sen!2sid"
-                    width="100%" height="520px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                     allowfullscreen></iframe>
                   </div>
                 <div class="row">
                       <label>Link (Online)</label>
@@ -174,35 +82,34 @@ input[type=submit]:hover {
                 </div>
                 <div class="row">
                     <label>Harga*</label>
-                    <input type="text" name="currency-field" id="currency-field" pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" placeholder="100,000.00 (Rp)"
-                    required style="width:30%;margin-left:20px">
-                    <input type="number" placeholder="Total Tiket" required style="width:30%;margin-left:10%">
+                    <br><input type="text" name="currency-field" id="currency-field" pattern="^\d{1,3}(,\d{3})*(\.\d+)?$" data-type="currency" placeholder="100,000.00 (Rp)"
+                    required>
+                </div>
+                <div class="row">
+                    <label>Total Ticket*</label>
+                    <input type="number" placeholder="Total Tiket" required>
                 </div>
                 <div class="row">
                     <label>Tanggal*</label>
-                    <input type="date" required style="width:30%">
+                    <input type="date" required >
                 </div>
                 <div class="row">
                     <label>Expired*</label>
-                    <input type="date" placeholder="Kadaluarsa Tiket" required style="width: 30%;margin-left:5px;">
+                    <input type="date" placeholder="Kadaluarsa Tiket" required>
                 </div>
                 <div class="row">
                     <label>Deskripsi*</label>
                     <textarea placeholder="Deskripsikan Event anda" required></textarea>
                 </div>
                 <div class="row">
-                  <div class="col-25">
-                    <label>Poster Event</label>
+                    <label>Poster</label>
                     <br><br><label for="file-upload" class="custom-file-upload">
                       Upload
                     </label>
                     <input id="file-upload" type="file"/>
                     <img src="images/felix.jpeg">
-                  </div>
                 </div>
-                <div class="row">
-                  <input type="submit" value="Kirim" >
-                </div>
+                <input type="submit" value="Kirim" >
               </form>
           </div>
         </div>
